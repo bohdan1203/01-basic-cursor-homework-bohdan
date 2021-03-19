@@ -4,28 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Перелік основних команд GIT</title>
+    <title>Домашнє завдання №1</title>
 </head>
 <body>
     <h1>Перелік основних команд GIT</h1>
 
-    <ul>
-        <li>git config --global user.name blabla</li>
-        <li>git config --global user.email blabal@bla</li>
-        <li>git init</li>
-        <li>git status</li>
-        <li>git add</li>
-        <li>git commit</li>
-        <li>git log</li>
-        <li>git checkout</li>
-        <li>git branch</li>
-        <li>git push</li>
-        <li>git pull</li>
-        <li>git merge</li>
-        <li>git clone</li>
-    </ul>
+    <h2>Base</h2>
 
-    <h1>.gitignore</h1>
-    <p>A <i>.gitignore</i> file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected.</p>
+        <ul>
+            <li>git config --global user.name blabla — встановлює ім'я, яке буде відібражатися в полі автора у комітів, що ви виконуєте</li>
+            <li>git config --global user.email blabal@bla — встановлює адрес електронної пошти, який буде відібражатися в інформації про коміти, що ви виконуєте</li>
+            <li>git init — створює новий локальний репозиторій з заданим ім'ям</li>
+            <li>git status — вказує всі нові та змінені файли, які треба зафіксувати</li>
+            <li>git add — індексує вказаний файл для подальшого коміту</li>
+            <li>git commit — фіксує проіндексовані зміни та зберігає їх в історію версій</li>
+            <li>git log — історія комітів для поточної гілки</li>
+            <li>git checkout — переключає на вибрану гілку та оновлює робочу директорію до її стану</li>
+            <li>git branch — перелік іменованих гілок комітів з зазначенням вибраної гілки </li>
+            <li>git push — завантажує всі змни локальної гілки у віддалений репозиторій</li>
+            <li>git pull — завантажує історію з віддаленого репозиторія та об'єднує її з локальною</li>
+            <li>git merge — вностить зміни з гілки віддаленого репозиторія в поточну гілку локального репозиторія</li>
+            <li>git clone — завантажує репозиторій разом зі всією історією змін</li>
+        </ul>
+
+    <h3>.gitignore</h3>
+        <p>
+            Файл <i>.gitignore</i> визначає навмисно не відстежувані файли, які Git повинен ігнорувати. Не впливає на файли, які Git вже відстежує. 
+        </p>
+
+    <h2>Advanced</h2>
+
+        <ul>
+            <li>git revert — скасовує зміни, але не шляхом видалення комітів з історії, а шляхом створення нового коміта з відміненимим змінами</li>
+            <li>git reset — скасовує локальні зміни до стану віддаленого репозиторія</li>
+            <li>git rebase — переміщує послідовність комітів до нового базового коміту</li>
+            <li>git cherry-pick — бере зміни, які внесені в коміт, та застосовує їх повторно у виді нового коміта в поточній гілці</li>
+            <li>git stash — зберігає зміни, які будуть виконані пізніше</li>
+        </ul>
+
+    <h3>Підключення GitHub через SSH</h3>
+
+        <ol>
+            <li>
+                Перед генерацією SSH-ключа треба перевірити наявніть вже наявних ключів. Для цього виконується команда <b>ls -al ~/.ssh</b>.
+                <img src="ssh/1.jpg" alt="cheching">
+            </li>
+            <li>
+                Для генерації SSH-ключа виконується наступна команда <b>ssh-keygen -t ed25519 -C "your_email@example.com"</b>. Задати шлях до файлу, де буде записаний код. Захистити ключ паролем.
+                <img src="ssh/2.jpg" alt="generation">
+            </li>
+            <li>
+                Отримати згенерований код.
+                <br>
+                <img src="ssh/3.jpg" alt="password">
+            </li>
+            <li>
+                Скопіювати код зі збереженого файла та вставити його в поле в налаштуваннях SSH на сайті GitHub.
+                <img src="ssh/4.jpg" alt="copy/paste">
+            </li>
+            <li>
+                Готово!
+                <br>
+                <img src="ssh/5.jpg" alt="done">
+            </li>
+        </ol>
 </body>
 </html>
