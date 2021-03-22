@@ -1,0 +1,15 @@
+body {
+    background-color: #eeeeee;
+}
+
+th {
+    background-color: darkgray
+}
+
+td {
+    text-align: center;
+}
+
+p {
+    font-size: large;
+}
