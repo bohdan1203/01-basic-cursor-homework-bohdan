@@ -1,0 +1,99 @@
+body {
+    background-color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    color: #888888;
+}
+
+table {
+    border: 1px solid #888888;
+    border-radius: 7px;
+    border-spacing: 0px;
+    width: 60%;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+td {
+    border-top: 1px solid #888888;
+    padding: 10px;
+    height: 30px;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    color: whitesmoke;
+    height: 30px;
+}
+
+.col1 {
+    width: 40%;
+    color: whitesmoke;
+}
+
+.col3 {
+    width: 30%;
+}
+
+img {
+   width: 20px;
+   margin-right: 5px;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid whitesmoke;
+    display: inline; 
+    margin-left: 6px;
+    position: relative;
+    top: 12px;
+}
+
+span {
+    height: 3px;
+    width: 3px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    right: -90%
+}
+
+.check {
+      margin-right: 7px;
+}
+
+.gray-dots {
+      background-color: #888888;
+}
+
+.search {
+      background-color: #777777;
+      width: 100%;
+      height: 30px;
+      border-radius: 7px;
+}
+
+.search-input {
+        background-color: #777777;
+        border: 0px solid transparent;
+        position: relative;
+        height: 24px;
+        top: -10px;
+        width: 75%;
+        
+}
+
+input::placeholder {
+      color: #dddddd;
+}
+
+#glass {
+      position: relative;
+      margin: 5px;
+}
