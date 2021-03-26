@@ -16,12 +16,12 @@ table {
 
 td {
     border-top: 1px solid #888888;
-    padding: 10px;
+    padding: 5px;
     height: 30px;
 }
 
 th {
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     color: whitesmoke;
     height: 30px;
@@ -30,6 +30,10 @@ th {
 .col1 {
     width: 40%;
     color: whitesmoke;
+}
+
+.padd-12 {
+    padding-left: 12px;
 }
 
 .col3 {
@@ -61,7 +65,7 @@ span {
     display: inline-block;
     margin: 0px;
     position: relative;
-    right: -90%
+    right: -85%
 }
 
 .check {
