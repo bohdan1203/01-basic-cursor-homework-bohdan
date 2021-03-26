@@ -113,4 +113,5 @@ a:hover {
 
 input:focus {
     outline: none;
+    color: white;
 }
