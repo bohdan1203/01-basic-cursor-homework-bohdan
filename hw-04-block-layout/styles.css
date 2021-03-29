@@ -1,0 +1,116 @@
+body {
+    background-color: #444444;
+    width: 1440px;
+    height: 1480px;
+}
+
+.div-top {
+    width: 100%;
+    height: 500px;
+    background-color: #ed4c5c;
+}
+
+.div-top-text {
+    width: 445px;
+    height: 195px;
+    position: absolute;
+    margin: 122px 165px;
+}
+
+.div-stay-focused {
+    width: 100%;
+    height: 107px;
+}
+
+.p-stay-focused {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+    position: absolute;
+    margin: 0px;
+}
+
+.div-it-is-important {
+    width: 100%;
+    height: 64px;
+    margin-top: 24px;
+}
+
+.p-it-is-important {
+    font-family:  Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%; /* or 20px */
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.div-top-images {
+    width: 533px;
+    height: 311px;
+    position: absolute;
+    margin-top: 94px;
+    margin-left: 691px;
+}
+
+.img-1 {
+    position: absolute;
+    margin-left: 44px;
+    z-index: 3;
+    border-radius: 15px;
+}
+
+.img-2 {
+    position: absolute;
+    margin: 22px 0px;
+    background: #c4c4c4;
+    opacity: 0.5;
+    border-radius: 15px;
+}
+
+.img-3 {
+    position: absolute;
+    margin: 22px 0px 22px 150px;
+    background: #c4c4c4;
+    opacity: 0.5;
+    border-radius: 15px;
+}
+
+.div-top-download {
+    width: 134px;
+    height: 32px;
+    position: absolute;
+    margin: 357px 163px;
+}
+
+.google {
+    position: absolute;
+}
+
+.apple {
+    position: absolute;
+    margin-left: 57px;
+}
+
+.windows {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 110px;
+}
+
+.div-middle {
+    width: 100%;
+    height: 545px;
+    background-color: #ffffff;
+}
+
+.div-bottom {
+    width: 100%;
+    height: 435px;
+    background-color: black;
+}
+
