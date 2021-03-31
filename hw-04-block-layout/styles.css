@@ -231,6 +231,213 @@ button {
 .div-bottom {
     width: 100%;
     height: 435px;
-    background-color: black;
+    background-color: #fafafa;
 }
 
+.div-address, .div-services, .div-get-in-touch, .div-we-support, .div-visa-mastercard {
+    position: absolute;
+}
+
+.div-address {
+    width: 259px;
+    height: 264px;
+    margin-top: 85px;
+    margin-left: 161px;
+}
+
+.div-address-address {
+    width: 65px;
+    height: 22px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.p-address {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px; /* identical to box height */
+    text-align: center;
+    color: #101010;
+    margin: 0px;
+}
+
+.div-pipang {
+    width: 254px;
+    height: 54px;
+    margin-left: 5px;
+    margin-top: 55px;
+    position: absolute;
+}
+
+.p-pipang {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%; /* or 18px */
+    color: #101010;
+    margin: 0px;
+}
+
+.div-copyright {
+    width: 160px;
+    height: 14px;
+    margin-top: 250px;
+    position: absolute;
+}
+
+.p-copyright {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #101010;
+    margin: 0px;
+}
+
+.div-services {
+    width: 254px;
+    height: 164px;
+    margin-top: 85px;
+    margin-left: 450px;
+}
+
+.div-services-services {
+    width: 70px;
+    height: 22px;
+    position: absolute;
+}
+
+.p-services {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px; /* identical to box height */
+    color: #101010;
+    margin: 0px;
+}
+
+.div-overview {
+    width: 254px;
+    height: 114px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.p-overview {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%; /* or 19px */
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0px;
+}
+
+.div-get-in-touch {
+    width: 122px;
+    height: 128px;
+    margin-top: 85px;
+    margin-left: 734px;
+}
+
+.div-get-in-touch-get-in-touch {
+    width: 101px;
+    height: 22px;
+    position: absolute;
+}
+
+.p-get-in-touch {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px; /* identical to box height */
+    text-align: center;
+    color: #101010;
+    margin: 0px;
+}
+
+.div-email {
+    width: 122px;
+    height: 14px;
+    margin-top: 55px;
+    position: absolute;
+}
+
+.p-email {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #101010;
+    margin: 0px;
+}
+
+.div-phone-number {
+    width: 96px;
+    height: 14px;
+    margin-top: 80px;
+    position: absolute;
+}
+
+.p-phone-number {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #121212;
+    margin: 0px;
+}
+
+.div-social-media {
+    width: 66px;
+    height: 14px;
+    margin-top: 114px;
+    position: absolute;
+}
+
+.facebook {
+    position: absolute;
+}
+
+.linkedin {
+    position: absolute;
+    margin-left: 26px;
+}
+
+.twitter {
+    position: absolute;
+    margin-left: 52px;
+}
+
+.div-we-support {
+    width: 96px;
+    height: 22px;
+    margin-top: 85px;
+    margin-left: 1022px;
+}
+
+.p-we-support {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px; /* identical to box height */
+    color: #101010;
+    margin: 0px;
+}
+
+.div-visa-mastercard {
+    width: 216px;
+    height: 31px;
+    margin-top: 140px;
+    margin-left: 1028px;
+}
