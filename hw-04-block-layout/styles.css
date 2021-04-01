@@ -59,24 +59,7 @@ body {
 
 .img-1 {
     position: absolute;
-    margin-left: 44px;
     z-index: 3;
-    border-radius: 15px;
-}
-
-.img-2 {
-    position: absolute;
-    margin: 22px 0px;
-    background: #c4c4c4;
-    opacity: 0.5;
-    border-radius: 15px;
-}
-
-.img-3 {
-    position: absolute;
-    margin: 22px 0px 22px 150px;
-    background: #c4c4c4;
-    opacity: 0.5;
     border-radius: 15px;
 }
 
@@ -191,6 +174,33 @@ body {
     box-sizing: border-box;
     padding-left: 31px;
 }
+
+
+/* HIDE ARROWS IN INPUT NUMBER */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* HIDE ARROWS IN INPUT NUMBER */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+}
+
+
 
 input::placeholder {
     font-family: Lato;
@@ -337,6 +347,22 @@ button {
     text-transform: capitalize;
     color: #000000;
     margin: 0px;
+}
+
+a {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%; /* or 19px */
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .div-get-in-touch {
