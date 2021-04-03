@@ -1,5 +1,5 @@
 body {
-    background-color: #555555;
+    background-color: #cccccc;
     width: 1600px;
     height: 4500px;
     margin: 0px;
@@ -163,19 +163,54 @@ body {
     background: url(images/img1.png);
 }
 
-
-
-
-
-
-
 .div-middle-1 {
     position: absolute;
     width: 1117px;
     height: 560px;
     left: 240px;
     top: 903.18px;
-    background-color: cornsilk;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.mid-1-img {
+    margin-left: 11px;
+}
+
+.mid-1-text {
+    width: 475px;
+    height: 310px;
+    margin-left: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mid-1-text-top {
+    width: 475px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #212353;
+}
+
+.mid-1-text-bottom {
+    width: 475px;
+    height: 170px;
+    font-family: Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+    letter-spacing: 0.015em;
 }
 
 .div-middle-2 {
@@ -193,8 +228,143 @@ body {
     height: 709px;
     left: 242px;
     top: 2789px;
-    background-color: darksalmon;
+    background: #9C69E2;
+    border-radius: 50px;
 }
+
+.testimonials {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 93px;
+    margin-top: 109px;
+}
+
+.testimonials-block {
+    width: 949px;
+    height: 330px;
+    background-color: darkseagreen;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 88px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.block-in-block {
+    width: 743px;
+    height: 220px;
+    display: flex;
+    margin-top: 60px;
+
+}
+
+.john-fang-photo {
+    width: 132px;
+    height: 90px;
+}
+
+.john-fang-text {
+    width: 566px;
+    height: 200px;
+    margin-top: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #4B5D68;
+    letter-spacing: 0.1em;
+}
+
+.john-fang-header {
+    width: 100%;
+    height: 50px;
+}
+
+.name {
+    width: 100%;
+    height: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+
+.reference {
+    width: 100%;
+    height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #9C69E2;
+    text-decoration: none;
+}
+
+.john-fang-testimonial {
+    width: 100%;
+    height: 130px;
+}
+
+.navigation-2 {
+    width: 949px;
+    height: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    width: 55px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+}
+
+.arrow-left {
+    height: 100%;
+    margin-left: 820px;
+    display: flex;
+}
+
+.arrow-right-2 {
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+}
+
+
+
+
 
 .div-bottom {
     position: absolute;
