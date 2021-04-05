@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #ffffff 0%, #000000 100%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 1px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: #111111;
+}
+
+.square:nth-child(1n + 21) {
+    background-color: navy;
+}
+
+.square:nth-child(4n + 3) {
+    background-color: rgb(90, 0, 20);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 200px;
+}
+
+.container::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 10px;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    margin-right: 46px;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 10px;
+    border-top: 2px solid #C4C4C4;
+    border-bottom: 2px solid #C4C4C4;
+    margin-left: 46px;
+}
+
+.create {
+    width: 501px;
+    height: 92px;
+    background: #44d3a8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+button:hover {
+    background-color: #005e42;
+}
+
+button:focus, button:active {
+    outline: none;
+    background-color: black;
+    color: orange;
+}
