@@ -1,0 +1,168 @@
+body {
+    height: 100%;
+    width: 100%;
+
+    min-width: 1100px;
+    min-height: 600px;
+
+    background-color: aquamarine;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+
+aside, main {
+    height: 95%;
+    background-color: black;
+}
+
+aside {
+    width: 9.2%;
+    background-color: black;
+    margin-left: 2.25%;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 78%;
+    background-color: #BADA55;
+    margin-left: 5%;
+}
+
+
+
+.logo {
+    height: 7.5%;
+    width: 33%;
+    margin-top: 33%;
+}
+
+.image-f {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    height: 44.5%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50%;
+}
+
+.nav-item, .quit-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.quit {
+    margin-top: 95%;
+    width: 20%;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: 55fr 39fr;
+    grid-template-rows: 24fr 75fr;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 5.7%;
+}
+
+.grid-main-cell {
+    height: 100%;
+    width: 100%;
+    background-color: darkgreen;
+
+}
+
+.grid-main-cell-top-left {
+    display: flex;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 75%;
+    background: #F5F5F7;
+    border-radius: 14px;
+    margin-top: auto;
+    display: flex;
+}
+
+.hello {
+    height: 46.25%;
+    width: 33%;
+    background-color: darkolivegreen;
+    margin-left: 5%;
+    margin-top: 5%;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+}
+
+.josh {
+    font-family: 'Baloo Bhai', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.75em;
+    line-height: 57px;
+
+    /* Black */
+
+    color: #000000;
+
+}
+
+.hello-image {
+    margin-left: 20%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    align-self: center;
+}
+
+.grid-main-cell-top-rigth {
+    display: flex;
+}
+
+.top-right-rows {
+    width: 100%;
+    height: 75%;
+    background: #bababa;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row-1 {
+    width: 100%;
+    height: 25%;
+    background-color: blueviolet;
+}
+
+.row-2 {
+    width: 100%;
+    height: 60%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-count {
+    width: 47%;
+    height: 100%;
+    background: #F5F5F7;
+    border-radius: 14px;}
