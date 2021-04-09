@@ -151,6 +151,8 @@ header {
     width: 100%;
     height: 25%;
     background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
 }
 
 .row-2 {
@@ -165,4 +167,97 @@ header {
     width: 47%;
     height: 100%;
     background: #F5F5F7;
-    border-radius: 14px;}
+    border-radius: 14px;
+}
+
+.search-input {
+    width: 68%;
+    height: 92%;
+    border: 0px solid transparent;
+    background: #F5F5F7;
+    border-radius: 8px;
+    background-image: url("img/m-glass.svg");
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position-x: 5%;
+    background-position-y: 50%;
+    text-align: center;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.icons {
+    height: 100%;
+    width: 23%;
+    background-color: hotpink;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-photo {
+    height: 100%;
+    width: 100%;
+}
+
+.notification {
+    height: 100%;
+    margin-top: -5%;
+    margin-left: 5%;
+}
+
+.arrow-down {
+    margin-top: 100%;
+}
+
+.link-photo {
+    width: 32%;
+}
+
+.course-count {
+    display: flex;
+    justify-content: center;
+}
+
+.count-text {
+    background-color: indigo;
+    display: flex;
+    width: 70%;
+    align-content: center;
+}
+
+.big-digit {
+    font-family: 'Baloo Bhai', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5em;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 0;
+
+    /* Black */
+
+    color: #000000;
+}
+
+.comp-in-prog {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2em;
+    /* or 150% */
+
+
+    /* Black */
+
+    color: #000000;
+
+    margin-left: 5%;
+}
+
+
+
+
+
