@@ -1,5 +1,5 @@
 body {
-    height: 100%;
+    height: 130%;
     width: 100%;
 
     min-width: 1100px;
@@ -46,8 +46,8 @@ aside {
 }
 
 main {
-    width: 78%;
-    background-color: #BADA55;
+    width: 82%;
+    background-color: orangered;
     margin-left: 5%;
 }
 
@@ -86,10 +86,10 @@ main {
 .grid-main {
     display: grid;
     grid-template-columns: 55fr 39fr;
-    grid-template-rows: 24fr 75fr;
+    grid-template-rows: 14fr 85fr;
     justify-content: space-between;
     margin: 0 auto;
-    gap: 5.7%;
+    gap: 2%;
 }
 
 .grid-main-cell {
@@ -106,7 +106,7 @@ main {
 
 header {
     width: 100%;
-    height: 75%;
+    height: 90%;
     background: #F5F5F7;
     border-radius: 14px;
     margin-top: auto;
@@ -156,7 +156,7 @@ header {
 
 .top-right-rows {
     width: 100%;
-    height: 75%;
+    height: 90%;
     background: #bababa;
     margin-top: auto;
     display: flex;
@@ -188,7 +188,7 @@ header {
 }
 
 .search-input {
-    width: 68%;
+    width: 65%;
     height: 92%;
     border: 0px solid transparent;
     background: #F5F5F7;
@@ -207,7 +207,7 @@ header {
 
 .icons {
     height: 100%;
-    width: 23%;
+    width: 30%;
     background-color: hotpink;
     display: flex;
     justify-content: space-between;
@@ -216,7 +216,6 @@ header {
 
 .profile-photo {
     height: 100%;
-    width: auto;
 }
 
 .notification {
@@ -226,7 +225,9 @@ header {
 }
 
 .arrow-down {
+    height: 15%;
     margin-top: 250%;
+    margin-left: -110%;
 }
 
 .link-photo {
@@ -236,12 +237,14 @@ header {
 .course-count {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .count-text {
     background-color: indigo;
     display: flex;
     width: 70%;
+    height: 50%;
     align-content: center;
 }
 
@@ -283,7 +286,11 @@ header {
 .course {
     width: 100%;
     height: 11.75%;
-    border: 1px solid #BADA55;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    background-color: gold;
+    border-radius: 14px;
 }
 
 .course-active {
@@ -293,14 +300,15 @@ header {
 }
 
 .espanol {
-    width: 75%;
+    width: 80%;
     height: 100%;
     background-color: chartreuse;
     display: flex;
+    border-radius: 14px;
 }
 
 .previous-next {
-    width: 18%;
+    width: 15%;
     height: 100%;
     background-color: darkcyan;
     display: flex;
@@ -322,23 +330,25 @@ header {
 
 .white-rectangle-active {
     height: 90%;
-    width: 8%;
+    width: 10%;
     background-color: blue;
     margin-left: 2%;
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
+    border-radius: 12%;
+
 }
 
-.spanish-pic {
+.course-logo {
     width: 80%;
     height: 80%;
     margin: auto;
 }
 
-.course-author {
-    height: 70%;
-    width: 30%;
+.course-author-active {
+    height: 90%;
+    width: 35%;
     background-color: chocolate;
     margin-top: auto;
     margin-bottom: auto;
@@ -348,7 +358,7 @@ header {
     justify-content: space-between;
 }
 
-.course-name {
+.course-name-active {
     font-family: 'Baloo Bhai', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -362,7 +372,7 @@ header {
 
 }
 
-.author-name {
+.author-name-active {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -476,3 +486,249 @@ button:focus {
     opacity: 1;
 }
 
+.white-rectangle {
+    height: 90%;
+    width: 8%;
+    background-color: darkblue;
+    margin-left: 1.5%;
+    border-radius: 12%;
+    display: flex;
+
+}
+
+.course-author {
+    height: 90%;
+    width: 30%;
+    background-color: darkred;
+    margin-left: 3%;
+}
+
+.course-name {
+    font-family: 'Baloo Bhai', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80%;
+    line-height: 27px;
+
+    /* Black */
+
+    color: #000000;
+    height: 50%;
+
+}
+
+.author-name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70%;
+    line-height: 15px;
+
+    /* Black */
+
+    color: #000000;
+
+    height: 50%;
+
+}
+
+.duration {
+    height: 50%;
+    width: 15%;
+    background-color: steelblue;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.time, .rate {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+
+    /* Black */
+
+    color: #000000;
+
+    margin-left: 10%;
+}
+
+.rating {
+    height: 50%;
+    width: 10%;
+    background-color: firebrick;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.view-course {
+    background: #000000;
+    border-radius: 8px;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    height: 90%;
+    width: 22%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 3%;
+
+}
+
+.stats {
+    width: 100%;
+    height: 60%;
+    background-color: mediumturquoise;
+    display: flex;
+    flex-direction: column;
+}
+
+.your-stats {
+    font-family: 'Baloo Bhai', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+
+    /* Black */
+
+    color: #000000;
+    background-color: olivedrab;
+
+}
+
+.stats-header {
+    width: 100%;
+    background-color: midnightblue;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second-line {
+    width: 100%;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hours-stats {
+    width: 60%;
+    background-color: plum;
+}
+
+select, option {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+
+    /* Black */
+
+    color: #000000;
+
+    background: #F5F5F7;
+    border-radius: 8px;
+
+    width: 25%;
+    text-align-last: center;
+    border: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+.graph-container {
+    background-color: sandybrown;
+    width: 100%;
+    height: 70%;
+    margin-top: 1%;
+}
+
+.graph {
+    height: 100%;
+    width: 100%;
+}
+
+.learn-more {
+    background-color: yellowgreen;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.learn-left {
+    background-color: tomato;
+    height: 100%;
+    width: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-square {
+    background-color: darkslategray;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.even-more {
+    font-family: 'Baloo Bhai', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+
+    /* Black */
+
+    color: #000000;
+}
+
+.premium {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    /* Black */
+
+    color: #000000;
+
+}
+
+.go {
+    width: 80%;
+    height: 30%;
+    margin-left: 0;
+    margin-top: auto;
+}
+
+.learn-right {
+    background-color: darkmagenta;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.learn-img {
+    width: 60%;
+}
