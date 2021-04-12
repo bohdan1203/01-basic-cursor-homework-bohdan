@@ -1,11 +1,11 @@
 body {
-    height: 130%;
+    height: 120%;
     width: 100%;
 
     min-width: 1100px;
     min-height: 600px;
 
-    background-color: aquamarine;
+
     margin: 0;
     display: flex;
     position: absolute;
@@ -47,7 +47,7 @@ aside {
 
 main {
     width: 82%;
-    background-color: orangered;
+    background-color: white;
     margin-left: 5%;
 }
 
@@ -89,13 +89,13 @@ main {
     grid-template-rows: 14fr 85fr;
     justify-content: space-between;
     margin: 0 auto;
-    gap: 2%;
+    gap: 3%;
 }
 
 .grid-main-cell {
     height: 100%;
     width: 100%;
-    background-color: darkgreen;
+
 
 }
 
@@ -115,16 +115,15 @@ header {
 
 .hello {
     height: 46.25%;
-    width: 33%;
-    background-color: darkolivegreen;
+    width: 70%;
     margin-left: 5%;
     margin-top: 5%;
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 16px;
     /* identical to box height, or 150% */
 }
 
@@ -132,8 +131,8 @@ header {
     font-family: 'Baloo Bhai', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 1.75em;
-    line-height: 57px;
+    font-size: 54px;
+    line-height: 60px;
 
     /* Black */
 
@@ -157,7 +156,6 @@ header {
 .top-right-rows {
     width: 100%;
     height: 90%;
-    background: #bababa;
     margin-top: auto;
     display: flex;
     flex-direction: column;
@@ -167,7 +165,7 @@ header {
 .row-1 {
     width: 100%;
     height: 25%;
-    background-color: blueviolet;
+
     display: flex;
     justify-content: space-between;
 }
@@ -175,7 +173,7 @@ header {
 .row-2 {
     width: 100%;
     height: 60%;
-    background-color: blueviolet;
+
     display: flex;
     justify-content: space-between;
 }
@@ -187,18 +185,29 @@ header {
     border-radius: 14px;
 }
 
+
+.search-form {
+    width: 60%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F5F5F7;
+}
+
 .search-input {
-    width: 65%;
-    height: 92%;
+    height: 90%;
+    width: 75%;
     border: 0px solid transparent;
     background: #F5F5F7;
     border-radius: 8px;
-    background-image: url("img/m-glass.svg");
-    background-repeat: no-repeat;
-    background-size: 7%;
-    background-position-x: 5%;
-    background-position-y: 50%;
-    text-align: center;
+    
+}
+
+.glass {
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
 .search-input:focus {
@@ -208,7 +217,7 @@ header {
 .icons {
     height: 100%;
     width: 30%;
-    background-color: hotpink;
+
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -241,7 +250,7 @@ header {
 }
 
 .count-text {
-    background-color: indigo;
+
     display: flex;
     width: 70%;
     height: 50%;
@@ -289,12 +298,12 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 1%;
-    background-color: gold;
+    background: #F5F5F7;;
     border-radius: 14px;
 }
 
 .course-active {
-    background-color: blanchedalmond;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
 }
@@ -302,7 +311,7 @@ header {
 .espanol {
     width: 80%;
     height: 100%;
-    background-color: chartreuse;
+    background: #F5F5F7;
     display: flex;
     border-radius: 14px;
 }
@@ -310,7 +319,7 @@ header {
 .previous-next {
     width: 15%;
     height: 100%;
-    background-color: darkcyan;
+
     display: flex;
     justify-content: space-between;
 }
@@ -331,7 +340,7 @@ header {
 .white-rectangle-active {
     height: 90%;
     width: 10%;
-    background-color: blue;
+    background: #ffffff;;
     margin-left: 2%;
     margin-top: auto;
     margin-bottom: auto;
@@ -348,8 +357,8 @@ header {
 
 .course-author-active {
     height: 90%;
-    width: 35%;
-    background-color: chocolate;
+    width: 30%;
+
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 4%;
@@ -389,13 +398,12 @@ header {
 
 .progress {
     height: 90%;
-    width: 8%;
-    background-color: blue;
+    width: 9%;
     align-items: center;
-    font-size: 0.7em;
+    font-size: 14px;
     display: flex;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 0%;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -443,15 +451,27 @@ button {
 
 }
 
+.continue {
+    width: 30%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 5%;
+    
+}
+
+.continue-button {
+    width: 100%;
+}
+
 button:focus {
     outline: none;
 
 }
 
 .courses-menu {
-    height: 20%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    height: 15%;
+    margin-top: 3%;
+    margin-bottom: 2%;
 }
 
 .courses-header {
@@ -482,6 +502,11 @@ button:focus {
     margin-right: 3%;
 }
 
+.category:hover {
+    opacity: 1;
+}
+
+
 .opacity-1 {
     opacity: 1;
 }
@@ -489,7 +514,7 @@ button:focus {
 .white-rectangle {
     height: 90%;
     width: 8%;
-    background-color: darkblue;
+    background: white;;
     margin-left: 1.5%;
     border-radius: 12%;
     display: flex;
@@ -499,7 +524,7 @@ button:focus {
 .course-author {
     height: 90%;
     width: 30%;
-    background-color: darkred;
+
     margin-left: 3%;
 }
 
@@ -535,7 +560,7 @@ button:focus {
 .duration {
     height: 50%;
     width: 15%;
-    background-color: steelblue;
+
     margin-left: 3%;
     display: flex;
     align-items: center;
@@ -558,7 +583,7 @@ button:focus {
 .rating {
     height: 50%;
     width: 10%;
-    background-color: firebrick;
+
     margin-left: 3%;
     display: flex;
     align-items: center;
@@ -576,7 +601,7 @@ button:focus {
     line-height: 15px;
 
     color: #FFFFFF;
-    height: 90%;
+    height: 70%;
     width: 22%;
     margin-top: auto;
     margin-bottom: auto;
@@ -584,10 +609,16 @@ button:focus {
 
 }
 
+.view-button {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+}
+
 .stats {
     width: 100%;
     height: 60%;
-    background-color: mediumturquoise;
+
     display: flex;
     flex-direction: column;
 }
@@ -602,13 +633,13 @@ button:focus {
     /* Black */
 
     color: #000000;
-    background-color: olivedrab;
+
 
 }
 
 .stats-header {
     width: 100%;
-    background-color: midnightblue;
+
     height: 25%;
     display: flex;
     flex-direction: column;
@@ -617,14 +648,14 @@ button:focus {
 
 .second-line {
     width: 100%;
-    background-color: palevioletred;
+
     display: flex;
     justify-content: space-between;
 }
 
 .hours-stats {
     width: 60%;
-    background-color: plum;
+
 }
 
 select, option {
@@ -651,7 +682,7 @@ select:focus {
 }
 
 .graph-container {
-    background-color: sandybrown;
+
     width: 100%;
     height: 70%;
     margin-top: 1%;
@@ -660,18 +691,22 @@ select:focus {
 .graph {
     height: 100%;
     width: 100%;
+    margin-top: 5%;
 }
 
 .learn-more {
-    background-color: yellowgreen;
+
     width: 100%;
     height: 40%;
     display: flex;
     flex-direction: row;
+    background: #F5F5F7;;
+    border-radius: 14px;
+    margin-top: 10%;
 }
 
 .learn-left {
-    background-color: tomato;
+
     height: 100%;
     width: 130%;
     display: flex;
@@ -680,7 +715,7 @@ select:focus {
 }
 
 .learn-square {
-    background-color: darkslategray;
+
     width: 80%;
     height: 90%;
     display: flex;
@@ -717,12 +752,17 @@ select:focus {
 .go {
     width: 80%;
     height: 30%;
-    margin-left: 0;
+    margin-left: -5%;
     margin-top: auto;
 }
 
+.go-prem {
+    width: 100%;
+    height: 80%;
+}
+
 .learn-right {
-    background-color: darkmagenta;
+
     height: 100%;
     width: 100%;
     display: flex;
@@ -731,4 +771,8 @@ select:focus {
 
 .learn-img {
     width: 60%;
+}
+
+button:hover {
+    cursor: pointer;
 }
