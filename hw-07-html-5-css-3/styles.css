@@ -697,7 +697,7 @@ select:focus {
 .learn-more {
 
     width: 100%;
-    height: 40%;
+    height: 28%;
     display: flex;
     flex-direction: row;
     background: #F5F5F7;;
@@ -712,40 +712,49 @@ select:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .learn-square {
 
-    width: 80%;
+    width: 100%;
     height: 90%;
     display: flex;
     flex-direction: column;
+    margin-left: 8%;
 }
 
 .even-more {
     font-family: 'Baloo Bhai', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 
-    /* Black */
+   color: black;
 
-    color: #000000;
+   max-height: 40px;
+
 }
+
+
+
 
 .premium {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em;
+    line-height: 1.5rem;
     /* or 150% */
 
 
     /* Black */
 
     color: #000000;
+
+    max-height: 40px;
+
 
 }
 
@@ -758,7 +767,8 @@ select:focus {
 
 .go-prem {
     width: 100%;
-    height: 80%;
+    height: 100%;
+    min-height: 30px;
 }
 
 .learn-right {
@@ -775,4 +785,7 @@ select:focus {
 
 button:hover {
     cursor: pointer;
+    background-color: white;
+    color: black;
+    font-size: 125%;
 }
