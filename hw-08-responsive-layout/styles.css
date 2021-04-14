@@ -212,12 +212,11 @@ p {
     right: 0;
     z-index: 1;
 
-    max-width: 90%;
     min-width: 80%;
 }
 
 .match {
-    width: 75%;
+    width: 80%;
     height: 55%;
     background-color: darkgreen;
     z-index: 2;
@@ -229,7 +228,7 @@ p {
 .top-match {
     background-color: indianred;
     width: 100%;
-    height: 80%;
+    height: 75%;
     display: flex;
     flex-direction: row;
 }
@@ -276,18 +275,41 @@ p {
 
 .opponents {
     height: 100%;
-    width: 45%;
+    width: 50%;
     background-color: orangered;
     display: flex;
+}
+
+.logos {
+    background-color: pink;
+    display: flex;
+    
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    margin-left: auto;
+    min-width: 100px;
 }
 
 .fc {
     position: absolute;
     align-self: center;
+    max-height: 30%;
+
+}
+
+@media (max-width: 1180px) {
+    .fc {
+        height: 20%;
+    }
+
+    .chelsea {
+        left: 50%;
+    }
 }
 
 .chelsea {
-    margin-left: 18%;
+    left:75%;
 }
 
 
@@ -295,7 +317,7 @@ p {
 .match-notif {
     background-color: rgb(158, 149, 221);
     width: 100%;
-    height: 20%;
+    height: 25%;
     display: flex;
     align-items: center;
 }
@@ -305,7 +327,7 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 18.8812px;
-    line-height: 25px;
+    line-height: 18px;
 
     color: #4F4F4F;
 }
@@ -447,3 +469,167 @@ h3 {
         max-width: 90%;
     }
 }
+
+.block-3 {
+    width: 100%;
+    height: 17.8%;
+    background-image: url(img/SAMPLE05.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 0;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.interface {
+    height: 50%;
+    width: 40%;
+    background-color: darkgray;
+    margin-left: 10%;
+
+}
+
+.block-3-mobile {
+    width: 100%;
+    height: 17.8%;
+    background-image: url(img/SAMPLE05.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 0;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .interface {
+        height: 100%;
+        width: 100%;
+        background-color: darkgray;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .block-3-mobile {
+        display: block;
+        background-position: 79.5% center;
+        height: 16%;
+    }
+}
+
+.block-4 {
+    height: 18%;
+    width: 100%;
+    background-image: url(img/Group\ 696.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.features-header {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    /* identical to box height */
+
+
+    /* #FFFFFF */
+
+    color: #FFFFFF;
+
+    margin-top: 4%;
+}
+
+.grid {
+    display: grid;
+    width: 80%;
+    height: 70%;
+    background-color: darkred;
+    gap: 1%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 2%;
+}
+
+.cell {
+    background-color: darkslateblue;
+    height: auto;
+}
+
+.feature {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* #FFFFFF */
+
+    color: #FFFFFF; 
+    margin-top: 2%;
+}
+
+
+@media (max-width: 720px) {
+    .block-4 {
+        background-image: none;
+        background-color: darkolivegreen;
+        height: auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0;
+        height: auto;
+    }
+
+    .cell {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        max-height: 220px;
+        text-align: center;
+    }
+
+    .cell img {
+        height: 20%;
+    }
+
+    .features-header {
+       text-align: center;
+       background-color: deeppink;
+
+    }
+}
+    
+.block-5 {
+    width: 100%;
+    height: 20%;
+    background-color: fuchsia;
+}
+
+
+
+
+
+
+/* @media (max-width: 720px) {
+    .block-4 {
+        background-image: none;
+        background-color: darkolivegreen;
+    }
+     */
