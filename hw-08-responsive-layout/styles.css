@@ -288,17 +288,18 @@ p {
     width: 80%;
     align-self: center;
     margin-left: auto;
-    min-width: 100px;
+    
 }
 
 .fc {
     position: absolute;
     align-self: center;
-    max-height: 30%;
+    margin-top: 15%;
+
 
 }
 
-@media (max-width: 1180px) {
+/* @media (max-width: 1180px) {
     .fc {
         height: 20%;
     }
@@ -306,11 +307,31 @@ p {
     .chelsea {
         left: 50%;
     }
+} */
+
+.arsenal {
+    width: 100%;
+    height: 100%;
 }
 
-.chelsea {
-    left:75%;
+.arsenal::after {
+    content: "";
+    background: url(img/chelsea.svg) no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 65%;
+    position: absolute;
+
+    max-height: 100%;
+
+    margin-top: 15%;
 }
+
+/* .chelsea {
+    left:75%;
+} */
+
+
 
 
 
@@ -582,6 +603,19 @@ h3 {
     margin-top: 2%;
 }
 
+.feature::before {
+    content: "• ";
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+
+    /* #FFFFFF */
+
+    color: #FFFFFF; 
+}
+
 
 @media (max-width: 720px) {
     .block-4 {
@@ -614,22 +648,107 @@ h3 {
        background-color: deeppink;
 
     }
+
+    .feature::before {
+        display: none;
+    }
 }
     
 .block-5 {
     width: 100%;
-    height: 20%;
+    height: 10.7%;
     background-color: fuchsia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials {
+    height: 37.4%;
+    width: 100%;
+    background-color: coral;
+    display: flex;
+    overflow: hidden;
+}
+
+.testimonial {
+    height: 100%;
+    min-width: 23%;
+    background-color: #FFFFFF;
+    margin-left: 2%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.first-testimonial {
+    margin-left: -15%;
+    background-image: none;
 }
 
 
+.gradient-testimonial {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(40,40,138,0) 10%, rgba(9,9,121,0) 90%, rgba(255,255,255,1) 100%);    height: 18%;
+    width: 100%;
+    height: 37.4%;
+    position: relative;
+    top: -37.4%
+
+}
+
+.twi-profile {
+    width: 100%;
+    height: 30%;
+    background-color: darkorange;
+
+    background-image: url(img/twitter-testimonial.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.twi-avatar {
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+.twi-name {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
 
 
+    /* #333333 */
+
+    color: #333333;
+
+    margin-left: 3%;
+}
+
+.testimonial-text {
+    
+    width: 90%;
+    height: auto;
+    background-color: aqua;
 
 
-/* @media (max-width: 720px) {
-    .block-4 {
-        background-image: none;
-        background-color: darkolivegreen;
-    }
-     */
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 75%;
+    line-height: 18px;
+
+    /* #4F4F4F */
+
+    color: #4F4F4F; 
+    margin-top: 5%;
+}
