@@ -317,7 +317,7 @@ p {
 .arsenal::after {
     content: "";
     background: url(img/chelsea.svg) no-repeat;
-    width: 100%;
+    width: 50%;
     height: 100%;
     left: 65%;
     position: absolute;
@@ -669,6 +669,7 @@ h3 {
     background-color: coral;
     display: flex;
     overflow: hidden;
+    top: 5%;
 }
 
 .testimonial {
@@ -687,16 +688,16 @@ h3 {
 
 .first-testimonial {
     margin-left: -15%;
-    background-image: none;
+
 }
 
 
 .gradient-testimonial {
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(40,40,138,0) 10%, rgba(9,9,121,0) 90%, rgba(255,255,255,1) 100%);    height: 18%;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(40,40,138,0) 15%, rgba(9,9,121,0) 85%, rgba(255,255,255,1) 100%);    
     width: 100%;
     height: 37.4%;
     position: relative;
-    top: -37.4%
+    top: -29%
 
 }
 
@@ -751,4 +752,252 @@ h3 {
 
     color: #4F4F4F; 
     margin-top: 5%;
+}
+
+.arrows {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    top: -50%;
+}
+
+.seven-dots {
+    width: 15%;
+    height: 5%;
+    background-color: blue;
+    position: relative;
+    bottom: 15%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot {
+    height: 100%;
+    width: 10%;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+
+.dot:nth-child(1) {
+    background: #828282;
+}
+
+.dot:nth-child(2) {
+    background: #979595;
+}
+
+.dot:nth-child(3) {
+    background: #B2B0B0;
+}
+
+.dot:nth-child(4) {
+    background: #CDCBCB;
+}
+
+.dot:nth-child(5) {
+    background: #E2E1E1;
+}
+
+.dot:nth-child(6) {
+    background: #EEEEEE;
+}
+
+.dot:nth-child(7) {
+    background: #F7F7F7;
+}
+
+.dot:hover {
+    background-color: black;
+    cursor: pointer;
+    width: 12%;
+}
+
+@media (max-width: 720px) {
+    .test-none {
+        display: none;
+    }
+
+    .gradient-testimonial {
+        display: none;
+    }
+
+    .testimonials {
+        height: 60%;
+        justify-content: center;
+    }
+
+    .testimonial {
+        width: 80%;
+        font-size: 120%;
+    }
+
+    .seven-dots {
+        width: 45%;
+        bottom: 10%;
+    }
+    
+    .arrows {
+        top: -30%;
+        left: 35%;
+        width: 10%;
+    }
+
+    .arrows>img:first-child {
+        display: none;
+    }
+
+    .arrows>img:last-child {
+        max-width: 60px;
+    }
+}
+
+
+.block-6 {
+    height: 7%;
+    width: 100%;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.featured-mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    /* .featured {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    } */
+
+    .featured>a>img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 720px) {
+    .block-6 {
+        height: 10%;
+    }
+
+    .featured {
+        display: none;
+    }
+
+    .featured-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        height: 75%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+
+    .feat-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feat-row:last-child {
+        justify-content: center;
+    }
+
+    .featured>a>img {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+.block-7 {
+    width: 100%;
+    height: 12%;
+    background-color: indigo;
+    display: flex;
+}
+
+.block-7-right {
+    height: 60%;
+    margin-top: 5%;
+    width: 40%;
+    margin-left: 10%;
+    background-color: yellow;
+}
+
+@media (max-width: 1100px) {
+    .phones-2 {
+        height: 80%;
+        margin-top: auto;
+    }
+
+    .block-7-right {
+        margin-left: -0%;
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .phones-2 {
+        height: 70%;
+        margin-top: auto;
+    }
+
+    .block-7-right {
+        margin-left: -10%;
+        width: 40%;
+        margin-top: 1%;
+    }
+}
+
+@media (max-width: 720px) {
+    .block-7 {
+        flex-direction: column-reverse;
+        margin: 0;
+        height: 20%;
+        height: auto;
+    }
+
+    .block-7-right {
+        height: 55%;
+        width: 100%;
+        background-color: yellow;
+        margin-left: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    
+    }
+
+    .phones-2 {
+        height: auto;
+        width: 100%;
+    }
+
+    .stores {
+        align-self: center;
+        margin-bottom: 5%;
+    }
+
+
 }
