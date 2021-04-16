@@ -1,5 +1,4 @@
 body {
-    background-color: burlywood;
     width: 100%;
     height: 4028px;
     margin: 0;
@@ -8,14 +7,13 @@ body {
 
 header {
     width: 100%;
-    background-color: coral;
     height: 16.5%;
+    background: #F4F6F9;
 }
 
 .header-content {
     width: 89%;
     height: 100%;
-    background-color: darkgray;
     margin-left: auto;
     display: flex;
     position: relative;
@@ -36,7 +34,9 @@ header {
 }
 
 .logo-sports {
-    font-family: 'Product Sans', sans-serif;
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     /* identical to box height */
@@ -44,7 +44,6 @@ header {
     letter-spacing: -0.02em;
 
     color: #5282F0;
-
 }
 
 h1 {
@@ -88,9 +87,6 @@ p {
 
 
 @media (max-width: 1100px) {
-    body {
-        background-color: red;
-    }
 
     .phones {
         height: 90%;
@@ -99,9 +95,7 @@ p {
 
 
 @media (max-width: 990px) {
-    body {
-        background-color: black;
-    }
+
 
     .phones {
         height: 80%;
@@ -110,9 +104,7 @@ p {
 }
 
 @media (max-width: 880px) {
-    body {
-        background-color: black;
-    }
+
 
     .phones {
         height: 65%;
@@ -121,9 +113,6 @@ p {
 }
 
 @media (max-width: 720px) {
-    body {
-        background-color: black;
-    }
 
     .phones {
         display: none;
@@ -154,7 +143,7 @@ p {
         width: 70%;
         margin-top: 10%;
         align-self: center;
-        background-color: chartreuse;
+
         justify-content: center;
     }
 
@@ -174,7 +163,6 @@ p {
 .block-2 {
     width: 100%;
     height: 14.71%;
-    background-color: cadetblue;
     display: flex;
 
 }
@@ -365,7 +353,6 @@ p {
 .block-2-right {
     width: 40%;
     height: 100%;
-    background-color: cornsilk;
 }
 
 .what {
@@ -421,7 +408,6 @@ h3 {
 }
 
 .description {
-    background-color: darkkhaki;
     width: 80%;
     max-height: 100%;
     margin-top: 18%;
@@ -429,7 +415,6 @@ h3 {
 
 @media (max-width: 800px) {
     .description {
-        background-color: hotpink;
         width: 90%;
         max-height: 100%;
         margin-top: 18%;
@@ -447,7 +432,6 @@ h3 {
     }
 
     .description {
-        background-color: hotpink;
         width: 90%;
         height: 90%;
         max-height: 100%;
@@ -506,14 +490,13 @@ h3 {
 .interface {
     height: 50%;
     width: 40%;
-    background-color: darkgray;
     margin-left: 10%;
 
 }
 
 .block-3-mobile {
     width: 100%;
-    height: 17.8%;
+    height: 10%;
     background-image: url(img/SAMPLE05.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -529,7 +512,6 @@ h3 {
     .interface {
         height: 100%;
         width: 100%;
-        background-color: darkgray;
         margin-left: 0;
         display: flex;
         flex-direction: column;
@@ -539,8 +521,14 @@ h3 {
 
     .block-3-mobile {
         display: block;
-        background-position: 79.5% center;
-        height: 16%;
+        background-image: url(img/salah.png);
+        background-position: center 70%;
+        /* background-position: 79.5% center; */
+        /* height: 16%; */
+    }
+
+    .block-3 {
+        background-image: none;
     }
 }
 
@@ -578,7 +566,6 @@ h3 {
     display: grid;
     width: 80%;
     height: 70%;
-    background-color: darkred;
     gap: 1%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -586,7 +573,6 @@ h3 {
 }
 
 .cell {
-    background-color: darkslateblue;
     height: auto;
 }
 
@@ -643,9 +629,12 @@ h3 {
         height: 20%;
     }
 
+    .feature {
+        color: #4F4F4F;
+    }
+
     .features-header {
        text-align: center;
-       background-color: deeppink;
 
     }
 
@@ -657,7 +646,6 @@ h3 {
 .block-5 {
     width: 100%;
     height: 10.7%;
-    background-color: fuchsia;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -666,7 +654,6 @@ h3 {
 .testimonials {
     height: 37.4%;
     width: 100%;
-    background-color: coral;
     display: flex;
     overflow: hidden;
     top: 5%;
@@ -683,6 +670,9 @@ h3 {
     align-items: center;
 
 
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
 
 }
 
@@ -704,7 +694,6 @@ h3 {
 .twi-profile {
     width: 100%;
     height: 30%;
-    background-color: darkorange;
 
     background-image: url(img/twitter-testimonial.svg);
     background-repeat: no-repeat;
@@ -739,13 +728,12 @@ h3 {
     
     width: 90%;
     height: auto;
-    background-color: aqua;
 
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 75%;
+    font-size: 70%;
     line-height: 18px;
 
     /* #4F4F4F */
@@ -767,7 +755,6 @@ h3 {
 .seven-dots {
     width: 15%;
     height: 5%;
-    background-color: blue;
     position: relative;
     bottom: 15%;
 
@@ -815,7 +802,6 @@ h3 {
 .dot:hover {
     background-color: black;
     cursor: pointer;
-    width: 12%;
 }
 
 @media (max-width: 720px) {
@@ -861,10 +847,10 @@ h3 {
 .block-6 {
     height: 7%;
     width: 100%;
-    background-color: greenyellow;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #FAFAFA;
 }
 
 .featured {
@@ -931,7 +917,6 @@ h3 {
 .block-7 {
     width: 100%;
     height: 12%;
-    background-color: indigo;
     display: flex;
 }
 
@@ -940,7 +925,6 @@ h3 {
     margin-top: 5%;
     width: 40%;
     margin-left: 10%;
-    background-color: yellow;
 }
 
 @media (max-width: 1100px) {
@@ -980,7 +964,6 @@ h3 {
     .block-7-right {
         height: 55%;
         width: 100%;
-        background-color: yellow;
         margin-left: 0;
         margin-top: 0;
         display: flex;
@@ -1000,4 +983,106 @@ h3 {
     }
 
 
+}
+
+footer {
+    height: 3.5%;
+    width: 100%;
+    background-color: #00ADEE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sports-footer {
+    font-family: 'Product Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+
+}
+
+.navigation-footer {
+    
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    /* #FFFFFF */
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+}
+
+nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+
+    height: 20%;
+}
+
+.social-media {
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+
+    height: 25%;
+}
+
+.sm {
+    height: 100%;
+    
+}
+
+@media (max-width: 950px) {
+    nav {
+        width: 45%;
+    }
+
+    .social-media {
+        width: 20%
+    }
+}
+
+@media (max-width: 720px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 5%;
+    }
+
+    .logo-footer {
+        margin-top: 5%;
+    }
+
+    .social-media {
+        width: 40%;
+    }
+
+    .sm {
+        height: 80%;
+    }
+
+    nav {
+        order: 3;
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .logo-footer, .social-media, nav {
+        margin-left: 5%;
+    }
 }
