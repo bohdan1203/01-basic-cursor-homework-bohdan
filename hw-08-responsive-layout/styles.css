@@ -76,7 +76,7 @@ p {
 }
 
 .stores {
-    width: 55%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     margin-top: auto;
@@ -135,7 +135,7 @@ p {
     }
 
     .header-left {
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
 
@@ -150,6 +150,7 @@ p {
     h1 {
         margin-top: 30%;    
         text-align: center;
+        font-size: 32px;
     }
 
     p {
@@ -185,7 +186,6 @@ p {
 }
 
 .container-1 {
-    background-color: darkgoldenrod;
     width: 55%;
     height: 75%;
     position: relative;
@@ -200,21 +200,28 @@ p {
     right: 0;
     z-index: 1;
 
-    min-width: 80%;
+    max-width: 120%;
+
+    border-radius: 4px;
 }
 
 .match {
     width: 80%;
     height: 55%;
-    background-color: darkgreen;
+
+    min-width: 80%;
+
     z-index: 2;
     position: absolute;
     max-height: 400px;
     min-width: 200px;
+
+    background: #FFFFFF;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
 }
 
 .top-match {
-    background-color: indianred;
     width: 100%;
     height: 75%;
     display: flex;
@@ -224,11 +231,11 @@ p {
 .match-info {
     height: 90%;
     width: 55%;
-    background-color: dodgerblue;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-top: auto;
+    margin-left: 5%;
 }
 
 .match-date {
@@ -264,20 +271,10 @@ p {
 .opponents {
     height: 100%;
     width: 50%;
-    background-color: orangered;
     display: flex;
 }
 
-.logos {
-    background-color: pink;
-    display: flex;
-    
-    height: 80%;
-    width: 80%;
-    align-self: center;
-    margin-left: auto;
-    
-}
+
 
 .fc {
     position: absolute;
@@ -297,14 +294,16 @@ p {
     }
 } */
 
-.arsenal {
+/* .arsenal {
     width: 100%;
     height: 100%;
-}
+} */
 
 .arsenal::after {
     content: "";
-    background: url(img/chelsea.svg) no-repeat;
+    background-image:  url(img/chelsea.svg);
+    background-repeat: no-repeat;
+    
     width: 50%;
     height: 100%;
     left: 65%;
@@ -324,7 +323,7 @@ p {
 
 
 .match-notif {
-    background-color: rgb(158, 149, 221);
+    background: #EEEEEE;
     width: 100%;
     height: 25%;
     display: flex;
@@ -339,14 +338,24 @@ p {
     line-height: 18px;
 
     color: #4F4F4F;
+    width: 80%;
 }
 
-#switch {
-    height: 80%;
-    width: 15%;
-    margin-left: auto;
-    margin-right: 3%;
+.switcher {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.switcher>img:first-child, .switcher>img:last-child {
+    position: absolute;
+    left: 83%;
+}
+
+.switcher>img:last-child {
+    left: 81%;
+}
+
 
 
 
@@ -413,6 +422,18 @@ h3 {
     margin-top: 18%;
 }
 
+@media (max-width: 950px) {
+    .fc {
+        height: 25%;
+    }
+
+    .arsenal::after {
+        height: 25%;
+        background-size: contain;
+    }
+
+}
+
 @media (max-width: 800px) {
     .description {
         width: 90%;
@@ -462,7 +483,6 @@ h3 {
     }
 
     .container-1 {
-        background-color: red;
         width: 75%;
         height: 90%;
         position: relative;
@@ -472,6 +492,15 @@ h3 {
 
     .video {
         max-width: 90%;
+    }
+
+    .fc {
+        height: 40%;
+    }
+
+    .arsenal::after {
+        height: 40%;
+        background-size: contain;
     }
 }
 
@@ -510,21 +539,24 @@ h3 {
 
 @media (max-width: 720px) {
     .interface {
-        height: 100%;
+        height: 90%;
         width: 100%;
         margin-left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        padding-top: 10%;
     
     }
 
     .block-3-mobile {
         display: block;
         background-image: url(img/salah.png);
-        background-position: center 70%;
+        background-position: center;
         /* background-position: 79.5% center; */
         /* height: 16%; */
+        height: 15%;
     }
 
     .block-3 {
@@ -576,6 +608,11 @@ h3 {
     height: auto;
 }
 
+.feature:hover {
+    font-size: 17px;
+}
+
+
 .feature {
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -602,12 +639,16 @@ h3 {
     color: #FFFFFF; 
 }
 
+.px-37 {
+    width: 36.7px;
+}
+
 
 @media (max-width: 720px) {
     .block-4 {
         background-image: none;
-        background-color: darkolivegreen;
         height: auto;
+        background-color: #FAFAFA;
     }
 
     .grid {
@@ -623,11 +664,18 @@ h3 {
         align-content: center;
         max-height: 220px;
         text-align: center;
+        margin-top: 5%;
     }
 
-    .cell img {
-        height: 20%;
+    .cell:first-child {
+        margin-top: 10%;
     }
+
+
+    .cell svg {
+        align-self: center;
+    }
+    
 
     .feature {
         color: #4F4F4F;
@@ -640,6 +688,14 @@ h3 {
 
     .feature::before {
         display: none;
+    }
+
+    .mobile-blue {
+        fill: #00ADEE;
+    }
+
+    .features-header {
+        color: #333333;
     }
 }
     
@@ -675,6 +731,7 @@ h3 {
     border-radius: 4px;
 
 }
+
 
 .first-testimonial {
     margin-left: -15%;
@@ -752,9 +809,11 @@ h3 {
     top: -50%;
 }
 
+
+
 .seven-dots {
-    width: 15%;
-    height: 5%;
+    width: 12%;
+    height: 4%;
     position: relative;
     bottom: 15%;
 
@@ -834,11 +893,11 @@ h3 {
         width: 10%;
     }
 
-    .arrows>img:first-child {
+    .arrows>a:first-child {
         display: none;
     }
 
-    .arrows>img:last-child {
+    .arrows>a:last-child {
         max-width: 60px;
     }
 }
@@ -936,6 +995,15 @@ h3 {
     .block-7-right {
         margin-left: -0%;
         width: 40%;
+        align-items: center;
+    }
+
+    .block-7 p, .block-7 h3 {
+        width: 90%;
+    }
+
+    .block-7 .stores {
+        margin-bottom: 15%;
     }
 }
 
@@ -1085,4 +1153,12 @@ nav {
     .logo-footer, .social-media, nav {
         margin-left: 5%;
     }
+}
+
+.blue-to-white {
+    fill: white;
+}
+
+.white-to-blue {
+    fill: #00ADEE;
 }
