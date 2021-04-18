@@ -157,6 +157,9 @@ p {
         text-align: center;
     }
 
+    p>br {
+        display: none;
+    }
 }
 
 
@@ -454,6 +457,10 @@ h3 {
         width: 100%;
     }
 
+    .gradient {
+        background: linear-gradient(180deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+    }
+
     .description {
         width: 90%;
         height: 90%;
@@ -481,7 +488,7 @@ h3 {
     }
 
     .ronaldo {
-     width: 100%;
+        width: 100%;
     }
 
     .container-1 {
@@ -552,17 +559,31 @@ h3 {
     
     }
 
+    .interface>p {
+        width: 90%;
+    }
+
     .block-3-mobile {
         display: block;
         background-image: url(img/salah.png);
-        background-position: center;
-        /* background-position: 79.5% center; */
-        /* height: 16%; */
+        background-position: 50% 75%;
+        background-size: 65% auto;
         height: 15%;
     }
 
     .block-3 {
         background-image: none;
+        height: 11.8%;
+    }
+}
+
+@media (max-width: 600px) {
+    .block-3-mobile {
+        display: block;
+        background-image: url(img/salah.png);
+        background-position: center;
+        background-size: auto;
+        height: 13%;
     }
 }
 
@@ -814,8 +835,8 @@ h3 {
 
 
 .seven-dots {
-    width: 12%;
-    height: 4%;
+    width: 200px;
+    height: 3%;
     position: relative;
     bottom: 15%;
 
@@ -824,8 +845,8 @@ h3 {
 }
 
 .dot {
-    height: 100%;
-    width: 10%;
+    height: 20px;
+    width: 20px;
     background-color: black;
     border-radius: 50%;
 }
