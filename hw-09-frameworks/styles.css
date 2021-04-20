@@ -1,5 +1,6 @@
 body {
     background-color: #fafafa;
+    min-width: 320px;
 }
 
 .header {
@@ -10,9 +11,7 @@ body {
     border-bottom: 1px solid #DBDBDB;
 }
 
-/* .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13 {
-    border: 1px solid black;
-} */
+
 
 
 
@@ -39,7 +38,7 @@ body {
     background-image: url(img/search.svg);
     background-repeat: no-repeat;
     /* background-size: 8%; */
-    background-position: 35% center;
+    background-position: 30% center;
     width: 80%;
 }
 
@@ -56,10 +55,16 @@ input::placeholder {
     justify-content: flex-end;
 }
 
+.navigation>.col-2 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .col-2 {
    display: flex;
    justify-content: center;
    align-content: center;
+
 }
 
 a {
@@ -80,7 +85,10 @@ a {
 
 .max-width-100 {
     max-width: 100%;
+
+
 }
+
 
 a:hover {
     color: #262626;
@@ -147,6 +155,17 @@ a:hover {
 
     color: #262626;
 
+    margin-right: 5%;
+
+    min-width: 60px;
+
+}
+
+.pad-0 {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 5%;
+    margin-left: 5%;
 }
 
 button {
@@ -172,9 +191,13 @@ button {
 
     justify-content: center;
     align-items: center;
+    
 
 }
 
+.follow {
+    min-width: 60px;
+}
 
 
 .btn-2 {
@@ -196,6 +219,8 @@ button {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    background-color: transparent;
+    min-width: 30px;
 }
 
 .dot {
@@ -227,6 +252,8 @@ button {
 .post-fol-fol>div {
     display: flex;
     justify-content: start;
+
+    min-width: 64px;
 }
 
 .info {
@@ -370,5 +397,5 @@ button {
 }
 
 .photos {
-    margin-top: 2%;
+    margin-top: 4%;
 }
