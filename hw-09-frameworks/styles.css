@@ -191,10 +191,16 @@ a:hover {
 
     color: #262626;
 
-    margin-right: 5%;
+   
 
     min-width: 60px;
 
+}
+
+@media (max-width: 767px) {
+    .name {
+        margin-right: 5%;
+    }
 }
 
 .pad-0 {
