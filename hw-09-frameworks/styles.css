@@ -270,7 +270,7 @@ button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    width: 35px;
     background-color: transparent;
     min-width: 30px;
     margin-left: -30%;
