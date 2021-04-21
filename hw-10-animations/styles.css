@@ -1,0 +1,186 @@
+body {
+    width: 100%;
+    height: 640px;
+    padding: 0;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.cell {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cell:first-child {
+    background-color: #121212;
+}
+
+.cell:last-child {
+    background-color: #ffd7ed;
+}
+
+.animation-container {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.animation-container:hover .line-green {
+    box-shadow: -1em 0 1.2em 0.5em green;
+    transition-duration: 1.5s;
+}
+
+.animation-container:hover .line-red {
+    box-shadow: -1em 0 1.2em 0.5em red;
+    transition-duration: 1.5s;
+}
+
+.animation-container:active .line-green {
+    transform: rotate(180deg);
+    margin-top: 10%;
+    transition-duration: 1s;
+    box-shadow: none;
+}
+
+.animation-container:active .line-red {
+  transform: rotate(0deg);
+  transition-duration: 1s;
+  box-shadow: none;
+}
+
+.animation-container:active .line-third {
+  display: block;
+  visibility: visible;
+  margin-left: 0%;
+  margin-top: -10%;
+  
+  transition-duration: 1s;
+  
+}
+
+
+
+
+.line {
+    height: 10px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+}
+
+.line-green {
+    transform: rotate(135deg);
+    z-index: 1;
+    transition-duration: 1.5s;
+}
+
+.line-red {
+    transform: rotate(45deg);
+    transition-duration: 1.5s;
+}
+
+.line-third {
+    visibility: hidden;
+    margin-top: -20%;
+    margin-left: 20%;
+    transform: rotate(180deg);
+}
+
+
+.black-block {
+    height: 10px;
+    width: 20px;
+    background-color: #121212;
+    margin-left: 75%;
+}
+
+
+
+
+
+
+
+
+.sphere {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0em 3em 1.5em 0.05em black;
+  /* position: absolute; */
+}
+
+.sphere:nth-child(1) {
+  background-color: #ff0040;
+  animation-name: first-sphere;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+
+.sphere:nth-child(2) {
+  background-color: #ff7300;
+}
+
+.sphere:nth-child(3) {
+  background-color: #ffee00;
+}
+
+.sphere:nth-child(4) {
+  background-color: #1eff00;
+}
+
+.sphere:nth-child(5) {
+  background-color: #00b7ff;
+}
+
+.sphere:nth-child(6) {
+  background-color: #0004ff;
+}
+
+.sphere:nth-child(7) {
+  background-color: #6f00ff;
+  animation-name: last-sphere;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  position: relative;
+
+}
+
+
+@keyframes last-sphere {
+  0% {top: 0; left: 0;}
+  33% {top: -50px; left: 50px;} 
+  66% {top: 0; left: 0;}    
+  100% {top: 0; left: 0;}      
+    }
+
+@keyframes first-sphere {
+  0% {top: 0; left: 0;}
+  33% {top: -50px; left: -50px;}  
+  66% {top: 0; left: 0;}    
+  100% {top: 0; left: 0;}      
+    }    
+
+  
+ 
