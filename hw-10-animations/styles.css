@@ -84,9 +84,6 @@ body {
     position: absolute;
 }
 
-.line:first-child {
-  
-}
 
 .line-green {
     transform: rotate(135deg);

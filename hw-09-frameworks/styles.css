@@ -42,6 +42,23 @@ body {
     width: 80%;
 }
 
+@media (max-width: 767px) {
+    .search-field {
+        background-position: 10% center;
+    } 
+}
+
+@media (max-width: 450px) {
+    .search-field {
+        background-image: none;
+    }
+}
+
+.search-field:focus {
+    background-image: none;
+}
+
+
 .search-field:focus {
     outline: none;
 }
@@ -76,6 +93,17 @@ a {
     text-decoration: none;
 }
 
+
+@media (max-width: 500px) {
+    .navigation {
+        justify-content: space-between;
+    }
+
+    .navigation>.col-2>a>img {
+        width: 90%;
+    }
+
+}
 
 
 /* -------------------- INPORTANT! -------------------- */
@@ -123,6 +151,14 @@ a:hover {
     top: -30%;
     left: 55%;
 
+}
+
+@media (max-width: 500px) {
+    .messages::after {
+        width: 12px;
+        height: 12px;
+        font-size: 9px;
+    }
 }
 
 .avatar-block {
@@ -195,6 +231,12 @@ button {
 
 }
 
+@media (max-width: 450px) {
+    .pad-0 {
+        margin-left: 10%;
+    }
+}
+
 .follow {
     min-width: 60px;
 }
@@ -204,6 +246,10 @@ button {
     background-image: url(img/arrow-down.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.blue-button:hover {
+    background-color: rgb(7, 69, 184);
 }
 
 .dots {
@@ -221,6 +267,17 @@ button {
     width: 80%;
     background-color: transparent;
     min-width: 30px;
+    margin-left: -30%;
+}
+
+@media (max-width: 450px) {
+    .three-dots {
+        margin-left: -100%;
+    }
+
+    .button-2-block {
+        margin-left: 13%;
+    }
 }
 
 .dot {
@@ -260,11 +317,17 @@ button {
     margin-top: 2%;
 }
 
+@media (max-width: 767px) {
+    .post-fol-fol>.col-2 {
+        margin-right: 2%;
+    }
+}
+
 
 .name-2 {
     font-family: 'Helvetica Neue', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 17px;
     line-height: 21px;
     /* identical to box height */
@@ -350,6 +413,10 @@ button {
 
 
 
+
+
+
+
 .block-3 {
     margin-top: 5%;
     border-top: 1px solid #DBDBDB;;
@@ -381,11 +448,7 @@ button {
 
 }
 
-@media (max-width: 400px) {
-    span {
-        font-size: 10px;
-    }
-}
+
 
 .block-3>.col-1 {
     padding-left: 0;
@@ -404,4 +467,17 @@ button {
 
 .photos {
     margin-top: 4%;
+}
+
+
+@media (max-width: 1000px) {
+    .smaller-font {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 450px) {
+    .smaller-font {
+        font-size: 10px;
+    }
 }
