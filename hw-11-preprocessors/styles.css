@@ -261,3 +261,68 @@ button:hover {
   height: 32px;
   width: 32.967032967%;
 }
+.main-block-3 {
+  height: 805px;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  background-image: url(img/Rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-block-3-content {
+  width: 50%;
+  height: 400px;
+  background-color: #078891;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-block-3-content-forty {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  /* identical to box height, or 132% */
+  text-align: center;
+  letter-spacing: 1px;
+  /* Colour/Main/Blue/700 */
+  color: #222F65;
+  margin-top: 36px;
+}
+.main-block-3-content-design {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-align: center;
+  /* Colour/Main/Blue/600 */
+  color: #37447E;
+}
+.main-block-3-content-simple {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  text-align: center;
+  /* Colour/Main/Grey/600 */
+  color: #5D6970;
+  margin-top: 50px;
+}
+.main-block-3-content-purchase {
+  min-height: 32px;
+  width: 31.5%;
+  margin-top: 9px;
+}
+.main-block-3-content > p {
+  text-align: center;
+}
+.main-block-3-content > h2 {
+  text-align: center;
+}
