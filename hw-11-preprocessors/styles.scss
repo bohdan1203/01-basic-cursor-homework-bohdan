@@ -2,7 +2,6 @@ $body-height: 4628px;
 $body-width: 1440px;
 
 body {
-    background-color: blueviolet;
     margin: 0;
     padding: 0;
     height: 4628px;
@@ -19,9 +18,20 @@ body {
 
 a {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    transition-duration: .2s;
     &:hover {
         font-size: larger;
+        font-weight: 700;
+        transition-duration: .2s;
     }
+
+    &:visited {
+        color: #505F98;
+    }
+
+
 }
 
 h2 {
@@ -40,7 +50,6 @@ h2 {
 }
 
 p {
-    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -56,6 +65,8 @@ p {
 button {
     background: #111B47;
     border-radius: 2px;
+
+    min-width: 95px;
 
 
     font-family: 'Roboto', sans-serif;
@@ -73,13 +84,19 @@ button {
 
     border: none;
     outline: none;
+    transition-duration: .5s;
+
 
     &:hover {
+    transition-duration: .5s;
     background: #000000;
     font-weight: bold;
     cursor: pointer;
+    // font-size: larger;
+    font-style: italic;
     }
 }
+
 
 .main-image {
     background-image: url(img/designer_1.svg);
@@ -90,9 +107,20 @@ button {
     position: absolute;
 }
 
+.purchase-image {
+    background-image: url(img/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+    width: 100%;
+    height: 938px;
+
+    position: absolute;
+    top: 78%;
+}
+
 .body-container {
-    background-color: rgba(70, 100, 0, 0.493);
-    height: 100%;
+    height: 95%;
     width: (1440px - 165px * 2) / 1440px * 100%;
     display: flex;
     flex-direction: row;
@@ -102,15 +130,16 @@ button {
 
 }
 
+
+
 .header {
-    height: (1112px - 49px) / $body-height * 100%;
+    height: 1112px;
     width: 100%;
     position: absolute;
 
     &-top {
         height: (38px + 12px + 12px) / 1112px * 100%;
         width: 100%;
-        background-color: rgb(41, 41, 41);
         position: absolute;
         display: flex;
         flex-direction: row;
@@ -120,7 +149,6 @@ button {
         &-navigation {
             height: 100%;
             width: 245px / $body-width * 100%;
-            background-color: red;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -149,6 +177,7 @@ button {
             /* Colour/Logo/Primary */
 
             color: #37447E;
+
         }
 
         &-buy {
@@ -158,7 +187,6 @@ button {
     }
 
     &-content {
-        background-color: palevioletred;
         position: absolute;
         // width: 539.37px / $body-width * 100%;
         width: auto;
@@ -219,7 +247,7 @@ button {
                 &:hover {
                     background-color: #330909;
                     color: white;
-                    border: none;
+                    border: 2px solid #250000;
                 }
             }
         }
@@ -229,17 +257,20 @@ button {
 
 
 
+.responsive-image {
+    width: 100%;
+    // min-width: 100px;
+}
+
 .main {
     width: 100%;
-    height: (742px + 1755.39px) / $body-height * 100%;
-    background-color: lightseagreen;
+    height: 742px + 1755.39px;
     top: 23%;
     position: absolute;
 
     &-block-2 {
         width: 100%;
         height: 742px;
-        background-color: darkred;
         position: absolute;
 
         background-image: url(img/undraw_mobile_login_ikmv.svg);
@@ -252,7 +283,6 @@ button {
         &-content {
             width: 50%;
             height: 420px;
-            background-color: sandybrown;
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -266,7 +296,6 @@ button {
             &-bottom {
                 width: 100%;
                 height: 136px;
-                background-color: plum;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -312,7 +341,6 @@ button {
     &-grid {
         width: 100%;
         height: 1755.39px;
-        background-color: rgba(46, 139, 86, 0.349);
         position: absolute;
         top: 29.7%;
 
@@ -321,8 +349,6 @@ button {
         grid-template-rows: 1fr 1fr 1fr;
 
         &-cell {
-            border: 1px solid black;
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -338,11 +364,8 @@ button {
         height: 805px;
         width: 100%;
         position: absolute;
-        top: 100%;
+        top: 105%;
 
-        background-image: url(img/Rectangle.svg);
-        background-repeat: no-repeat;
-        background-position: 50% 0%;
 
         display: flex;
         flex-direction: column;
@@ -352,7 +375,6 @@ button {
         &-content {
             width: 50%;
             height: 400px;
-            background-color: rgb(7, 136, 145);
 
             display: flex;
             flex-direction: column;
@@ -424,3 +446,135 @@ button {
 
 
 }
+
+.footer-container {
+    height: 100%;
+    width: (1440px - 165px * 2) / 1440px * 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    z-index: 1;
+}
+
+.footer {
+    width: 100%;
+    height: 216px;
+    position: absolute;
+    top: 95.35%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E7ECFF;
+    align-items: center;
+
+    &-top {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid #CDD1D4;
+
+        &-company {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+
+
+            /* Colour/Main/Grey/400 */
+
+            color: #939EA4;
+        }
+
+        &-purchase {
+            height: 26px;
+            width: 11%;
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+
+        &-navigation {
+            width: 17.0138888889%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-social {
+            width: 20%;
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-link {
+                height: 16px;
+                width: 16px;
+                display: flex;
+            }
+        }
+    }
+}
+
+.footer-bottom-social-link:hover #fb {
+    fill: #4267B2;
+    transition-duration: .5s;
+}
+
+.footer-bottom-social-link:hover #li {
+    fill: #0077b5;
+    transition-duration: .5s;
+}
+
+.footer-bottom-social-link:hover #tw {
+    fill: #1DA1F2;
+    transition-duration: .5s;
+}
+
+.footer-bottom-social-link:hover #yt {
+    fill: #FF0000;
+    transition-duration: .5s;
+}
+
+.footer-bottom-social-link:hover #ig {
+    fill: #C13584;
+    transition-duration: .5s;
+;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.just-kidding {
+    display: none;
+}
+
+
+
+// .main-block-3-content:hover .just-kidding {
+//     display: inline;
+// }

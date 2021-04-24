@@ -1,5 +1,4 @@
 body {
-  background-color: blueviolet;
   margin: 0;
   padding: 0;
   height: 4628px;
@@ -14,9 +13,17 @@ body {
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  transition-duration: 0.2s;
 }
 a:hover {
   font-size: larger;
+  font-weight: 700;
+  transition-duration: 0.2s;
+}
+a:visited {
+  color: #505F98;
 }
 
 h2 {
@@ -32,7 +39,6 @@ h2 {
 }
 
 p {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -45,6 +51,7 @@ p {
 button {
   background: #111B47;
   border-radius: 2px;
+  min-width: 95px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -56,11 +63,14 @@ button {
   color: #FFFFFF;
   border: none;
   outline: none;
+  transition-duration: 0.5s;
 }
 button:hover {
+  transition-duration: 0.5s;
   background: #000000;
   font-weight: bold;
   cursor: pointer;
+  font-style: italic;
 }
 
 .main-image {
@@ -72,9 +82,19 @@ button:hover {
   position: absolute;
 }
 
+.purchase-image {
+  background-image: url(img/Rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  width: 100%;
+  height: 938px;
+  position: absolute;
+  top: 78%;
+}
+
 .body-container {
-  background-color: rgba(70, 100, 0, 0.493);
-  height: 100%;
+  height: 95%;
   width: 77.0833333333%;
   display: flex;
   flex-direction: row;
@@ -84,14 +104,13 @@ button:hover {
 }
 
 .header {
-  height: 22.9688850475%;
+  height: 1112px;
   width: 100%;
   position: absolute;
 }
 .header-top {
   height: 5.5755395683%;
   width: 100%;
-  background-color: #292929;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -101,7 +120,6 @@ button:hover {
 .header-top-navigation {
   height: 100%;
   width: 17.0138888889%;
-  background-color: red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -128,7 +146,6 @@ button:hover {
   height: 50%;
 }
 .header-content {
-  background-color: palevioletred;
   position: absolute;
   width: auto;
   height: 37.8597122302%;
@@ -175,20 +192,22 @@ button:hover {
 .header-content-two-buttons-learn-more:hover {
   background-color: #330909;
   color: white;
-  border: none;
+  border: 2px solid #250000;
+}
+
+.responsive-image {
+  width: 100%;
 }
 
 .main {
   width: 100%;
-  height: 53.9626188418%;
-  background-color: lightseagreen;
+  height: 2497.39px;
   top: 23%;
   position: absolute;
 }
 .main-block-2 {
   width: 100%;
   height: 742px;
-  background-color: darkred;
   position: absolute;
   background-image: url(img/undraw_mobile_login_ikmv.svg);
   background-repeat: no-repeat;
@@ -199,7 +218,6 @@ button:hover {
 .main-block-2-content {
   width: 50%;
   height: 420px;
-  background-color: sandybrown;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -212,7 +230,6 @@ button:hover {
 .main-block-2-content-bottom {
   width: 100%;
   height: 136px;
-  background-color: plum;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -244,7 +261,6 @@ button:hover {
 .main-grid {
   width: 100%;
   height: 1755.39px;
-  background-color: rgba(46, 139, 86, 0.349);
   position: absolute;
   top: 29.7%;
   display: grid;
@@ -252,7 +268,6 @@ button:hover {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .main-grid-cell {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,10 +280,7 @@ button:hover {
   height: 805px;
   width: 100%;
   position: absolute;
-  top: 100%;
-  background-image: url(img/Rectangle.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
+  top: 105%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,7 +289,6 @@ button:hover {
 .main-block-3-content {
   width: 50%;
   height: 400px;
-  background-color: #078891;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,4 +336,103 @@ button:hover {
 }
 .main-block-3-content > h2 {
   text-align: center;
+}
+
+.footer-container {
+  height: 100%;
+  width: 77.0833333333%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  z-index: 1;
+}
+
+.footer {
+  width: 100%;
+  height: 216px;
+  position: absolute;
+  top: 95.35%;
+  display: flex;
+  flex-direction: column;
+  background-color: #E7ECFF;
+  align-items: center;
+}
+.footer-top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #CDD1D4;
+}
+.footer-top-company {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  /* Colour/Main/Grey/400 */
+  color: #939EA4;
+}
+.footer-top-purchase {
+  height: 26px;
+  width: 11%;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.footer-bottom-navigation {
+  width: 17.0138888889%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom-social {
+  width: 20%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom-social-link {
+  height: 16px;
+  width: 16px;
+  display: flex;
+}
+
+.footer-bottom-social-link:hover #fb {
+  fill: #4267B2;
+  transition-duration: 0.5s;
+}
+
+.footer-bottom-social-link:hover #li {
+  fill: #0077b5;
+  transition-duration: 0.5s;
+}
+
+.footer-bottom-social-link:hover #tw {
+  fill: #1DA1F2;
+  transition-duration: 0.5s;
+}
+
+.footer-bottom-social-link:hover #yt {
+  fill: #FF0000;
+  transition-duration: 0.5s;
+}
+
+.footer-bottom-social-link:hover #ig {
+  fill: #C13584;
+  transition-duration: 0.5s;
+}
+
+.just-kidding {
+  display: none;
 }
