@@ -1,3 +1,195 @@
+$body-height: 4628px;
+$body-width: 1440px;
+
 body {
     background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    height: 4628px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        font-size: larger;
+    }
+}
+
+button {
+    background: #111B47;
+    border-radius: 2px;
+
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+
+    /* Colour/Secondary/White 100 (general) */
+
+    color: #FFFFFF;
+
+    border: none;
+    outline: none;
+
+    &:hover {
+    background: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    }
+}
+
+.main-image {
+    background-image: url(img/designer_1.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: (1161px - 49px) / $body-height * 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.body-container {
+    background-color: rgba(70, 100, 0, 0.493);
+    height: 100%;
+    width: (1440px - 165px * 2) / 1440px * 100%;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    z-index: 1;
+    position: absolute;
+
+}
+
+.header {
+    height: (1161px - 49px) / $body-height * 100%;
+    width: 100%;
+    background-color: gold;
+    position: absolute;
+
+    &-top {
+        height: (38px + 12px + 12px) / 1161px * 100%;
+        width: 100%;
+        background-color: rgb(41, 41, 41);
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &-navigation {
+            height: 100%;
+            width: 245px / $body-width * 100%;
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+
+
+            /* Colour/Main/Blue/500 */
+
+            color: #505F98;
+        }
+
+        &-brand {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 38px;
+            /* identical to box height, or 146% */
+
+
+            /* Colour/Logo/Primary */
+
+            color: #37447E;
+        }
+
+        &-buy {
+            width: 160px / $body-width * 100%;
+            height: 50%;
+        }
+    }
+
+    &-content {
+        background-color: palevioletred;
+        position: absolute;
+        // width: 539.37px / $body-width * 100%;
+        width: auto;
+        height: 421px / 1161px * 100%;
+        top: 303px / 1161px * 100%;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            width: 100%;
+            height: 132px / 421px * 100%;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 66px;
+            /* or 132% */
+
+            letter-spacing: 1px;
+
+            /* Colour/Main/Blue/900 */
+
+            color: #091133;     
+
+        }
+
+        &-description {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+            /* or 167% */
+
+
+            /* Colour/Main/Blue/500 */
+
+            color: #505F98; 
+        }
+
+        &-two-buttons {
+            margin-top: auto;
+            height: 36px / 421px * 100%;
+
+            &-purchase, &-learn-more {
+                height: 100%;
+                width: 189px / 539.37px * 100%;
+            }
+
+            &-learn-more {
+                margin-left: 7%;
+
+                background-color: transparent;
+                border: 2px solid #091133;
+                color: #091133;
+
+                &:hover {
+                    background-color: #330909;
+                    color: white;
+                    border: none;
+                }
+            }
+        }
+    }
 }
