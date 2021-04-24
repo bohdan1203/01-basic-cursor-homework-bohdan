@@ -22,6 +22,35 @@ a {
     }
 }
 
+h2 {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height, or 133% */
+
+
+    /* Colour/Main/Blue/900 */
+
+    color: #091133;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+
+    /* Colour/Main/Blue/400 */
+
+    color: #6F7CB2;
+}
+
 button {
     background: #111B47;
     border-radius: 2px;
@@ -54,7 +83,7 @@ button {
     background-image: url(img/designer_1.svg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    height: (1161px - 49px) / $body-height * 100%;
+    height: (1112px - 49px) / $body-height * 100%;
     width: 100%;
     position: absolute;
 }
@@ -72,13 +101,12 @@ button {
 }
 
 .header {
-    height: (1161px - 49px) / $body-height * 100%;
+    height: (1112px - 49px) / $body-height * 100%;
     width: 100%;
-    background-color: gold;
     position: absolute;
 
     &-top {
-        height: (38px + 12px + 12px) / 1161px * 100%;
+        height: (38px + 12px + 12px) / 1112px * 100%;
         width: 100%;
         background-color: rgb(41, 41, 41);
         position: absolute;
@@ -132,8 +160,8 @@ button {
         position: absolute;
         // width: 539.37px / $body-width * 100%;
         width: auto;
-        height: 421px / 1161px * 100%;
-        top: 303px / 1161px * 100%;
+        height: 421px / 1112px * 100%;
+        top: 303px / 1112px * 100%;
         display: flex;
         flex-direction: column;
 
@@ -165,7 +193,9 @@ button {
 
             /* Colour/Main/Blue/500 */
 
-            color: #505F98; 
+            color: #505F98;
+            
+            margin-top: 20px;
         }
 
         &-two-buttons {
@@ -190,6 +220,90 @@ button {
                     border: none;
                 }
             }
+        }
+    }
+}
+
+
+
+
+.main {
+    width: 100%;
+    height: (742px + 1755.39px) / $body-height * 100%;
+    background-color: lightseagreen;
+    top: 23%;
+    position: absolute;
+
+    &-block-2 {
+        width: 100%;
+        height: 742px;
+        background-color: darkred;
+        position: absolute;
+
+        background-image: url(img/undraw_mobile_login_ikmv.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+
+        display: flex;
+        align-items: center;
+
+        &-content {
+            width: 50%;
+            height: 420px;
+            background-color: sandybrown;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-top {
+                width: 100%;
+                height: 204px;
+            }
+
+            &-bottom {
+                width: 100%;
+                height: 136px;
+                background-color: plum;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                &-section {
+                    width: 50%;
+                    height: 100%;
+
+                    &-title {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 26px;
+                        /* identical to box height, or 162% */
+
+
+                        /* Colour/Main/Blue/900 */
+
+                        color: #091133;
+
+                        margin-top: 14px;
+                    }
+
+                    &-description {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 18px;
+                        /* or 150% */
+
+
+                        /* Colour/Main/Grey/600 */
+
+                        color: #5D6970;
+
+                        margin-top: 6px;
+                    }
+                }
+            }  
         }
     }
 }

@@ -18,6 +18,29 @@ a:hover {
   font-size: larger;
 }
 
+h2 {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  /* Colour/Main/Blue/900 */
+  color: #091133;
+}
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  /* Colour/Main/Blue/400 */
+  color: #6F7CB2;
+}
+
 button {
   background: #111B47;
   border-radius: 2px;
@@ -43,7 +66,7 @@ button:hover {
   background-image: url(img/designer_1.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
-  height: 24.0276577355%;
+  height: 22.9688850475%;
   width: 100%;
   position: absolute;
 }
@@ -60,13 +83,12 @@ button:hover {
 }
 
 .header {
-  height: 24.0276577355%;
+  height: 22.9688850475%;
   width: 100%;
-  background-color: gold;
   position: absolute;
 }
 .header-top {
-  height: 5.3402239449%;
+  height: 5.5755395683%;
   width: 100%;
   background-color: #292929;
   position: absolute;
@@ -108,8 +130,8 @@ button:hover {
   background-color: palevioletred;
   position: absolute;
   width: auto;
-  height: 36.2618432386%;
-  top: 26.0981912145%;
+  height: 37.8597122302%;
+  top: 27.2482014388%;
   display: flex;
   flex-direction: column;
 }
@@ -133,6 +155,7 @@ button:hover {
   /* or 167% */
   /* Colour/Main/Blue/500 */
   color: #505F98;
+  margin-top: 20px;
 }
 .header-content-two-buttons {
   margin-top: auto;
@@ -152,4 +175,68 @@ button:hover {
   background-color: #330909;
   color: white;
   border: none;
+}
+
+.main {
+  width: 100%;
+  height: 53.9626188418%;
+  background-color: lightseagreen;
+  top: 23%;
+  position: absolute;
+}
+.main-block-2 {
+  width: 100%;
+  height: 742px;
+  background-color: darkred;
+  position: absolute;
+  background-image: url(img/undraw_mobile_login_ikmv.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  display: flex;
+  align-items: center;
+}
+.main-block-2-content {
+  width: 50%;
+  height: 420px;
+  background-color: sandybrown;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-block-2-content-top {
+  width: 100%;
+  height: 204px;
+}
+.main-block-2-content-bottom {
+  width: 100%;
+  height: 136px;
+  background-color: plum;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-block-2-content-bottom-section {
+  width: 50%;
+  height: 100%;
+}
+.main-block-2-content-bottom-section-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  /* Colour/Main/Blue/900 */
+  color: #091133;
+  margin-top: 14px;
+}
+.main-block-2-content-bottom-section-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+  /* Colour/Main/Grey/600 */
+  color: #5D6970;
+  margin-top: 6px;
 }
