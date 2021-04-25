@@ -89,8 +89,8 @@ button {
 
     &:hover {
     transition-duration: .5s;
-    background: #000000;
-    font-weight: bold;
+    background: #c5d5ff;
+    color: black;
     cursor: pointer;
     // font-size: larger;
     }
@@ -841,6 +841,4 @@ button {
     width: 50%;
     height: 10%;
     color: crimson;
-    text-transform: uppercase;
-    font-weight: 600;
 }
