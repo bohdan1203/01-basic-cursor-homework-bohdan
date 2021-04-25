@@ -255,6 +255,34 @@ button {
 }
 
 
+@media (max-width: 1000px) {
+    .body-container {
+        width: 90%;
+    }
+
+    .header-top-navigation {
+        width: 22%;
+    }
+
+    .header-content {
+        width: 100%;
+        height: 45%;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 40px;
+        align-items: center;
+
+        &-two-buttons {
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 3%;
+        }
+
+        &-title {
+            text-align: center;
+        }
+    }
+}
 
 
 .responsive-image {
@@ -338,6 +366,45 @@ button {
         }
     }
 
+    @media (max-width:900px) {
+        .main-block-2-content {
+            background-color: #e7ecffd3;
+            width: 100%;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+
+            &-top {
+                width: 80%;
+
+                & p, & h2 {
+                    text-align: center;
+                    margin-top: 2%;
+                }
+
+                & p {
+                    margin-top: 4%;
+                }
+            }
+        }
+
+        .main-block-2-content-bottom {
+            display: flex;
+            justify-content: center;
+        }
+        .main-block-2-content-bottom-section:first-child {
+            display: none;
+        }
+
+        .main-block-2-content-bottom-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+    }
+
     &-grid {
         width: 100%;
         height: 1755.39px;
@@ -347,6 +414,7 @@ button {
         display: grid;
         grid-template-columns: 7fr 5fr;
         grid-template-rows: 1fr 1fr 1fr;
+        gap: 2%;
 
         &-cell {
             display: flex;
@@ -445,6 +513,12 @@ button {
     }
 
 
+}
+
+@media (max-width:900px) {
+    .main-block-3-content {
+        width: 90%;
+    }
 }
 
 .footer-container {
@@ -575,6 +649,24 @@ button {
 
 
 
+
+
+
+
+
+
+
+
 // .main-block-3-content:hover .just-kidding {
 //     display: inline;
+// }
+
+// .main-block-3-content:hover .main-block-3-content-purchase {
+//     background-color: #000000;
+//     border-radius: 80px;
+//     font-size: x-large;
+//     width: 50%;
+//     height: 10%;
+//     color: crimson;
+//     text-transform: uppercase;
 // }
