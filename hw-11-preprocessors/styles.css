@@ -70,7 +70,6 @@ button:hover {
   background: #000000;
   font-weight: bold;
   cursor: pointer;
-  font-style: italic;
 }
 
 .mobile-sides {
@@ -653,10 +652,9 @@ button:hover {
 
 .main-block-3-content:hover .main-block-3-content-purchase {
   background-color: #000000;
-  border-radius: 80px;
-  font-size: x-large;
   width: 50%;
   height: 10%;
   color: crimson;
   text-transform: uppercase;
+  font-weight: 600;
 }
