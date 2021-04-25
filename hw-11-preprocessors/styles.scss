@@ -97,6 +97,10 @@ button {
     }
 }
 
+.mobile-sides {
+    display: none;
+}
+
 
 .main-image {
     background-image: url(img/designer_1.svg);
@@ -105,6 +109,10 @@ button {
     height: (1112px - 49px) / $body-height * 100%;
     width: 100%;
     position: absolute;
+
+    & img {
+        display: none;
+    }
 }
 
 .purchase-image {
@@ -255,7 +263,17 @@ button {
 }
 
 
+@media (max-width: 1300px) {
+    .main-image {
+        background-size: 60% 95%;
+    }
+}
+
 @media (max-width: 1000px) {
+    .main-image {
+        background-size: auto;
+    }
+
     .body-container {
         width: 90%;
     }
@@ -281,6 +299,62 @@ button {
         &-title {
             text-align: center;
         }
+    }
+}
+
+@media (max-width: 720px) {
+    .main-image, .header-top-navigation, .header-top-buy {
+        display: none;
+    }
+
+    .header-top-brand {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-content {
+        top: 20%;
+        background-color: transparent;
+        height: 65%;
+    }
+
+    .header {
+        height: 800px;
+        text-align: center;
+        background-color: #E7ECFF;
+
+
+    }
+
+    br {
+        display: none;
+    }
+
+    .mobile-sides {
+        width: 100%;
+        height: 800px;
+        background-color: #E7ECFF;
+        display: block;
+        position: absolute;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .header-content-title {
+        font-size: 42px;
+        line-height: 48px;
+        height: auto;
+        margin-bottom: 1%;
+    }
+
+   
+}
+
+@media (max-width: 380px) {
+    .header-content {
+        height: 70%;
+        top: 15%;
     }
 }
 
@@ -368,8 +442,9 @@ button {
     }
 
     @media (max-width:900px) {
+
         .main-block-2-content {
-            background-color: #e7ecffd3;
+            background-color: #e7ecfff0;
             width: 100%;
             border-radius: 40px;
             display: flex;
@@ -405,6 +480,33 @@ button {
         }
 
     }
+
+    @media (max-width: 720px) {
+        .main-block-2-content {
+            background-color: transparent;
+    }
+}
+
+    @media (max-width:500px) {
+
+        .main-block-2-content-top {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .main-block-2-content-top h2 {
+            font-size: 26px;
+            line-height: 36px;
+        }
+
+        .main-block-2-content-top p {
+            font-size: 14px;
+    }
+        .main-block-2-content-bottom-section {
+            width: 75%;
+        }
+}
 
     &-grid {
         width: 100%;
@@ -522,6 +624,44 @@ button {
     }
 }
 
+@media (max-width: 720px) {
+    .main-block-2 {
+        background-position: 50% 0%;
+        background-size: auto;
+        height: 1500px;
+        top: -8%;
+
+    
+    }   
+
+
+
+    .main-grid {
+        margin-top: 20%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        &-cell-content {
+            text-align: center;
+        }
+
+        
+    }
+
+    .responsive-image {
+        width: 75%;
+
+    }
+}
+
+@media (max-width: 540px) {
+    .main-block-2 {
+        background-size: initial;
+        background-position: center top;
+    }
+}
+
+
 .footer-container {
     height: 100%;
     width: (1440px - 165px * 2) / 1440px * 100%;
@@ -631,9 +771,44 @@ button {
 
 
 
+@media (max-width: 1100px) {
+    .footer-bottom-navigation {
+        width: 25%;
+    }
+}
 
+@media (max-width: 1000px) {
+    .footer-container {
+        width: 90%;
+    }
+}
 
+@media (max-width: 720px) {
+    .footer-bottom {
+        flex-direction: column;
+    }
 
+    .footer-bottom-navigation {
+        width: 60%;
+        margin-right: 0;
+    }
+
+    .footer-bottom-social {
+        width: 50%;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .footer-top {
+        flex-direction: column;
+
+        &-company {
+            order: 3;
+        }
+    }
+}
 
 
 
@@ -658,16 +833,16 @@ button {
 
 
 
-// .main-block-3-content:hover .just-kidding {
-//     display: inline;
-// }
+.main-block-3-content:hover .just-kidding {
+    display: inline;
+}
 
-// .main-block-3-content:hover .main-block-3-content-purchase {
-//     background-color: #000000;
-//     border-radius: 80px;
-//     font-size: x-large;
-//     width: 50%;
-//     height: 10%;
-//     color: crimson;
-//     text-transform: uppercase;
-// }
+.main-block-3-content:hover .main-block-3-content-purchase {
+    background-color: #000000;
+    border-radius: 80px;
+    font-size: x-large;
+    width: 50%;
+    height: 10%;
+    color: crimson;
+    text-transform: uppercase;
+}
