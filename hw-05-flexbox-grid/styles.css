@@ -44,17 +44,9 @@ body {
     justify-content: space-between;
 }
 
-.nav-1 {
-    font-family: Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 160%;
-    color: #212353;
-    text-decoration: none;
-}
 
-.nav-2 {
+
+.nav {
     font-family: Tahoma, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -64,6 +56,10 @@ body {
     text-decoration: none;
 }
 
+.nav-selected {
+    font-weight: 800;
+    color: #212353;
+}
 
 
 .request-button {
@@ -169,7 +165,7 @@ body {
     background: url(images/img1.png);
 }
 
-.block-middle-1 {
+.block-main-1 {
     position: absolute;
     width: 1117px;
     height: 560px;
@@ -218,7 +214,7 @@ body {
     letter-spacing: 0.015em;
 }
 
-.block-middle-2 {
+.block-main-2 {
     position: absolute;
     width: 1136.85px;
     height: 1002.06px;
@@ -345,7 +341,7 @@ body {
 }
 
 
-.block-middle-3 {
+.block-main-3 {
     position: absolute;
     width: 1118px;
     height: 709px;

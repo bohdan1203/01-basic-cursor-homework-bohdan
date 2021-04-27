@@ -39,23 +39,21 @@ body {
     height: 200px;
 }
 
-.container::before {
+.container::before, .container::after {
     content: "";
     display: block;
     width: 200px;
     height: 10px;
     border-top: 2px solid #C4C4C4;
     border-bottom: 2px solid #C4C4C4;
+ 
+}
+
+.container::before {
     margin-right: 46px;
 }
 
 .container::after {
-    content: "";
-    display: block;
-    width: 200px;
-    height: 10px;
-    border-top: 2px solid #C4C4C4;
-    border-bottom: 2px solid #C4C4C4;
     margin-left: 46px;
 }
 
