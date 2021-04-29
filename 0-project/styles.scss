@@ -676,9 +676,37 @@ button:hover {
 
 .gallery-grid-left-top-photo-1 {
     background-image: url(img/Photo-1.jpg);
-    
+}
 
+.gallery-grid-left-bottom-photo-2 {
+    background-image: url(img/Photo-2.jpg);
     
+}
+
+.gallery-grid-left-bottom-photo-3 {
+    background-image: url(img/Photo-3.jpg);
+}
+
+.gallery-grid-right-photo-4 {
+    background-image: url(img/Photo-4.jpg);
+}
+
+.gallery-grid-right-photo-5 {
+    background-image: url(img/Photo-5.jpg);
+}
+
+.gallery-grid-right-photo-6 {
+    background-image: url(img/Photo-6.jpg);
+}
+
+
+.gallery-grid-left-top-photo-1, 
+.gallery-grid-left-bottom-photo-2,
+.gallery-grid-left-bottom-photo-3,
+.gallery-grid-right-photo-4, 
+.gallery-grid-right-photo-5, 
+.gallery-grid-right-photo-6 {
+
 
     &:hover .photo-hovered {
         width: 100%;
@@ -719,33 +747,15 @@ button:hover {
 
             &-button {
                 width: 286px;
-                height: 48px;
+                min-height: 48px;
             }
+        }
+
+        #height-bigger {
+            height: 180px;
         }
     }
 }
-
-.gallery-grid-left-bottom-photo-2 {
-    background-image: url(img/Photo-2.jpg);
-}
-
-.gallery-grid-left-bottom-photo-3 {
-    background-image: url(img/Photo-3.jpg);
-}
-
-.gallery-grid-right-photo-4 {
-    background-image: url(img/Photo-4.jpg);
-}
-
-.gallery-grid-right-photo-5 {
-    background-image: url(img/Photo-5.jpg);
-}
-
-.gallery-grid-right-photo-6 {
-    background-image: url(img/Photo-6.jpg);
-}
-
-
 
 
 

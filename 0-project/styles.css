@@ -466,38 +466,6 @@ button:hover {
 .gallery-grid-left-top-photo-1 {
   background-image: url(img/Photo-1.jpg);
 }
-.gallery-grid-left-top-photo-1:hover .photo-hovered {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gallery-grid-left-top-photo-1:hover .photo-hovered-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  height: 115px;
-}
-.gallery-grid-left-top-photo-1:hover .photo-hovered-block-title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 34px;
-  /* identical to box height, or 106% */
-  text-align: center;
-  text-transform: uppercase;
-  /* White */
-  color: #FFFFFF;
-}
-.gallery-grid-left-top-photo-1:hover .photo-hovered-block-button {
-  width: 286px;
-  height: 48px;
-}
 
 .gallery-grid-left-bottom-photo-2 {
   background-image: url(img/Photo-2.jpg);
@@ -517,6 +485,67 @@ button:hover {
 
 .gallery-grid-right-photo-6 {
   background-image: url(img/Photo-6.jpg);
+}
+
+.gallery-grid-left-top-photo-1:hover .photo-hovered,
+.gallery-grid-left-bottom-photo-2:hover .photo-hovered,
+.gallery-grid-left-bottom-photo-3:hover .photo-hovered,
+.gallery-grid-right-photo-4:hover .photo-hovered,
+.gallery-grid-right-photo-5:hover .photo-hovered,
+.gallery-grid-right-photo-6:hover .photo-hovered {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-grid-left-top-photo-1:hover .photo-hovered-block,
+.gallery-grid-left-bottom-photo-2:hover .photo-hovered-block,
+.gallery-grid-left-bottom-photo-3:hover .photo-hovered-block,
+.gallery-grid-right-photo-4:hover .photo-hovered-block,
+.gallery-grid-right-photo-5:hover .photo-hovered-block,
+.gallery-grid-right-photo-6:hover .photo-hovered-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 115px;
+}
+.gallery-grid-left-top-photo-1:hover .photo-hovered-block-title,
+.gallery-grid-left-bottom-photo-2:hover .photo-hovered-block-title,
+.gallery-grid-left-bottom-photo-3:hover .photo-hovered-block-title,
+.gallery-grid-right-photo-4:hover .photo-hovered-block-title,
+.gallery-grid-right-photo-5:hover .photo-hovered-block-title,
+.gallery-grid-right-photo-6:hover .photo-hovered-block-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 34px;
+  /* identical to box height, or 106% */
+  text-align: center;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
+.gallery-grid-left-top-photo-1:hover .photo-hovered-block-button,
+.gallery-grid-left-bottom-photo-2:hover .photo-hovered-block-button,
+.gallery-grid-left-bottom-photo-3:hover .photo-hovered-block-button,
+.gallery-grid-right-photo-4:hover .photo-hovered-block-button,
+.gallery-grid-right-photo-5:hover .photo-hovered-block-button,
+.gallery-grid-right-photo-6:hover .photo-hovered-block-button {
+  width: 286px;
+  min-height: 48px;
+}
+.gallery-grid-left-top-photo-1:hover .photo-hovered #height-bigger,
+.gallery-grid-left-bottom-photo-2:hover .photo-hovered #height-bigger,
+.gallery-grid-left-bottom-photo-3:hover .photo-hovered #height-bigger,
+.gallery-grid-right-photo-4:hover .photo-hovered #height-bigger,
+.gallery-grid-right-photo-5:hover .photo-hovered #height-bigger,
+.gallery-grid-right-photo-6:hover .photo-hovered #height-bigger {
+  height: 180px;
 }
 
 .projects-mobile {
