@@ -1,5 +1,11 @@
+html {
+    min-width: 375px;
+}
+
 body {
     width: 100%;
+
+    min-width: 375px;
     height: 4635px;
     background-color: #010101;
 
@@ -110,6 +116,7 @@ button:hover {
 
 .top-image {
     width: 100%;
+    min-width: 375px;
     height: 700px;
     position: absolute;
 
@@ -256,14 +263,25 @@ button:hover {
  
 }
 
-.numbers {
-    width: 100%;
-    height: 106px;
-    margin-top: 120px;
-    
-    display: flex;
-    justify-content: space-between;
 
+.grid {
+    margin-top: 120px;
+    width: 100%;
+    height: 109px;
+
+    display: grid;
+    grid-template-columns: 215fr 237fr 207fr 286fr;
+    gap: 4%;
+}
+    
+
+        
+.cell {
+    border: 1px solid black;
+    height: 103px;
+}
+
+.cell-top {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -272,6 +290,7 @@ button:hover {
     /* identical to box height, or 133% */
 
     text-align: right;
+    text-transform: uppercase;
 
     /* Dark Grey */
 
@@ -279,41 +298,21 @@ button:hover {
 
     opacity: 0.7;
 
-    &-block {
-        height: 100%;
-
-        &:first-child {
-            width: 215px / 1200px * 110%;
-        }
-
-        &:nth-child(2) {
-            width: 237px / 1200px * 110%;
-        }
-
-        &:nth-child(3) {
-            width: 207px / 1200px * 110%;
-        }
-
-        &:last-child {
-            width: 286px / 1200px * 110%;
-        }
-
-    }
-
-}
-
-.number-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
     position: relative;
-    top: -35%;
 }
 
-.numbers-block-number {
-    text-align: left;
+.cell-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    top: -35px;
+}
 
+.cell-bottom-number {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 68px;
     line-height: 76px;
     /* identical to box height, or 112% */
@@ -322,21 +321,185 @@ button:hover {
     /* White */
 
     color: #FFFFFF;
-
+    margin-right: 10px;
 }
 
-.numbers-block-item-small {
+.cell-bottom-text {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
     line-height: 33px;
-  
+    text-align: right;
+    text-transform: uppercase;
 
     /* White */
 
     color: #FFFFFF;
 }
+
+
+@media (max-width: 1300px) {
+    .body-container .grid {
+        gap: 1%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .cell-top {
+        font-size: 36px;
+    }
+
+   .cell-bottom {
+        align-items: baseline;
+    }
+
+    #two-rows {
+        align-items: center;
+    }
+
+    .cell-bottom-number {
+        font-size: 50px;
+    }
+
+    .cell-bottom-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .body-container .grid {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 132fr 181fr;
+        gap: 1%;    
+
+    }
+
+    .cell-top {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .cell-bottom-number {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .cell-bottom-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .cell-bottom {
+        top: -20px;
+    }
+
+    #two-rows-text {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .grid {
+        margin-top: 56px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .numbers {
+//     width: 100%;
+//     height: 106px;
+//     margin-top: 120px;
+    
+//     display: flex;
+//     justify-content: space-between;
+
+//     font-family: 'Oswald', sans-serif;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 48px;
+//     line-height: 64px;
+//     /* identical to box height, or 133% */
+
+//     text-align: right;
+
+//     /* Dark Grey */
+
+//     color: #1E1E1E;
+
+//     opacity: 0.7;
+
+//     &-block {
+//         height: 100%;
+
+//         &:first-child {
+//             width: 215px / 1200px * 110%;
+//         }
+
+//         &:nth-child(2) {
+//             width: 237px / 1200px * 110%;
+//         }
+
+//         &:nth-child(3) {
+//             width: 207px / 1200px * 110%;
+//         }
+
+//         &:last-child {
+//             width: 286px / 1200px * 110%;
+//         }
+
+//     }
+
+// }
+
+// .number-item {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: flex-end;
+//     position: relative;
+//     top: -35%;
+// }
+
+// .numbers-block-number {
+//     text-align: left;
+
+//     font-size: 68px;
+//     line-height: 76px;
+//     /* identical to box height, or 112% */
+
+
+//     /* White */
+
+//     color: #FFFFFF;
+
+// }
+
+// .numbers-block-item-small {
+//     font-family: 'Raleway', sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 28px;
+//     line-height: 33px;
+  
+
+//     /* White */
+
+//     color: #FFFFFF;
+// }
 
 
 .services {
@@ -647,11 +810,12 @@ button:hover {
 
 .partners-extension {
     width: 100%;
+    min-width: 375px;
     height: 690px;
     background-color: #ffffff;
 
     position: absolute;
-    top: 3126px;
+    top: 3129px;
 }
 
 
@@ -763,6 +927,7 @@ button:hover {
 
 .bottom {
     width: 100%;
+    min-width: 375px;
     height: 380px;
     position: absolute;
     top: 4255px;
@@ -996,7 +1161,6 @@ button:hover {
 
 @media (max-width: 720px) {
     body {
-        min-width: 320px;
         height: 4260px;
     }
 
@@ -1143,6 +1307,7 @@ button:hover {
         top: 1594px;
 
         width: 100%;
+        min-width: 375px;
         height: 592px;
         background-image: url(img/Group221.jpg);
         background-repeat: no-repeat;
@@ -1236,7 +1401,7 @@ button:hover {
             position: absolute;
 
             width: 92%;
-            min-width: 320px;
+            min-width: 348.67px;
             max-width: 420px;
             height: 216px;
             background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
@@ -1249,7 +1414,7 @@ button:hover {
             position: absolute;
 
             width: 92%;
-            min-width: 320px;
+            min-width: 348.67px;
             max-width: 420px;
             height: 216px;
 
@@ -1312,7 +1477,7 @@ button:hover {
 
     .partners-extension {
         height: 265px;
-        top: 3476px;
+        top: 3479px;
     }
 
     .partners {
