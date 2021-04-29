@@ -1,8 +1,7 @@
 body {
     width: 100%;
     height: 4635px;
-    // background-color: #010101;
-    background-color: #111111;
+    background-color: #010101;
 
     margin: 0;
 
@@ -13,6 +12,7 @@ body {
 
 a {
     text-decoration: none;
+
 
     &:visited {
         color: white;
@@ -64,6 +64,50 @@ button:hover {
 
 }
 
+.social-media {
+    display: flex;
+    position: absolute;
+    top: 100px;
+
+    z-index: 666;
+    transform: rotate(-90deg);
+    right: -80px;
+    top: 326px;
+
+
+    &-item {
+        font-family: 'Oswald', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height, or 167% */
+    
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        /* White */
+    
+        color: #FFFFFF;
+        
+
+        background: #010101;
+        opacity: 0.8;
+
+        padding: 6px;
+        margin: 0 1px;
+
+        transition-duration: .2s;
+
+        &:hover {
+            opacity: 1;
+            transition-duration: .2s;
+        }
+    }
+}
+
+
+
 .top-image {
     width: 100%;
     height: 700px;
@@ -74,6 +118,12 @@ button:hover {
     background-position: center 75%;
     background-size: cover;
 
+    .header-gradient {
+        width: 100%;
+        height: 80px;
+        background: linear-gradient(180deg, #010101 -17.5%, rgba(1, 1, 1, 0) 100%);
+        position: absolute;
+    }
 
     
 }
@@ -83,16 +133,12 @@ button:hover {
 .body-container {
     width: (1440px - 240px) / 1440px * 100%;
     height: 100%;
-    background-color: rgba(128, 255, 0, 0.267);
-
-
     z-index: 1;
 }
 
 .header {
     width: 100%;
     height: 80px;
-    background: linear-gradient(180deg, #010101 -17.5%, rgba(1, 1, 1, 0) 100%);
 
     display: flex;
     align-items: center;
@@ -101,7 +147,6 @@ button:hover {
     &-navigation {
         height: 100%;
         width: 533px / 1200px * 100%;
-        background-color: rgba(0, 139, 139, 0.233);
 
         display: flex;
         align-items: center;
@@ -114,6 +159,7 @@ button:hover {
             font-size: 18px;
             line-height: 178%;
             color: #FFFFFF;
+            display: flex;
         }
         
         .weight-600 {
@@ -123,8 +169,11 @@ button:hover {
     }
 }
 
+.mobile {
+    display: none;
+}
+
 .top-block {
-    background-color: rgba(184, 135, 11, 0.295);
     width: 100%;
     height: 620px;
 
@@ -134,7 +183,8 @@ button:hover {
 
     &-content {
         height: 409px;
-        width: 863px / 1200px * 100%;
+        // width: 863px / 1200px * 100%;
+        width: 100%;
         position: relative;
         top: 147px;
 
@@ -177,7 +227,7 @@ button:hover {
 
         &-button {
             width: 262px;
-            height: 56px;
+            min-height: 56px;
             border: 1px solid #FFFFFF;
             box-sizing: border-box;
 
@@ -209,7 +259,6 @@ button:hover {
 .numbers {
     width: 100%;
     height: 106px;
-    background-color: yellowgreen;
     margin-top: 120px;
     
     display: flex;
@@ -231,7 +280,6 @@ button:hover {
     opacity: 0.7;
 
     &-block {
-        background-color: violet;
         height: 100%;
 
         &:first-child {
@@ -294,7 +342,6 @@ button:hover {
 .services {
     height: 214px;
     width: 100%;
-    background-color: yellow;
     margin-top: 120px;
     display: flex;
     justify-content: space-between;
@@ -302,7 +349,6 @@ button:hover {
     .service-block {
         height: 100%;
         width: 342px / 1200px * 100%;
-        background-color: hotpink;
         background-repeat: no-repeat;
         background-position: 30% center;
         background-size: cover;
@@ -352,16 +398,17 @@ button:hover {
 .history {
     width: 100%;
     height: 592px;
-    background-color: red;
     margin-top: 120px;
     background-image: url(img/Group221.jpg);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
+    display: flex;
 
     &-text {
         width: 50%;
         height: 90%;
+        margin-top: 20px;
 
         display: flex;
         flex-direction: column;
@@ -402,7 +449,6 @@ button:hover {
 .gallery {
     width: 100%;
     height: 914px;
-    background-color: fuchsia;
 
     z-index: 20;
 
@@ -441,7 +487,6 @@ button:hover {
     &-more {
         height: 86px;
         width: 100%;
-        background-color: gold;
 
         display: flex;
         align-items: flex-end;
@@ -460,12 +505,15 @@ button:hover {
     background-position: center;
 }
 
+
+
 .photo-hovered-block {
     display: none;
 }
 
 .gallery-grid-left-top-photo-1 {
     background-image: url(img/Photo-1.jpg);
+    
 
     
 
@@ -478,6 +526,7 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+
         
         &-block {
             display: flex;
@@ -485,8 +534,9 @@ button:hover {
             align-items: center;
             justify-content: space-between;
 
-            width: 45%;
+            width: 90%;
             height: 115px;
+
 
             &-title {
                 font-family: 'Oswald', sans-serif;
@@ -509,8 +559,6 @@ button:hover {
                 height: 48px;
             }
         }
-
-
     }
 }
 
@@ -581,6 +629,11 @@ button:hover {
     }
 }
 
+.partner-logo {
+    width: 80%;
+    height: 100%;
+}
+
 .partners-extension {
     width: 100%;
     height: 690px;
@@ -600,7 +653,6 @@ button:hover {
     margin-top: 120px;
     width: 100%;
     height: 318px;
-    background-color: lightpink;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -612,7 +664,6 @@ button:hover {
     &-row {
         width: 100%;
         height: 228px;
-        background-color: rgba(7, 138, 94, 0.315);
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -628,14 +679,12 @@ button:hover {
             &-top {
                 height: 52px;
                 width: 332px / 398px * 100%;
-                background-color: blue;
                 display: flex;
                 justify-content: space-between;
 
                 &-profile {
                     width: 60%;
                     height: 100%;
-                    background-color: chartreuse;
 
                     display: flex;
                     flex-direction: column;
@@ -674,7 +723,6 @@ button:hover {
             &-text {
                 width: 332px / 398px * 100%;
                 height: 102px;
-                background-color: blueviolet;
 
                 font-family: 'Raleway', sans-serif;
                 font-style: normal;
@@ -705,7 +753,6 @@ button:hover {
 .bottom {
     width: 100%;
     height: 380px;
-    background-color: darkred;
     position: absolute;
     top: 4255px;
 
@@ -735,7 +782,6 @@ button:hover {
 .footer {
     width: 100%;
     height: 221px;
-    background-color: darkslateblue;
     margin-top: 160px;
 
     &-top {
@@ -744,13 +790,10 @@ button:hover {
 
         display: flex;
 
-        background-color: darkviolet;
         align-items: flex-end;
         justify-content: space-between;
 
-        &-logo {
-            
-        }
+       
 
         &-navigation {
             width: 406px / 1200px * 100%;
@@ -816,6 +859,294 @@ button:hover {
 
             color: #FFFFFF;
         }
+    }
+}
+
+
+@media (max-width: 1180px) {
+    .body-container {
+        width: 95%;
+    }
+
+    .header-navigation {
+        width: 55%;
+    }
+
+    .service-block {
+        min-width: 32%;
+    }
+
+    .numbers-block {
+        width: 18%;
+    }
+
+    .numbers-block-item-small {
+        font-size: 45%;
+    }
+
+    .numbers-block-number {
+        font-size: 130%;
+    }
+
+    .numbers-block-item {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .top-block-content {
+        top: 100px;
+    }
+
+    .history-text {
+        width: 66%;
+    }
+
+    .numbers-block-item-small {
+        font-size: 40%;
+    }
+
+    .numbers-block-number {
+        font-size: 120%;
+    }
+
+    .numbers-block-item {
+        font-size: 77%;
+    }
+
+    .services .service-block .obscuration .we-do {
+        font-size: 32px;
+    }
+
+    .footer-top-navigation {
+        width: 45%;
+    }
+
+    .testimonials-row-review-text {
+        height: 120px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .testimonials-row-review-top img {
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 860px) {
+    .header-navigation {
+        width: 66%;
+    }
+    
+    .top-block-content-description {
+        font-size: 16px;
+    }
+
+    .numbers-block {
+        line-height: initial;
+    }
+
+    .numbers-block-item-small {
+        font-size: 35%;
+        line-height: initial;
+        position: relative;
+        top: -15px;
+
+    }
+
+    .numbers-block-number {
+        font-size: 95%;
+        
+    }
+
+    .numbers-block-item {
+        font-size: 70%;
+    }
+
+    .services .service-block .obscuration .we-do {
+        font-size: 30px;
+    }
+
+    .history-text {
+       width: 100%;
+
+    }
+
+    .footer-bottom-social-media {
+        width: 17%;
+    }
+}
+
+
+
+//----------------M-O-B-I-L-E------------------//
+
+
+@media (max-width: 720px) {
+    body {
+        min-width: 320px;
+    }
+
+
+    .body-container {
+        width: (375px - 30px) / 375px * 100%;
+    }
+
+    .top-image {
+        background-image: url(img/image-21-mobile.jpg);
+        height: 648px;
+        top: 88px;
+    }
+
+    
+    .social-media {
+        display: none;
+    }
+
+    .header {
+        margin-top: 88px;
+        height: auto;
+    }
+
+    .logo-top {
+        width: 100px;
+    }
+
+    .header-navigation {
+        width: 20%;
+    }
+
+    .header-navigation-item {
+        display: none;
+    }
+
+    .header-navigation-item:nth-child(5) {
+        display: flex;
+    }
+
+    .mobile-burger {
+        display: flex;
+    }
+
+    .footer-top-navigation {
+        display: none;
+    }
+
+    .top-block-content {
+        top: 189px;
+    }
+
+    .top-block-content-title {
+        font-size: 40px;
+    }
+
+    .top-block-content-description {
+        display: none;
+    }
+
+    .top-block-content-button {
+        background-color: transparent;
+        color: #ffffff;
+        width: 200px;
+        height: 42px;
+        font-size: 14px;
+        line-height: 18px;  
+        margin-top: 32px;
+    }
+
+    .top-block-content-arrow {
+        margin-top: 164px;
+    }
+
+    .numbers {
+        margin-top: 56px;
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services {
+        margin-top: 156px;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: 480px;
+
+        .service-block {
+            width: 100%;
+            min-width: 320px;
+            max-width: 480px;
+            height: 152px;
+        }
+    }
+
+    .services .service-block .obscuration .we-do {
+        margin-top: 96px;
+    }
+
+    .history {
+        display: none;
+        margin-top: 56px;
+
+        
+
+    }
+
+    .history-mobile {
+        display: flex;
+        align-items: top;
+        justify-content: center;
+        position: absolute;
+        top: 1594px;
+
+        width: 100%;
+        height: 592px;
+        background-image: url(img/Group221.jpg);
+        background-repeat: no-repeat;
+        background-position: 75% -80%;
+        background-size: auto 110%;
+
+        .history-text {
+            width: 90%;
+            height: 100%;
+            margin-top: 0;
+
+            &-title {
+                font-family: 'Oswald', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 34px;
+                /* identical to box height, or 189% */
+
+                text-transform: uppercase;
+
+                /* White */
+
+                color: #FFFFFF;
+            }
+
+            &-paragraph {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                /* or 157% */
+
+
+                /* White */
+
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .gallery {
+        top: 2300px;
     }
 }
 
