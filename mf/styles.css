@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.body-container {
+  width: 90%;
+  height: 800px;
+  background-color: sandybrown;
+}
+.body-container .grid {
+  margin-top: 150px;
+  width: 100%;
+  height: 109px;
+  background-color: seagreen;
+  display: grid;
+  grid-template-columns: 215fr 237fr 207fr 286fr;
+  gap: 7%;
+}
+.body-container .grid .cell {
+  border: 1px solid black;
+}
+.body-container .grid .cell-top {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  /* identical to box height, or 133% */
+  text-align: right;
+  text-transform: uppercase;
+  /* Dark Grey */
+  color: #1E1E1E;
+  opacity: 0.7;
+}
+.body-container .grid .cell-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.body-container .grid .cell-bottom-number {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 76px;
+  /* identical to box height, or 112% */
+  /* White */
+  color: #FFFFFF;
+}
+.body-container .grid .cell-bottom-text {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: right;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}

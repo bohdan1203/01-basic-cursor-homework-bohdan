@@ -583,6 +583,17 @@ button:hover {
 }
 
 
+
+
+
+.projects-mobile {
+    display: none;
+}
+
+
+
+
+
 .partners {
     margin-top: 1154px;
     width: 100%;
@@ -986,6 +997,7 @@ button:hover {
 @media (max-width: 720px) {
     body {
         min-width: 320px;
+        height: 4260px;
     }
 
 
@@ -1066,6 +1078,34 @@ button:hover {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
+///////////////////////////////////////////////
+    .numbers-block-item {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 36px;
+        /* identical to box height, or 112% */
+
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .numbers-block-number {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 50px;
+        /* identical to box height, or 114% */
+    }
+
+    .numbers-block-item-small {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height, or 125% */
+        text-align: right;
+    }
+///////////////////////////////////////////////
 
     .services {
         margin-top: 156px;
@@ -1146,7 +1186,286 @@ button:hover {
     }
 
     .gallery {
-        top: 2300px;
+        display: none;
+    }
+
+    .projects-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 704px;
+        height: 1184px;
+        width: 100%;
+
+        &-grid {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 12px;
+
+            width: 100%;
+            max-width: 420px;
+            height: 1128px;
+
+        }
+
+        &-button {
+            background-color: transparent;
+            color: #ffffff;
+            width: 162px;
+            height: 32px;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+
+            letter-spacing: 0.03em;
+        }
+    }
+
+    .projects-mobile-grid-cell {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+
+            width: 92%;
+            min-width: 320px;
+            max-width: 420px;
+            height: 216px;
+            background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+            opacity: 0.8;
+        }
+
+        &::after {
+            content: '';
+
+            position: absolute;
+
+            width: 92%;
+            min-width: 320px;
+            max-width: 420px;
+            height: 216px;
+
+
+            font-family: 'Oswald', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            /* identical to box height, or 140% */
+
+            text-align: center;
+            text-transform: uppercase;
+
+            /* White */
+
+            color: #FFFFFF; 
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .projects-mobile-grid-cell:first-child {
+        background-image: url(img/Photo-1.jpg);
+        &::after {
+            content: 'DISCOVER UKRAINE SVYDOVETS’';
+        }
+    }
+
+    .projects-mobile-grid-cell:nth-child(2) {
+        background-image: url(img/Photo-3.jpg);
+        &::after {
+            content: 'MOUNTAIN ISOLATION';
+        }
+    }
+
+    .projects-mobile-grid-cell:nth-child(3) {
+        background-image: url(img/Photo-6.jpg);
+        &::after {
+            content: 'DISCOVER UKRAINE 2.0';
+        }
+    }
+
+    .projects-mobile-grid-cell:nth-child(4) {
+        background-image: url(img/Photo-4.jpg);
+        &::after {
+            content: 'UKRAINE GRAVITY ТА НАЙКРАЩИЙ ПІЛОТ FPV В УКРАЇНІ DOROSH.RAW';
+        }
+    }
+
+    .projects-mobile-grid-cell:last-child {
+        background-image: url(img/Photo-2.jpg);
+        &::after {
+            content: 'PORSCHE UKRAINE';
+        }
+    }
+
+    .partners-extension {
+        height: 265px;
+        top: 3476px;
+    }
+
+    .partners {
+        height: 265px;
+        margin-top: 38px;
+
+        &-top {
+            margin-top: 24px;
+            height: 26px;
+
+            & a img {
+                height: 24px;
+            }
+
+            &-title {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        &-grid {
+            margin-top: 32px;
+            height: 143px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &-cell {
+                &:nth-child(3) {
+                    grid-row-start: 1;
+                }  
+
+                &:nth-child(4) {
+                    grid-row-start: 1;
+                } 
+
+                &:nth-child(2) {
+                    grid-row-start: 1;
+                    order: 3;
+                } 
+
+                &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12),  {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .partner-logo {
+        max-width: 108px;
+        max-height: 50px;
+    }
+
+    .testimonials {
+        margin-top: 56px;
+        height: 286px;
+
+        &-top {
+            margin: 0;
+
+            .black-to-white {
+                width: 60%;
+            }
+        }
+
+        &-row {
+            display: flex;
+
+            &-review {
+                
+                &:first-child, &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .testimonials-row-review-top-profile-name {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .testimonials-row-review-top-profile-occupation  {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .testimonials-row-review-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .thomas-marniz {
+        width: 48px;
+        height: 48px;
+    }
+
+    .bottom {
+        height: 177px;
+
+        top: 4083px;
+        
+        .bottom-gradient, .bottom-mountains {
+            height: 120px;
+            width: 100%;
+            min-width: 320px;
+            
+        }
+
+        .bottom-mountains {
+            
+            z-index: 5;
+
+            background-image: url(img/montana-grande.svg), url(img/montana-pequena.svg);
+            background-repeat: no-repeat;
+
+            background-position: -30px 25px, 200px bottom;
+        }
+    }
+
+    .footer {
+        height: 56px;
+
+        margin-top: 120px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-top, &-bottom {
+            height: 100%;
+            display: flex;
+            width: 38%;
+        }
+
+        .footer-top-logo {
+            width: 113px;
+            height: 47px;
+            margin-bottom: auto;
+        }
+    }
+   
+    .footer-bottom-copyright {
+        display: none;
+    }
+
+    .footer-bottom-social-media {
+        width: 100%;
+        flex-direction: row-reverse;
+
+        & a img {
+            width: 18px;
+        }
     }
 }
 
