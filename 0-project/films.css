@@ -1,0 +1,322 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  min-width: 375px;
+  height: 3934px;
+  background-color: #010101;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+a:hover {
+  color: #919191;
+  transition-duration: 0.5s;
+}
+
+h1, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height, or 121% */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+button {
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  text-transform: capitalize;
+  /* Black */
+  color: #010101;
+  transition-duration: 1s;
+  transition-property: color, background;
+}
+
+button:hover {
+  background: #010101;
+  color: #ffffff;
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  transition-duration: 1s;
+  transition-property: color, background;
+}
+
+.social-media {
+  display: flex;
+  position: absolute;
+  top: 100px;
+  z-index: 666;
+  transform: rotate(-90deg);
+  right: -80px;
+  top: 326px;
+}
+.social-media-item {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+  background: #010101;
+  opacity: 0.8;
+  padding: 6px;
+  margin: 0 1px;
+  transition-duration: 0.2s;
+}
+.social-media-item:hover {
+  opacity: 1;
+  transition-duration: 0.2s;
+}
+
+.body-container {
+  width: 83.3333333333%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-navigation {
+  height: 100%;
+  width: 44.4166666667%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-navigation-item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  color: #FFFFFF;
+  display: flex;
+}
+.header-navigation .weight-600 {
+  font-weight: 600;
+}
+
+.mobile {
+  display: none;
+}
+
+.main-block {
+  width: 100%;
+  height: 3434px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title-films {
+  width: 100%;
+  height: 34px;
+}
+
+.films-block {
+  width: 100%;
+  height: 3360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.film {
+  width: 100%;
+  height: 640px;
+}
+
+.film-hovered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.film-hovered-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 115px;
+  opacity: 0;
+  transition-duration: 2s;
+}
+.film-hovered-block-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 34px;
+  /* identical to box height, or 106% */
+  text-align: center;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
+.film-hovered-block-button {
+  width: 286px;
+  min-height: 48px;
+}
+
+.film {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.film:hover .film-hovered {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.film:hover .film-hovered-block {
+  opacity: 1;
+  transition-duration: 2s;
+}
+.film:first-child {
+  background-image: url(img/film-1.jpg);
+}
+.film:nth-child(2) {
+  background-image: url(img/film-2.jpg);
+}
+.film:nth-child(3) {
+  background-image: url(img/film-3.jpg);
+}
+.film:nth-child(4) {
+  background-image: url(img/film-4.jpg);
+}
+.film:last-child {
+  background-image: url(img/film-5.jpg);
+}
+
+#anounce::before {
+  content: "НЕЗАБАРОМ";
+  position: absolute;
+  top: 3140px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  /* identical to box height, or 109% */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-transform: capitalize;
+  /* White */
+  color: #FFFFFF;
+}
+
+.bottom {
+  width: 100%;
+  min-width: 375px;
+  height: 380px;
+  position: absolute;
+  top: 3554px;
+}
+.bottom-gradient {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(180deg, #010101 11.52%, rgba(41, 40, 40, 0.76) 100%);
+  position: absolute;
+}
+.bottom-mountains {
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  z-index: 5;
+  background-image: url(img/montana-grande.svg), url(img/montana-pequena.svg);
+  background-repeat: no-repeat;
+  background-position: 3% 50px, 24% bottom;
+}
+
+.footer {
+  width: 100%;
+  height: 221px;
+  margin-top: 160px;
+}
+.footer-top {
+  width: 100%;
+  height: 57px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer-top-navigation {
+  width: 33.8333333333%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-top-navigation-item {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  /* identical to box height, or 229% */
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
+.footer-top-navigation .weight-600 {
+  font-weight: 600;
+}
+.footer-top-empty {
+  width: 143px;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 164px;
+}
+.footer-bottom-social-media {
+  width: 12.3333333333%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom-copyright {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
