@@ -1,0 +1,137 @@
+body {
+  width: 100%;
+  min-width: 375px;
+  height: 812px;
+  background-color: #010101;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+a:hover {
+  color: #919191;
+  transition-duration: 0.5s;
+}
+
+h1, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+.body-container {
+  width: 83.3333333333%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-navigation {
+  height: 100%;
+  width: 44.4166666667%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-navigation-item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  color: #FFFFFF;
+  display: flex;
+}
+.header-navigation .weight-600 {
+  font-weight: 600;
+}
+
+.mobile {
+  display: none;
+}
+
+.background {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  /* or 125% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* White */
+  color: #111111;
+  margin-top: 226px;
+}
+
+.menu {
+  height: 224px;
+  width: 50%;
+  position: relative;
+  top: -164px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  text-transform: uppercase;
+  /* light grey */
+  color: #C7C7C7;
+}
+
+@media (max-width: 720px) {
+  .body-container {
+    width: 92%;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .header {
+    margin-top: 88px;
+    height: auto;
+  }
+
+  .logo-top {
+    width: 100px;
+  }
+
+  .header-navigation {
+    width: 20%;
+    display: flex;
+  }
+
+  .header-navigation-item {
+    display: none;
+  }
+
+  .header-navigation-item:nth-child(5) {
+    display: flex;
+  }
+
+  .mobile {
+    display: flex;
+  }
+}

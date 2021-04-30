@@ -144,7 +144,6 @@ button:hover {
 .contacts {
   width: 100%;
   height: 409px;
-  background-color: chartreuse;
   margin-top: 280px;
   display: flex;
   justify-content: space-between;
@@ -152,7 +151,92 @@ button:hover {
 .contacts-contact {
   height: 100%;
   width: 30.1666666667%;
-  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts-contact .contact-photo {
+  width: 100%;
+  height: 224px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contacts-contact .photo-1 {
+  background-image: url(img/contacts-1.jpg);
+  background-position: 62% center;
+}
+.contacts-contact .photo-2 {
+  background-image: url(img/contacts-2.jpg);
+  background-position: 29% center;
+}
+.contacts-contact .photo-3 {
+  background-image: url(img/contacts-3.jpg);
+  background-position: 52% center;
+}
+.contacts-contact .contact-title {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts-contact .contact-title-name {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height, or 121% */
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
+.contacts-contact .contact-title-occupation {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
+.contacts-contact .contact-info {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts-contact .contact-info-phone, .contacts-contact .contact-info-email {
+  width: 100%;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+  /* White */
+  color: #FFFFFF;
+}
+.contacts-contact .contact-info-phone {
+  background-image: url(img/Phone.svg);
+}
+.contacts-contact .contact-info-email {
+  background-image: url(img/Envelope.svg);
+}
+
+.border {
+  width: 100px;
+  height: 1px;
+}
+
+span {
+  margin-left: 36px;
 }
 
 .bottom {
@@ -172,7 +256,6 @@ button:hover {
   width: 100%;
   height: 160px;
   position: absolute;
-  z-index: 5;
   background-image: url(img/montana-grande.svg), url(img/montana-pequena.svg);
   background-repeat: no-repeat;
   background-position: 3% 50px, 24% bottom;
@@ -235,4 +318,175 @@ button:hover {
   text-transform: uppercase;
   /* White */
   color: #FFFFFF;
+}
+
+@media (max-width: 1180px) {
+  .body-container {
+    width: 95%;
+  }
+
+  .header-navigation {
+    width: 55%;
+  }
+}
+@media (max-width: 1000px) {
+  .footer-top-navigation {
+    width: 45%;
+  }
+
+  .contacts-contact .contact-title-name {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .contacts-contact .contact-title-occupation {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .contacts-contact .contact-info-phone, .contacts-contact .contact-info-email {
+    width: 100%;
+    height: 26px;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 860px) {
+  .header-navigation {
+    width: 66%;
+  }
+
+  .footer-bottom-social-media {
+    width: 17%;
+  }
+}
+@media (max-width: 720px) {
+  .body-container {
+    width: 92%;
+  }
+
+  .top-image {
+    background-image: url(img/contacts-main-mobile.jpg);
+    height: 648px;
+    top: 88px;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .header {
+    margin-top: 88px;
+    height: auto;
+  }
+
+  .logo-top {
+    width: 100px;
+  }
+
+  .header-navigation {
+    width: 20%;
+  }
+
+  .header-navigation-item {
+    display: none;
+  }
+
+  .header-navigation-item:nth-child(5) {
+    display: flex;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .footer-top-navigation {
+    display: none;
+  }
+
+  .contacts {
+    flex-direction: column;
+    min-width: 343px;
+    width: 50%;
+    height: 963px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts-contact {
+    width: 100%;
+    height: 289px;
+  }
+  .contacts-contact .contact-photo {
+    height: 168px;
+  }
+  .contacts-contact .contact-title {
+    height: 48px;
+  }
+  .contacts-contact .contact-title-name {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .contacts-contact .contact-title-occupation {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contacts-contact .contact-info {
+    height: 46px;
+  }
+  .contacts-contact .contact-info-phone, .contacts-contact .contact-info-email {
+    font-size: 14px;
+    line-height: 22px;
+    background-size: 16px 16px;
+  }
+
+  span {
+    margin-left: 28px;
+  }
+
+  .bottom {
+    height: 177px;
+    top: 1109px;
+  }
+  .bottom .bottom-gradient, .bottom .bottom-mountains {
+    height: 120px;
+    width: 100%;
+    min-width: 320px;
+  }
+  .bottom .bottom-mountains {
+    z-index: 5;
+    background-image: url(img/montana-grande.svg), url(img/montana-pequena.svg);
+    background-repeat: no-repeat;
+    background-position: -30px 25px, 200px bottom;
+  }
+
+  .footer {
+    height: 56px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-top, .footer-bottom {
+    height: 100%;
+    display: flex;
+    width: 38%;
+  }
+  .footer .footer-top-logo {
+    width: 113px;
+    height: 47px;
+    margin-bottom: auto;
+  }
+
+  .footer-bottom-copyright {
+    display: none;
+  }
+
+  .footer-bottom-social-media {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .footer-bottom-social-media a img {
+    width: 18px;
+  }
 }
