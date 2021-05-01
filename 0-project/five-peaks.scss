@@ -160,313 +160,6 @@ button:hover {
     }
 }
 
-.mobile {
-    display: none;
-}
-
-.main-block {
-    width: 100%;
-    height: 3434px;
-
-    margin-top: 40px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.title-films {
-    width: 100%;
-    height: 34px;
-
-    color: #ffffff
-
-}
-
-.films-block {
-    width: 100%;
-    height: 3360px;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.film {
-    width: 100%;
-    height: 640px;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 33% center;
-    
-}
-
-
-.film-hovered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.film-hovered-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
-    height: 115px;
-
-  
-  
-
-    opacity: 0;
-    transition-duration: 2s;
-
-
-    &-title {
-        font-family: 'Oswald', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 32px;
-        line-height: 34px;
-        /* identical to box height, or 106% */
-
-        text-align: center;
-        text-transform: uppercase;
-
-        /* White */
-
-        color: #FFFFFF;
-    }
-
-    &-button {
-        width: 286px;
-        min-height: 48px;
-    }
-}
-
-.film {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-    &:hover .film-hovered {
-        width: 100%;
-        height: 100%;
-
-        background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
-
-       
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &-block {
-            opacity: 1;
-            transition-duration: 2s;
-        }
-        
-    }
-
-    &:first-child {
-        background-image: url(img/film-1.jpg);
-    }
-
-    &:nth-child(2) {
-        background-image: url(img/film-2.jpg);
-    }
-
-    &:nth-child(3) {
-        background-image: url(img/film-3.jpg);
-    }
-
-    &:nth-child(4) {
-        background-image: url(img/film-4.jpg);
-    }
-
-    &:last-child {
-        background-image: url(img/film-5.jpg);
-    }
-
-
-}
-
-#anounce::before {
-    content: "НЕЗАБАРОМ";
-
-    position: absolute;
-    top: 3140px;
-
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 24px;
-    /* identical to box height, or 109% */
-
-    text-decoration-line: underline;
-    text-transform: capitalize;
-
-    /* White */
-
-    color: #FFFFFF;
-
-
-}
-
-
-
-
-
-
-
-
-.films-mobile {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    margin-top: 704px;
-    height: 1184px;
-    width: 100%;
-
-    &-grid {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        gap: 12px;
-
-        width: 100%;
-        max-width: 420px;
-        height: 1128px;
-
-    }
-
-}
-
-.films-mobile-grid-cell {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    &::before {
-        content: '';
-
-
-        position: absolute;
-
-        width: 92%;
-        min-width: 348.67px;
-        max-width: 420px;
-        height: 216px;
-        background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
-        opacity: 0.8;
-    }
-
- 
-    &::after {
-        content: '';
-
-        position: absolute;
-
-        width: 92%;
-        min-width: 348.67px;
-        max-width: 420px;
-        height: 216px;
-
-
-        font-family: 'Oswald', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 28px;
-        /* identical to box height, or 140% */
-
-        text-align: center;
-        text-transform: uppercase;
-
-        /* White */
-
-        color: #FFFFFF; 
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-}
-
-
-
-.films-mobile-grid-cell:first-child{
-    background-image: url(img/film-1.jpg);
-    &::after {
-        content: 'DISCOVER UKRAINE SVYDOVETS’';
-    }
-}
-
-.films-mobile-grid-cell:nth-child(2) {
-    background-image: url(img/film-2.jpg);
-    &::after {
-        content: 'BLACK SOIL';
-    }
-}
-
-.films-mobile-grid-cell:nth-child(3) {
-    background-image: url(img/film-3.jpg);
-    &::after {
-        content: 'MOUNTAIN ISOLATION';
-    }
-}
-
-.films-mobile-grid-cell:nth-child(4) {
-    background-image: url(img/film-4.jpg);
-    &::after {
-        content: 'DISCOVER UKRAINE BAKOTA';
-    }
-}
-
-.films-mobile-grid-cell:last-child {
-    background-image: url(img/film-5.jpg);
-    &::after {
-        content: '5 ВЕРШИН';
-    }
-}
-
-#anounce-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    & span {
-        margin-bottom: 60px;
-
-        z-index: 5;
-
-        font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 24px;
-        /* identical to box height, or 171% */
-
-        text-decoration-line: underline;
-        text-transform: capitalize;
-
-        /* White */
-
-        color: #FFFFFF;
-
-    }
-}
-
-
 
 
 
@@ -589,6 +282,190 @@ button:hover {
         }
     }
 }
+
+
+
+
+
+
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+.film-video {
+    width: 100%;
+    height: 638px;
+    margin-top: 40px;
+
+
+    background-color: deeppink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  25% center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-play {
+        position: absolute;
+        z-index: 2;
+    }
+
+    &-gradient {
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+        opacity: 0;
+        transition-duration: 0.5s;
+
+        &:hover {
+            opacity: 0.8;
+            transition-duration: 0.5s;
+        }
+    }   
+}
+
+.film-info {
+    width: 100%;
+    height: 780px;
+    margin-top: 40px;
+
+    background-color: #1E1E1E;
+
+    display: flex;
+    flex-direction: column;
+
+    
+
+    &-title {
+        color: #ffffff;
+        margin-top: 56px;
+        margin-left: 80px / 1200px *100%;
+
+        font-size: 40px;
+        line-height: 38px;
+    }
+
+    &-grid {
+        width: 1120px / 1200px * 100%;
+        height: 566px;
+        margin-top: 56px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        display: grid;
+        grid-template-columns: 378fr 742fr;
+
+        &-cell {
+
+            &:first-child {
+                display: grid;
+                grid-auto-rows: 66px 62px 152px 62px ;
+                gap: 48px;
+            }
+
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            &-paragraph {
+                width: 606px / 742px * 100%;
+
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                /* or 162% */
+
+
+                /* White */
+
+                color: #FFFFFF;
+
+            }
+        }
+        
+    
+    }
+}
+
+.film-info-grid-cell-left-top {
+    width: 100%;
+    height: 30px;
+  
+
+    display: flex;
+    align-items: center;
+
+    &-icon {
+        height: 24px;
+    }
+
+    &-title {
+        font-family: 'Oswald', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        /* identical to box height, or 156% */
+
+        text-transform: uppercase;
+
+        /* White */
+
+        color: #FFFFFF;
+
+        //////////////////////
+        padding: 0;
+        margin: 0;
+        /////////////////////
+
+        margin-left: 3%;
+    }
+}
+
+.film-info-grid-cell-left-bottom {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+
+    /* White */
+
+    color: #FFFFFF;
+
+    margin-left: 10%;
+    margin-top: 8px;
+
+    & ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: square;
+            margin-bottom: 4px;
+
+            &::marker {
+                color: #777777;
+            }
+        }
+    }
+}
+
+
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+
+
 
 
 
@@ -730,32 +607,3 @@ button:hover {
 }
 
 /////////////////////////////////
-
-@media (max-width: 720px) {
-    .main-block {
-        height: 1180px;
-    }
-
-    .films-block {
-        display: none;
-    }
-
-    .films-mobile {
-        display: flex;
-        margin-top: 24px;
-    }
-
-    body {
-        height: 1539px;
-    }
-    
-    .bottom {
-        top: 1360px;
-    }
-    
-    .footer {
-        margin-top: 128px;
-    }
-}
-
-
