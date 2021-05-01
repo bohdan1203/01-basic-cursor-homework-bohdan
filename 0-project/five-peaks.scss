@@ -466,6 +466,113 @@ button:hover {
 /////////////////////////////////////
 
 
+.participants {
+    width: 100%;
+    height: 412px;
+    margin-top: 120px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-top {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        color: #FFFFFF;
+    }
+
+    &-main {
+        width: 100%;
+        height: 322px;
+
+        display: flex;
+        justify-content: space-between;
+
+        &-participant {
+            height: 100%;
+            width: 175px / 1200px * 100%;
+        
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            &-photo {
+                height: 256px;
+                width: 100%;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-name {
+                font-family: 'Oswald', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+
+                text-align: center;
+                text-transform: uppercase;
+
+                /* White */
+
+                color: #FFFFFF;
+            }
+
+            &-occupation {
+                
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                /* identical to box height, or 157% */
+
+                text-align: center;
+                text-transform: uppercase;
+
+                /* White */
+
+                color: #FFFFFF;
+
+            }
+        }
+    }
+}
+
+#participant-1 {
+    background-image: url(img/participants/participant-1.jpg);
+}
+
+#participant-2 {
+    background-image: url(img/participants/participant-2.jpg);
+}
+
+#participant-3 {
+    background-image: url(img/participants/participant-3.jpg);
+}
+
+#participant-4 {
+    background-image: url(img/participants/participant-4.jpg);
+}
+
+#participant-5 {
+    background-image: url(img/participants/participant-5.jpg);
+}
+
+#participant-6 {
+    background-image: url(img/participants/participant-6.jpg);
+}
+
+
+
+
 
 
 

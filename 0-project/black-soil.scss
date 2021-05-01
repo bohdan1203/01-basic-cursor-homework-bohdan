@@ -161,6 +161,10 @@ button:hover {
     }
 }
 
+.mobile {
+    display: none;
+}
+
 
 
 
@@ -169,7 +173,7 @@ button:hover {
     min-width: 375px;
     height: 380px;
     position: absolute;
-    top: 3555px;
+    top: 4590px;
 
     &-gradient {
         width: 100%;
@@ -461,6 +465,394 @@ button:hover {
 /////////////////////////////////////
 /////////////////////////////////////
 
+.participants {
+    width: 100%;
+    height: 412px;
+    margin-top: 120px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-top {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        color: #FFFFFF;
+    }
+
+    &-main {
+        width: 100%;
+        height: 322px;
+
+        display: flex;
+        justify-content: space-between;
+
+        &-participant {
+            height: 100%;
+            width: 175px / 1200px * 100%;
+        
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            &-photo {
+                height: 256px;
+                width: 100%;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-name {
+                font-family: 'Oswald', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+
+                text-align: center;
+                text-transform: uppercase;
+
+                /* White */
+
+                color: #FFFFFF;
+            }
+
+            &-occupation {
+                
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                /* identical to box height, or 157% */
+
+                text-align: center;
+                text-transform: uppercase;
+
+                /* White */
+
+                color: #FFFFFF;
+
+            }
+        }
+    }
+}
+
+#participant-1 {
+    background-image: url(img/participants/participant-1.jpg);
+}
+
+#participant-2 {
+    background-image: url(img/participants/participant-2.jpg);
+}
+
+#participant-3 {
+    background-image: url(img/participants/participant-3.jpg);
+}
+
+#participant-4 {
+    background-image: url(img/participants/participant-4.jpg);
+}
+
+#participant-5 {
+    background-image: url(img/participants/participant-5.jpg);
+}
+
+#participant-6 {
+    background-image: url(img/participants/participant-6.jpg);
+}
+
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+
+
+.partners {
+    margin-top: 98px;
+    width: 100%;
+    height: 482px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+        margin-top: 120px;
+        width: 100%;
+        height: 34px;
+
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            color: #010101;
+            width: 30%;
+        }
+    }
+
+    &-grid {
+        margin-top: 49px;
+        width: 100%;
+        height: 160px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        &-cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.partner-logo {
+    width: 80%;
+    height: 100%;
+}
+
+
+
+.partners-extension {
+    width: 100%;
+    min-width: 375px;
+    height: 482px;
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 2208px;
+}
+
+
+////////////////////////////////
+
+
+.projects-content {
+    height: 902px;
+    width: 100%;
+    margin-top: 120px;
+
+    color: white;
+}
+
+
+
+.gallery {
+    width: 100%;
+    height: 914px;
+
+    z-index: 20;
+
+    position: absolute;
+
+    ///////////////////////////////////
+    top: 2885px;
+    ///////////////////////////////
+
+    &-grid {
+        width: 100;
+        height: 914px - 86px;
+
+
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        gap: 3px;
+
+        &-left {
+            display: grid;
+            grid-template-rows: 2fr 1fr;
+            gap: 3px;
+
+            &-bottom {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 3px;
+            }
+        }
+
+        &-right {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 3px;
+        }
+    }
+
+    &-more {
+        height: 86px;
+        width: 100%;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        &-button {
+            width: 162px;
+            height: 46px;
+        }
+    }
+}
+
+.gallery-photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.photo-hovered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-hovered-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 115px;
+
+  
+  
+
+    opacity: 0;
+    transition-duration: 2s;
+
+
+    &-title {
+        font-family: 'Oswald', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 34px;
+        /* identical to box height, or 106% */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        /* White */
+
+        color: #FFFFFF;
+    }
+
+    &-button {
+        width: 286px;
+        min-height: 48px;
+    }
+}
+
+.gallery-grid-left-top-photo-1 {
+    background-image: url(img/black-soil-gallery/photo-1.jpg);
+}
+
+.gallery-grid-left-bottom-photo-2 {
+    background-image: url(img/black-soil-gallery/photo-2.jpg);
+    
+}
+
+.gallery-grid-left-bottom-photo-3 {
+    background-image: url(img/black-soil-gallery/photo-3.jpg);
+}
+
+.gallery-grid-right-photo-4 {
+    background-image: url(img/black-soil-gallery/photo-4.jpg);
+}
+
+.gallery-grid-right-photo-5 {
+    background-image: url(img/black-soil-gallery/photo-5.jpg);
+}
+
+.gallery-grid-right-photo-6 {
+    background-image: url(img/black-soil-gallery/photo-6.jpg);
+}
+
+
+.gallery-grid-left-top-photo-1, 
+.gallery-grid-left-bottom-photo-2,
+.gallery-grid-left-bottom-photo-3,
+.gallery-grid-right-photo-4, 
+.gallery-grid-right-photo-5, 
+.gallery-grid-right-photo-6 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &:hover .photo-hovered {
+        width: 100%;
+        height: 100%;
+
+        background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+
+       
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-block {
+            opacity: 1;
+            transition-duration: 2s;
+        }
+        
+    }
+}
+
+.announce {
+    width: 100%;
+    height: 48px;
+
+    z-index: 100;
+
+    margin-top: 240px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    &-button {
+        height: 100%;
+        width: 240px;
+    }
+}
+
+.coming-soon-image {
+    width: 100%;
+    height: 288px;
+
+    position: absolute;
+    top: 3836px;
+
+    background-image: url(img/black-soil-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &-gradient {
+        width: 100%;
+        height: 100%;
+        /* Obscuration */
+
+        background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+        opacity: 0.8;
+    }
+
+}
 
 
 
@@ -473,6 +865,109 @@ button:hover {
 
 
 
+
+
+
+.testimonials {
+    margin-top: 284px;
+    width: 100%;
+    height: 318px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-top {
+        margin: 0;
+    }
+
+    &-row {
+        width: 100%;
+        height: 228px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &-review {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            background-color: #C7C7C7;
+
+            &-top {
+                height: 52px;
+                width: 332px / 398px * 100%;
+                display: flex;
+                justify-content: space-between;
+
+                &-profile {
+                    width: 60%;
+                    height: 100%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    &-name {
+                        font-family: 'Oswald', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 24px;
+                        /* identical to box height, or 133% */
+
+
+                        /* Black */
+
+                        color: #010101;
+                    }
+
+                    &-occupation {
+                        font-family: 'Raleway', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 20px;
+                        /* identical to box height, or 167% */
+
+
+                        /* Black */
+
+                        color: #010101;
+                    }
+                }
+            }
+
+            &-text {
+                width: 332px / 398px * 100%;
+                height: 102px;
+
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                /* or 143% */
+
+
+                /* Black */
+
+                color: #010101; 
+
+            }
+        }
+
+    }
+}
+
+.testimonials-row-review:nth-child(2) {
+    background-color: #1E1E1E;
+}
+
+.black-to-white {
+    color: #ffffff;
+}
 
 
 
@@ -503,13 +998,28 @@ button:hover {
     .header-navigation {
         width: 55%;
     }
+    
+    .film-info-grid-cell-paragraph {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1000px) {
     .footer-top-navigation {
         width: 45%;
     }
+
+    .testimonials-row-review-text {
+        height: 120px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .testimonials-row-review-top img {
+        max-width: 35%;
+    }
 }
+
 
 
 @media (max-width: 860px) {
@@ -519,6 +1029,10 @@ button:hover {
 
     .footer-bottom-social-media {
         width: 17%;
+    }
+
+    .film-info-grid-cell-paragraph {
+        font-size: smaller;
     }
 }
 
@@ -561,6 +1075,59 @@ button:hover {
 
     .footer-top-navigation {
         display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    .testimonials {
+        margin-top: 56px;
+        height: 286px;
+
+        &-top {
+            margin: 0;
+
+            .black-to-white {
+                width: 60%;
+            }
+        }
+
+        &-row {
+            display: flex;
+
+            &-review {
+                
+                &:first-child, &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .testimonials-row-review-top-profile-name {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .testimonials-row-review-top-profile-occupation  {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .testimonials-row-review-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .thomas-marniz {
+        width: 48px;
+        height: 48px;
     }
 
 
