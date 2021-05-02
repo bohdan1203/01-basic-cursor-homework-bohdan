@@ -1248,10 +1248,16 @@ button:hover {
                     }
                 }
 
+                &:last-child {
+                    justify-content: flex-start;
+                }
+
                 &-paragraph {
                     font-size: 14px;
                     line-height: 22px;
                     font-weight: 400;
+
+                    margin-bottom: 12px;
                 }
             }
         }
@@ -1261,16 +1267,17 @@ button:hover {
         margin-top: 56px;
         height: 330px;
 
-        overflow: hidden;
+        overflow: scroll;
 
         &-top {
             &-title {
+                position: absolute;
                 font-size: 18px;
                 line-height: 34px;
             }
 
-            &-carets a img{
-                height: 26px;
+            &-carets {
+                display: none;
             }
         }
 

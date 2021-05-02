@@ -926,23 +926,28 @@ button:hover {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+  .film-info-grid-cell:last-child {
+    justify-content: flex-start;
+  }
   .film-info-grid-cell-paragraph {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
+    margin-bottom: 12px;
   }
 
   .participants {
     margin-top: 56px;
     height: 330px;
-    overflow: hidden;
+    overflow: scroll;
   }
   .participants-top-title {
+    position: absolute;
     font-size: 18px;
     line-height: 34px;
   }
-  .participants-top-carets a img {
-    height: 26px;
+  .participants-top-carets {
+    display: none;
   }
   .participants-main {
     height: 272px;

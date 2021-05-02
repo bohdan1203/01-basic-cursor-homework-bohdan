@@ -124,12 +124,16 @@ button:hover {
   font-weight: 600;
 }
 
+.mobile {
+  display: none;
+}
+
 .bottom {
   width: 100%;
   min-width: 375px;
   height: 380px;
   position: absolute;
-  top: 3555px;
+  top: 3685px;
 }
 .bottom-gradient {
   width: 100%;
@@ -216,17 +220,22 @@ button:hover {
   width: 100%;
   height: 638px;
   margin-top: 40px;
-  background-image: url(img/film-2.jpg);
+  background-image: url(img/five-peaks.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 25% center;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-.film-video-play {
+.film-video-carets {
   position: absolute;
   z-index: 2;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+.film-video-carets a img {
+  height: 40px;
 }
 .film-video-gradient {
   width: 100%;
@@ -246,22 +255,35 @@ button:hover {
 
 .film-info {
   width: 100%;
-  height: 780px;
+  height: 639px;
   margin-top: 40px;
   background-color: #1E1E1E;
   display: flex;
   flex-direction: column;
 }
+.film-info-in-process {
+  margin-top: 56px;
+  margin-left: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 20px;
+  /* identical to box height, or 91% */
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
 .film-info-title {
   color: #ffffff;
-  margin-top: 56px;
+  margin-top: 32px;
   margin-left: 6.6666666667%;
   font-size: 40px;
   line-height: 38px;
 }
 .film-info-grid {
   width: 93.3333333333%;
-  height: 566px;
+  height: 437px;
   margin-top: 56px;
   margin-left: auto;
   margin-right: auto;
@@ -270,13 +292,13 @@ button:hover {
 }
 .film-info-grid-cell:first-child {
   display: grid;
-  grid-auto-rows: 66px 62px 152px 62px;
+  grid-auto-rows: 66px 157px 62px;
   gap: 48px;
 }
 .film-info-grid-cell:last-child {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
 }
 .film-info-grid-cell-paragraph {
   width: 81.6711590296%;
@@ -288,6 +310,11 @@ button:hover {
   /* or 162% */
   /* White */
   color: #FFFFFF;
+  margin-bottom: 32px;
+}
+
+.film-info-grid-cell-left:nth-child(2) {
+  display: none;
 }
 
 .film-info-grid-cell-left-top {
@@ -401,31 +428,31 @@ button:hover {
 }
 
 #participant-1 {
-  background-image: url(img/participants/participant-1.jpg);
+  background-image: url(img/participants/participant-7.jpg);
 }
 
 #participant-2 {
-  background-image: url(img/participants/participant-2.jpg);
+  background-image: url(img/participants/participant-8.jpg);
 }
 
 #participant-3 {
-  background-image: url(img/participants/participant-3.jpg);
+  background-image: url(img/participants/participant-9.jpg);
 }
 
 #participant-4 {
-  background-image: url(img/participants/participant-4.jpg);
+  background-image: url(img/participants/participant-10.jpg);
 }
 
 #participant-5 {
-  background-image: url(img/participants/participant-5.jpg);
+  background-image: url(img/participants/participant-11.jpg);
 }
 
 #participant-6 {
-  background-image: url(img/participants/participant-6.jpg);
+  background-image: url(img/participants/participant-12.jpg);
 }
 
 .partners {
-  margin-top: 1154px;
+  margin-top: 120px;
   width: 100%;
   height: 690px;
   background-color: #ffffff;
@@ -473,11 +500,11 @@ button:hover {
   height: 690px;
   background-color: #ffffff;
   position: absolute;
-  top: 3129px;
+  top: 2089px;
 }
 
 .testimonials {
-  margin-top: 284px;
+  margin-top: 120px;
   width: 100%;
   height: 318px;
   display: flex;
@@ -554,6 +581,112 @@ button:hover {
   color: #ffffff;
 }
 
+.other-films-placeholder {
+  height: 348px;
+  width: 100%;
+  margin-top: 120px;
+  color: white;
+}
+
+.other-films {
+  width: 100%;
+  height: 274px;
+  position: absolute;
+  top: 3411px;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+.gallery-photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-hovered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-hovered-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 115px;
+  opacity: 0;
+  transition-duration: 2s;
+}
+.photo-hovered-block-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 34px;
+  /* identical to box height, or 106% */
+  text-align: center;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
+.photo-hovered-block-button {
+  width: 189px;
+  min-height: 48px;
+  padding: 0;
+}
+
+.photo-hovered-block img {
+  width: 200px;
+}
+
+.other-films-1,
+.other-films-2,
+.other-films-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.other-films-1:hover .photo-hovered,
+.other-films-2:hover .photo-hovered,
+.other-films-3:hover .photo-hovered {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-films-1:hover .photo-hovered-block,
+.other-films-2:hover .photo-hovered-block,
+.other-films-3:hover .photo-hovered-block {
+  opacity: 1;
+  transition-duration: 2s;
+}
+
+#height-bigger-1, #height-bigger-2 {
+  height: 150px;
+}
+
+.other-films-1 {
+  background-image: url(img/Photo-5.jpg);
+}
+
+.other-films-2 {
+  background-image: url(img/Photo-3.jpg);
+}
+
+.other-films-3 {
+  background-image: url(img/Photo-4.jpg);
+}
+
+.other-films-mobile {
+  display: none;
+}
+
 @media (max-width: 1180px) {
   .body-container {
     width: 95%;
@@ -565,6 +698,11 @@ button:hover {
 
   .film-info-grid-cell-paragraph {
     width: 100%;
+  }
+
+  .photo-hovered-block-title {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 @media (max-width: 1000px) {
@@ -596,6 +734,10 @@ button:hover {
   }
 }
 @media (max-width: 720px) {
+  body {
+    height: 2851px;
+  }
+
   .body-container {
     width: 92%;
   }
@@ -635,7 +777,7 @@ button:hover {
 
   .bottom {
     height: 177px;
-    top: 4109px;
+    top: 2674px;
   }
   .bottom .bottom-gradient, .bottom .bottom-mountains {
     height: 120px;
@@ -685,8 +827,8 @@ button:hover {
 
   .top-video-mobile {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     position: absolute;
     top: 132px;
     z-index: 20;
@@ -695,7 +837,7 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: fuchsia;
+    background-image: url(img/five-peaks.jpg);
   }
   .top-video-mobile-gradient {
     height: 100%;
@@ -703,12 +845,12 @@ button:hover {
     background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
     opacity: 0.8;
   }
-  .top-video-mobile-play {
+  .top-video-mobile-carets {
     height: 40px;
-    width: 40px;
+    width: 90px;
     position: absolute;
   }
-  .top-video-mobile-play-button {
+  .top-video-mobile-carets-button {
     width: 40px;
     margin: auto;
   }
@@ -721,15 +863,22 @@ button:hover {
     display: block;
     width: 100%;
     min-width: 375px;
-    height: 1054px;
+    height: 786px;
     position: absolute;
-    top: 347px;
+    top: 348px;
     background-color: #1E1E1E;
   }
 
   .film-info {
     margin-top: 0;
-    height: 1054px;
+    height: 786px;
+  }
+  .film-info-in-process {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 16px;
+    margin-left: 16px;
   }
   .film-info-title {
     font-size: 24px;
@@ -770,16 +919,6 @@ button:hover {
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  .film-info-grid-cell-left:nth-child(3) ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .film-info-grid-cell-left:nth-child(3) ul li:first-child {
-    order: 4;
-  }
-  .film-info-grid-cell-left:nth-child(3) ul li:nth-child(2) {
-    order: 3;
-  }
   .film-info-grid-cell-left:last-child {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -790,16 +929,22 @@ button:hover {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .film-info-grid-cell-left:nth-child(2) {
+    display: block;
   }
 
   .participants {
     margin-top: 56px;
     height: 330px;
-    overflow: hidden;
+    overflow: scroll;
   }
   .participants-top-title {
     font-size: 18px;
     line-height: 34px;
+    position: absolute;
   }
   .participants-top-carets a img {
     height: 26px;
@@ -833,7 +978,7 @@ button:hover {
 
   .partners-extension {
     height: 265px;
-    top: 3479px;
+    top: 1558px;
   }
 
   .partners {
@@ -856,19 +1001,13 @@ button:hover {
   .partners-grid {
     margin-top: 32px;
     height: 143px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .partners-grid-cell:nth-child(3) {
     grid-row-start: 1;
+    grid-column-start: 4;
   }
-  .partners-grid-cell:nth-child(4) {
-    grid-row-start: 1;
-  }
-  .partners-grid-cell:nth-child(2) {
-    grid-row-start: 1;
-    order: 3;
-  }
-  .partners-grid-cell:nth-child(7), .partners-grid-cell:nth-child(8), .partners-grid-cell:nth-child(9), .partners-grid-cell:nth-child(10), .partners-grid-cell:nth-child(11), .partners-grid-cell:nth-child(12) {
+  .partners-grid-cell:nth-child(9), .partners-grid-cell:nth-child(10), .partners-grid-cell:nth-child(11), .partners-grid-cell:nth-child(12) {
     display: none;
   }
 
@@ -878,39 +1017,87 @@ button:hover {
   }
 
   .testimonials {
-    margin-top: 114px;
-    height: 286px;
-  }
-  .testimonials-top {
-    margin: 0;
-  }
-  .testimonials-top .black-to-white {
-    width: 60%;
-  }
-  .testimonials-row {
-    display: flex;
-  }
-  .testimonials-row-review:first-child, .testimonials-row-review:last-child {
     display: none;
   }
 
-  .testimonials-row-review-top-profile-name {
-    font-size: 16px;
-    line-height: 24px;
+  .other-films {
+    display: none;
   }
 
-  .testimonials-row-review-top-profile-occupation {
-    font-size: 12px;
-    line-height: 20px;
+  .other-films-placeholder {
+    height: 730px;
   }
-
-  .testimonials-row-review-text {
-    font-size: 14px;
-    line-height: 20px;
+  .other-films-placeholder .other-films-title {
+    font-size: 18px;
+    line-height: 34px;
   }
-
-  .thomas-marniz {
-    width: 48px;
-    height: 48px;
+  .other-films-placeholder .other-films-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .other-films-placeholder .other-films-mobile-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    max-width: 420px;
+    height: 672px;
+    margin-top: 24px;
+  }
+  .other-films-placeholder .other-films-mobile-grid-cell {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .other-films-placeholder .other-films-mobile-grid-cell::before {
+    content: "";
+    position: absolute;
+    width: 92%;
+    min-width: 348.67px;
+    max-width: 420px;
+    height: 216px;
+    background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+    opacity: 0.8;
+  }
+  .other-films-placeholder .other-films-mobile-grid-cell::after {
+    content: "";
+    position: absolute;
+    width: 92%;
+    min-width: 348.67px;
+    max-width: 420px;
+    height: 216px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    text-align: center;
+    text-transform: uppercase;
+    /* White */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:first-child {
+    background-image: url(img/film-2.jpg);
+  }
+  .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:first-child::after {
+    content: "BLACK SOIL";
+  }
+  .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(2) {
+    background-image: url(img/film-3.jpg);
+  }
+  .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(2)::after {
+    content: "MOUNTAIN ISOLATION";
+  }
+  .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(3) {
+    background-image: url(img/film-4.jpg);
+  }
+  .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(3)::after {
+    content: "DISCOVER UKRAINE BAKOTA";
   }
 }
