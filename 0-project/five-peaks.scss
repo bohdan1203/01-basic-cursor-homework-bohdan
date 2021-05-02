@@ -290,6 +290,13 @@ button:hover {
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
+.film-video-mobile-placeholder, .top-video-mobile {
+    display: none;
+
+    height: 216px;
+    width: 100%;
+}
+
 
 .film-video {
     width: 100%;
@@ -297,7 +304,7 @@ button:hover {
     margin-top: 40px;
 
 
-    background-color: deeppink;
+    background-image: url(img/film-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:  25% center;
@@ -325,6 +332,11 @@ button:hover {
         }
     }   
 }
+
+.film-info-extension {
+    display: none;
+}
+
 
 .film-info {
     width: 100%;
@@ -468,6 +480,10 @@ button:hover {
 
 .participants {
     width: 100%;
+
+    ///////////////////////////////////////////////////////////
+    overflow: hidden;
+
     height: 412px;
     margin-top: 120px;
 
@@ -485,6 +501,9 @@ button:hover {
 
     &-main {
         width: 100%;
+    ////////////////////////////////////////////////////////////////////////
+        min-width: 1000px;
+                
         height: 322px;
 
         display: flex;
@@ -574,6 +593,179 @@ button:hover {
 
 
 
+.partners {
+    margin-top: 1154px;
+    width: 100%;
+    height: 690px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+        margin-top: 120px;
+        width: 100%;
+        height: 34px;
+
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            color: #010101;
+            width: 30%;
+        }
+
+        &-carets {
+            width: 10%;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+    }
+
+    &-grid {
+        margin-top: 49px;
+        width: 100%;
+        height: 368px;
+        
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        &-cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.partner-logo {
+    width: 80%;
+    height: 100%;
+}
+
+.partners-extension {
+    width: 100%;
+    min-width: 375px;
+    height: 690px;
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 3129px;
+}
+
+
+
+
+
+
+.testimonials {
+    margin-top: 284px;
+    width: 100%;
+    height: 318px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-top {
+        margin: 0;
+    }
+
+    &-row {
+        width: 100%;
+        height: 228px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &-review {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            background-color: #C7C7C7;
+
+            &-top {
+                height: 52px;
+                width: 332px / 398px * 100%;
+                display: flex;
+                justify-content: space-between;
+
+                &-profile {
+                    width: 60%;
+                    height: 100%;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    &-name {
+                        font-family: 'Oswald', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 24px;
+                        /* identical to box height, or 133% */
+
+
+                        /* Black */
+
+                        color: #010101;
+                    }
+
+                    &-occupation {
+                        font-family: 'Raleway', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 20px;
+                        /* identical to box height, or 167% */
+
+
+                        /* Black */
+
+                        color: #010101;
+                    }
+                }
+            }
+
+            &-text {
+                width: 332px / 398px * 100%;
+                height: 102px;
+
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                /* or 143% */
+
+
+                /* Black */
+
+                color: #010101; 
+
+            }
+        }
+
+    }
+}
+
+.testimonials-row-review:nth-child(2) {
+    background-color: #1E1E1E;
+}
+
+.black-to-white {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
 
 
 
@@ -591,11 +783,25 @@ button:hover {
     .header-navigation {
         width: 55%;
     }
+
+    .film-info-grid-cell-paragraph {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1000px) {
     .footer-top-navigation {
         width: 45%;
+    }
+
+    .testimonials-row-review-text {
+        height: 120px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .testimonials-row-review-top img {
+        max-width: 35%;
     }
 }
 
@@ -607,6 +813,10 @@ button:hover {
 
     .footer-bottom-social-media {
         width: 17%;
+    }
+
+    .film-info-grid-cell-paragraph {
+        font-size: smaller;
     }
 }
 
@@ -711,6 +921,322 @@ button:hover {
             width: 18px;
         }
     }
+
+
+    
+    .film-video {
+        display: none;
+    }
+
+    .top-video-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        position: absolute;
+        top: 132px;
+        z-index: 20;
+        min-width: 375px;
+        max-width: 420px;
+
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        background-color: fuchsia;
+
+        &-gradient {
+            height: 100%;
+            width: 100%;
+
+            background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+            opacity: 0.8;
+        }
+
+        &-play {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+
+            &-button {
+                width: 40px;
+                margin: auto;
+            }
+        }
+    }
+
+    .film-video-mobile-placeholder {
+        display: block;
+        
+    }
+
+
+    
+    .film-info-extension {
+        display: block;
+
+        width: 100%;
+        min-width: 375px;
+        height: 1054px;
+
+        position: absolute;
+        top: 347px;
+
+        background-color: #1E1E1E;
+    }
+
+
+
+    .film-info {
+        margin-top: 0;
+        height: 1054px;
+
+        &-title {
+            font-size: 24px;
+            line-height: 38px;
+
+            margin-top: 16px;
+            margin-left: 0;
+        }
+
+        &-grid {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 24px;
+
+            width: 100%;
+            height: 960px;
+
+            grid-template-rows: 166fr 628fr;
+            grid-template-columns: 1fr;
+            gap: 16px;
+
+            &-cell {
+                &:first-child {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 54fr 166fr;
+
+                    gap: 48px 0;
+                }
+
+                &-left {
+                    &-top {
+                        icon {
+                            height: 16px;
+                        }
+
+                        &-title {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    &-bottom {
+                        font-size: 14px;
+                        line-height: 22px;
+
+                        margin-left: 28px;
+                    }
+
+                    &:nth-child(3) {
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+
+                        & ul {
+                            display: flex;
+                            flex-direction: column;
+
+                            & li:first-child {
+                                order: 4;
+                            }
+
+                            & li:nth-child(2) {
+                                order: 3;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                    }
+                }
+
+                &-paragraph {
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+
+    
+    .participants {
+        margin-top: 56px;
+        height: 330px;
+
+        overflow: hidden;
+
+        &-top {
+            &-title {
+                font-size: 18px;
+                line-height: 34px;
+            }
+
+            &-carets a img{
+                height: 26px;
+            }
+        }
+
+        &-main {
+            height: 272px;
+            width: 480px;
+
+            min-width: 480px;
+            margin-right: auto;
+            margin-left: auto;
+
+            &-participant {
+                width: 32%;
+                
+                &-photo {
+                    height: 216px;
+                    width: 100%;
+                }
+
+                &-name {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+                &-occupation {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+
+                &:nth-child(1n + 4) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .partners-extension {
+        height: 265px;
+        top: 3479px;
+    }
+
+    .partners {
+        height: 265px;
+        margin-top: 38px;
+
+        &-top {
+            margin-top: 24px;
+            height: 26px;
+
+            & a img {
+                height: 24px;
+            }
+
+            &-title {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        &-grid {
+            margin-top: 32px;
+            height: 143px;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &-cell {
+                &:nth-child(3) {
+                    grid-row-start: 1;
+                }  
+
+                &:nth-child(4) {
+                    grid-row-start: 1;
+                } 
+
+                &:nth-child(2) {
+                    grid-row-start: 1;
+                    order: 3;
+                } 
+
+                &:nth-child(7), &:nth-child(8), &:nth-child(9), &:nth-child(10), &:nth-child(11), &:nth-child(12),  {
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .partner-logo {
+        max-width: 108px;
+        max-height: 50px;
+    }
+
+
+    
+    .testimonials {
+        margin-top: 114px;
+        height: 286px;
+
+        &-top {
+            margin: 0;
+
+            .black-to-white {
+                width: 60%;
+            }
+        }
+
+        &-row {
+            display: flex;
+
+            &-review {
+                
+                &:first-child, &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .testimonials-row-review-top-profile-name {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .testimonials-row-review-top-profile-occupation  {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .testimonials-row-review-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .thomas-marniz {
+        width: 48px;
+        height: 48px;
+    }
+
 }
 
 /////////////////////////////////
+
