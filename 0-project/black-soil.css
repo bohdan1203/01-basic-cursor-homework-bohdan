@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 100%;
   min-width: 375px;
@@ -210,6 +211,12 @@ button:hover {
   color: #FFFFFF;
 }
 
+.film-video-mobile-placeholder, .top-video-mobile {
+  display: none;
+  height: 216px;
+  width: 100%;
+}
+
 .film-video {
   width: 100%;
   height: 638px;
@@ -236,6 +243,10 @@ button:hover {
 .film-video-gradient:hover {
   opacity: 0.8;
   transition-duration: 0.5s;
+}
+
+.film-info-extension {
+  display: none;
 }
 
 .film-info {
@@ -274,7 +285,7 @@ button:hover {
 }
 .film-info-grid-cell-paragraph {
   width: 81.6711590296%;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -334,6 +345,7 @@ button:hover {
 
 .participants {
   width: 100%;
+  overflow: hidden;
   height: 412px;
   margin-top: 120px;
   display: flex;
@@ -348,6 +360,7 @@ button:hover {
 }
 .participants-main {
   width: 100%;
+  min-width: 1000px;
   height: 322px;
   display: flex;
   justify-content: space-between;
@@ -467,6 +480,9 @@ button:hover {
   width: 100%;
   margin-top: 120px;
   color: white;
+}
+.projects-content-mobile {
+  display: none;
 }
 
 .gallery {
@@ -762,6 +778,10 @@ button:hover {
   }
 }
 @media (max-width: 720px) {
+  body {
+    height: 3400px;
+  }
+
   .body-container {
     width: 92%;
   }
@@ -799,8 +819,303 @@ button:hover {
     display: none;
   }
 
-  .testimonials {
+  .film-video {
+    display: none;
+  }
+
+  .top-video-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 132px;
+    z-index: 20;
+    min-width: 375px;
+    max-width: 420px;
+    background-image: url(img/film-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .top-video-mobile-gradient {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+    opacity: 0.8;
+  }
+  .top-video-mobile-play {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+  }
+  .top-video-mobile-play-button {
+    width: 40px;
+    margin: auto;
+  }
+
+  .film-video-mobile-placeholder {
+    display: block;
+  }
+
+  .film-info-extension {
+    display: block;
+    width: 100%;
+    min-width: 375px;
+    height: 1054px;
+    position: absolute;
+    top: 347px;
+    background-color: #1E1E1E;
+  }
+
+  .film-info {
+    margin-top: 0;
+    height: 1054px;
+  }
+  .film-info-title {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+  .film-info-grid {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 24px;
+    width: 100%;
+    height: 960px;
+    grid-template-rows: 166fr 628fr;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .film-info-grid-cell:first-child {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 54fr 166fr;
+    gap: 48px 0;
+  }
+  .film-info-grid-cell-left-top icon {
+    height: 16px;
+  }
+  .film-info-grid-cell-left-top-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .film-info-grid-cell-left-bottom {
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 28px;
+  }
+  .film-info-grid-cell-left:nth-child(3) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .film-info-grid-cell-left:nth-child(3) ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .film-info-grid-cell-left:nth-child(3) ul li:first-child {
+    order: 4;
+  }
+  .film-info-grid-cell-left:nth-child(3) ul li:nth-child(2) {
+    order: 3;
+  }
+  .film-info-grid-cell-left:last-child {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .film-info-grid-cell-paragraph {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  .participants {
     margin-top: 56px;
+    height: 330px;
+    overflow: hidden;
+  }
+  .participants-top-title {
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .participants-top-carets a img {
+    height: 26px;
+  }
+  .participants-main {
+    height: 272px;
+    width: 480px;
+    min-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .participants-main-participant {
+    width: 32%;
+  }
+  .participants-main-participant-photo {
+    height: 216px;
+    width: 100%;
+  }
+  .participants-main-participant-name {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .participants-main-participant-occupation {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .participants-main-participant:nth-child(1n+4) {
+    display: none;
+  }
+
+  .partners {
+    height: 173px;
+    margin-top: 58px;
+  }
+  .partners-top {
+    margin-top: 24px;
+    height: 26px;
+  }
+  .partners-top-title {
+    font-size: 18px;
+    line-height: 26px;
+    width: 60%;
+  }
+  .partners-top-title::after {
+    content: " ФІЛЬМУ";
+  }
+  .partners-grid {
+    height: 67px;
+    margin-top: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .partners-grid-cell:nth-child(3) {
+    display: none;
+  }
+
+  .partner-logo {
+    width: 60%;
+  }
+
+  .partners-extension {
+    height: 173px;
+    top: 1846px;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .projects-content {
+    margin-top: 56px;
+    height: 553px;
+  }
+  .projects-content h2 {
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .projects-content-mobile {
+    height: 495px;
+    width: 100%;
+    max-width: 460px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+  }
+  .projects-content-mobile-cell {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .projects-content-mobile-cell-video-gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
+    opacity: 0.8;
+  }
+  .projects-content-mobile-cell:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/black-soil-gallery/photo-1.jpg);
+  }
+  .projects-content-mobile-cell:first-child > .video-play-image {
+    width: 11.6618075802%;
+    position: absolute;
+  }
+  .projects-content-mobile-cell:nth-child(2) {
+    background-image: url(img/black-soil-gallery/photo-4.jpg);
+  }
+  .projects-content-mobile-cell:nth-child(3) {
+    background-image: url(img/black-soil-gallery/photo-5.jpg);
+  }
+  .projects-content-mobile-cell:nth-child(4) {
+    background-image: url(img/black-soil-gallery/photo-6.jpg);
+  }
+  .projects-content-mobile-cell:nth-child(5) {
+    background-image: url(img/black-soil-gallery/photo-2.jpg);
+  }
+  .projects-content-mobile-cell:nth-child(6) {
+    background-image: url(img/black-soil-gallery/photo-3.jpg);
+  }
+  .projects-content-mobile-cell:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects-content-mobile-cell-button {
+    background-color: #FFFFFF;
+    color: #010101;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+    letter-spacing: 0.03em;
+    height: 32px;
+    width: 149px;
+    padding: 0;
+  }
+
+  .announce {
+    margin-top: 114px;
+    height: 84px;
+    flex-direction: column;
+  }
+  .announce-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .announce-title b {
+    font-weight: normal;
+  }
+  .announce-button {
+    height: 40px;
+    width: 185px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    border: 1px solid #010101;
+  }
+
+  .coming-soon-image {
+    height: 200px;
+    min-width: 375px;
+    top: 2672px;
+  }
+
+  .testimonials {
+    margin-top: 114px;
     height: 286px;
   }
   .testimonials-top {
@@ -838,7 +1153,7 @@ button:hover {
 
   .bottom {
     height: 177px;
-    top: 4109px;
+    top: 3226px;
   }
   .bottom .bottom-gradient, .bottom .bottom-mountains {
     height: 120px;
