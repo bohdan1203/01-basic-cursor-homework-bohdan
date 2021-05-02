@@ -1062,7 +1062,7 @@ button:hover {
 
 @media (max-width: 720px) {
     body {
-        height: 3400px;
+        height: 3424px;
     }
 
     .body-container {
@@ -1124,6 +1124,7 @@ button:hover {
         z-index: 20;
         min-width: 375px;
         max-width: 420px;
+        margin-top: 24px;
 
         background-image: url(img/film-2.jpg);
         background-repeat: no-repeat;
@@ -1152,6 +1153,7 @@ button:hover {
 
     .film-video-mobile-placeholder {
         display: block;
+        margin-top: 24px;
         
     }
 
@@ -1164,7 +1166,7 @@ button:hover {
         height: 1054px;
 
         position: absolute;
-        top: 347px;
+        top: 372px;
 
         background-color: #1E1E1E;
     }
@@ -1357,7 +1359,7 @@ button:hover {
 
     .partners-extension {
         height: 173px;
-        top: 1846px;
+        top: 1870px
     }
 
     .gallery {
@@ -1492,7 +1494,7 @@ button:hover {
     .coming-soon-image {
         height: 200px;
         min-width: 375px;
-        top: 2672px;
+        top: 2696px;
         
     }
 
@@ -1547,7 +1549,7 @@ button:hover {
     .bottom {
         height: 177px;
 
-        top: 3226px;
+        top: 3250px;
         
         .bottom-gradient, .bottom-mountains {
             height: 120px;

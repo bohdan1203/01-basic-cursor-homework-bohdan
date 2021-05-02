@@ -214,6 +214,7 @@ button:hover {
   display: none;
   height: 216px;
   width: 100%;
+  margin-top: 24px;
 }
 
 .film-video {
@@ -735,7 +736,7 @@ button:hover {
 }
 @media (max-width: 720px) {
   body {
-    height: 2851px;
+    height: 2809px;
   }
 
   .body-container {
@@ -777,7 +778,7 @@ button:hover {
 
   .bottom {
     height: 177px;
-    top: 2674px;
+    top: 2633px;
   }
   .bottom .bottom-gradient, .bottom .bottom-mountains {
     height: 120px;
@@ -865,7 +866,7 @@ button:hover {
     min-width: 375px;
     height: 786px;
     position: absolute;
-    top: 348px;
+    top: 372px;
     background-color: #1E1E1E;
   }
 
@@ -978,7 +979,7 @@ button:hover {
 
   .partners-extension {
     height: 265px;
-    top: 1558px;
+    top: 1582px;
   }
 
   .partners {
@@ -1026,6 +1027,7 @@ button:hover {
 
   .other-films-placeholder {
     height: 730px;
+    margin-top: 56px;
   }
   .other-films-placeholder .other-films-title {
     font-size: 18px;
