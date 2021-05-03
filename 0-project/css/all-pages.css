@@ -1,8 +1,6 @@
-@charset "UTF-8";
 body {
   width: 100%;
   min-width: 375px;
-  height: 3934px;
   background-color: #010101;
   margin: 0;
   display: flex;
@@ -38,6 +36,7 @@ h2 {
 button {
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -129,237 +128,11 @@ button:hover {
   display: none;
 }
 
-.main-block {
-  width: 100%;
-  height: 3434px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.title-films {
-  width: 100%;
-  height: 34px;
-  color: #ffffff;
-}
-
-.films-block {
-  width: 100%;
-  height: 3360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.film {
-  width: 100%;
-  height: 640px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 33% center;
-}
-
-.film-hovered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.film-hovered-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 115px;
-  opacity: 0;
-  transition-duration: 2s;
-}
-.film-hovered-block-title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 34px;
-  /* identical to box height, or 106% */
-  text-align: center;
-  text-transform: uppercase;
-  /* White */
-  color: #FFFFFF;
-}
-.film-hovered-block-button {
-  width: 286px;
-  min-height: 48px;
-}
-
-.film {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.film:hover .film-hovered {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.film:hover .film-hovered-block {
-  opacity: 1;
-  transition-duration: 2s;
-}
-.film:first-child {
-  background-image: url(img/film-1.jpg);
-}
-.film:nth-child(2) {
-  background-image: url(img/film-2.jpg);
-}
-.film:nth-child(3) {
-  background-image: url(img/film-3.jpg);
-}
-.film:nth-child(4) {
-  background-image: url(img/film-4.jpg);
-}
-.film:last-child {
-  background-image: url(img/film-5.jpg);
-}
-
-#anounce::before {
-  content: "НЕЗАБАРОМ";
-  position: absolute;
-  top: 3140px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 24px;
-  /* identical to box height, or 109% */
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  text-transform: capitalize;
-  /* White */
-  color: #FFFFFF;
-}
-
-.films-mobile {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 704px;
-  height: 1184px;
-  width: 100%;
-}
-.films-mobile-grid {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 12px;
-  width: 100%;
-  max-width: 420px;
-  height: 1128px;
-}
-
-.films-mobile-grid-cell {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.films-mobile-grid-cell::before {
-  content: "";
-  position: absolute;
-  width: 92%;
-  min-width: 348.67px;
-  max-width: 420px;
-  height: 216px;
-  background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
-  opacity: 0.8;
-}
-.films-mobile-grid-cell::after {
-  content: "";
-  position: absolute;
-  width: 92%;
-  min-width: 348.67px;
-  max-width: 420px;
-  height: 216px;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  /* identical to box height, or 140% */
-  text-align: center;
-  text-transform: uppercase;
-  /* White */
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.films-mobile-grid-cell:first-child {
-  background-image: url(img/film-1.jpg);
-}
-.films-mobile-grid-cell:first-child::after {
-  content: "DISCOVER UKRAINE SVYDOVETS’";
-}
-
-.films-mobile-grid-cell:nth-child(2) {
-  background-image: url(img/film-2.jpg);
-}
-.films-mobile-grid-cell:nth-child(2)::after {
-  content: "BLACK SOIL";
-}
-
-.films-mobile-grid-cell:nth-child(3) {
-  background-image: url(img/film-3.jpg);
-}
-.films-mobile-grid-cell:nth-child(3)::after {
-  content: "MOUNTAIN ISOLATION";
-}
-
-.films-mobile-grid-cell:nth-child(4) {
-  background-image: url(img/film-4.jpg);
-}
-.films-mobile-grid-cell:nth-child(4)::after {
-  content: "DISCOVER UKRAINE BAKOTA";
-}
-
-.films-mobile-grid-cell:last-child {
-  background-image: url(img/film-5.jpg);
-}
-.films-mobile-grid-cell:last-child::after {
-  content: "5 ВЕРШИН";
-}
-
-#anounce-mobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#anounce-mobile span {
-  margin-bottom: 60px;
-  z-index: 5;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  text-transform: capitalize;
-  /* White */
-  color: #FFFFFF;
-}
-
 .bottom {
   width: 100%;
   min-width: 375px;
   height: 380px;
   position: absolute;
-  top: 3555px;
 }
 .bottom-gradient {
   width: 100%;
@@ -372,7 +145,7 @@ button:hover {
   height: 160px;
   position: absolute;
   z-index: 5;
-  background-image: url(img/montana-grande.svg), url(img/montana-pequena.svg);
+  background-image: url(../img/montana-grande.svg), url(../img/montana-pequena.svg);
   background-repeat: no-repeat;
   background-position: 3% 50px, 24% bottom;
 }
@@ -451,12 +224,12 @@ button:hover {
   }
 }
 @media (max-width: 860px) {
-  .header-navigation {
-    width: 66%;
-  }
-
   .footer-bottom-social-media {
     width: 17%;
+  }
+
+  .header-navigation {
+    width: 66%;
   }
 }
 @media (max-width: 720px) {
@@ -499,7 +272,6 @@ button:hover {
 
   .bottom {
     height: 177px;
-    top: 4109px;
   }
   .bottom .bottom-gradient, .bottom .bottom-mountains {
     height: 120px;
@@ -508,7 +280,7 @@ button:hover {
   }
   .bottom .bottom-mountains {
     z-index: 5;
-    background-image: url(img/montana-grande.svg), url(img/montana-pequena.svg);
+    background-image: url(../img/montana-grande.svg), url(../img/montana-pequena.svg);
     background-repeat: no-repeat;
     background-position: -30px 25px, 200px bottom;
   }
@@ -541,31 +313,5 @@ button:hover {
   }
   .footer-bottom-social-media a img {
     width: 18px;
-  }
-}
-@media (max-width: 720px) {
-  .main-block {
-    height: 1180px;
-  }
-
-  .films-block {
-    display: none;
-  }
-
-  .films-mobile {
-    display: flex;
-    margin-top: 24px;
-  }
-
-  body {
-    height: 1539px;
-  }
-
-  .bottom {
-    top: 1360px;
-  }
-
-  .footer {
-    margin-top: 128px;
   }
 }

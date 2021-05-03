@@ -1,9 +1,8 @@
 body {
     width: 100%;
 
- 
     min-width: 375px;
-    height: 1069px;
+  
     background-color: #010101;
 
     margin: 0;
@@ -13,15 +12,17 @@ body {
     align-items: center;
 }
 
+
+
+
 a {
     text-decoration: none;
     transition-duration: .5s;
 
     &:hover {
-        color: rgb(201, 201, 201);
+        color: rgb(145, 145, 145);
         transition-duration: .5s;
     }
-
 }
 
 h1, p, a {
@@ -46,6 +47,8 @@ button {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
 
+    padding: 0;
+
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -57,7 +60,10 @@ button {
 
     /* Black */
 
-    color: #010101;     
+    color: #010101;   
+    transition-duration: 1s;  
+    transition-property: color, background;
+
 }
 
 button:hover {
@@ -67,7 +73,13 @@ button:hover {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
 
+    transition-duration: 1s;
+    transition-property: color, background;
+
 }
+
+
+
 
 .social-media {
     display: flex;
@@ -111,26 +123,6 @@ button:hover {
     }
 }
 
-.top-image {
-    width: 100%;
-    min-width: 375px;
-    height: 700px;
-    position: absolute;
-
-    background-image: url(img/contacts-main.jpg);
-    background-repeat: no-repeat;
-    background-position: center 75%;
-    background-size: cover;
-
-    .header-gradient {
-        width: 100%;
-        height: 80px;
-        background: linear-gradient(180deg, #010101 -17.5%, rgba(1, 1, 1, 0) 100%);
-        position: absolute;
-    }
-
-    
-}
 
 
 .body-container {
@@ -180,147 +172,12 @@ button:hover {
 
 
 
-.contacts {
-    width: 100%;
-    height: 409px;
-
-
-    margin-top: 280px;
-
-    display: flex;
-    justify-content: space-between;
-
-    &-contact {
-        height: 100%;
-        width: 362px / 1200px * 100%;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .contact-photo {
-            width: 100%;
-            height: 224px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .photo-1 {
-            background-image: url(img/contacts-1.jpg);
-            background-position: 62% center;
-        }
-
-        .photo-2 {
-            background-image: url(img/contacts-2.jpg);
-            background-position: 29% center;
-        }
-
-        .photo-3 {
-            background-image: url(img/contacts-3.jpg);
-            background-position: 52% center;
-        }
-
-        .contact-title {
-            width: 100%;
-            height: 64px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            &-name {
-                font-family: 'Oswald', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 28px;
-                line-height: 34px;
-                /* identical to box height, or 121% */
-
-                text-transform: uppercase;
-
-                /* White */
-
-                color: #FFFFFF;
-            }
-
-            &-occupation {
-                font-family: 'Montserrat', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 26px;
-                /* identical to box height, or 162% */
-
-                text-transform: uppercase;
-
-                /* White */
-
-                color: #FFFFFF;
-            }
-        }
-
-        .contact-info {
-            width: 100%;
-            height: 60px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            &-phone, &-email {
-                width: 100%;
-                height: 26px;
-
-                background-repeat: no-repeat;
-                background-position: center left;
-
-
-                font-family: 'Montserrat', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 26px;
-                /* identical to box height, or 144% */
-
-
-                /* White */
-
-                color: #FFFFFF; 
-            }
-
-            &-phone {
-                background-image: url(img/Phone.svg);
-            }
-
-            &-email {
-                background-image: url(img/Envelope.svg);
-            }
-        }
-    }
-}
-
-.border {
-    width: 100px;
-    height: 1px;
-}
-
-span {
-    margin-left: 36px;
-}
-
-
-
-
-
-
-
-
 .bottom {
     width: 100%;
     min-width: 375px;
     height: 380px;
     position: absolute;
-    top: 748px;
+
 
     &-gradient {
         width: 100%;
@@ -334,9 +191,9 @@ span {
         width: 100%;
         height: 160px;
         position: absolute;
-     
+        z-index: 5;
 
-        background-image: url(img/montana-grande.svg), url(img/montana-pequena.svg);
+        background-image: url(../img/montana-grande.svg), url(../img/montana-pequena.svg);
         background-repeat: no-repeat;
 
         background-position: 3% 50px, 24% bottom;
@@ -345,10 +202,16 @@ span {
     }
 }
 
+
+
+
+
+
+
 .footer {
     width: 100%;
     height: 221px;
-    margin-top: 139px;
+    margin-top: 160px;
 
 
     &-top {
@@ -430,8 +293,6 @@ span {
 }
 
 
-
-
 @media (max-width: 1180px) {
     .body-container {
         width: 95%;
@@ -442,65 +303,28 @@ span {
     }
 }
 
+
 @media (max-width: 1000px) {
     .footer-top-navigation {
         width: 45%;
     }
-
-    .contacts-contact .contact-title {
-
-
-        &-name {
-
-            font-size: 21px;
-            line-height: 26px;
-
-        }
-
-        &-occupation {
-
-            font-size: 12px;
-            line-height: 20px;
-       
-        }
-    }
-
-    .contacts-contact .contact-info {
-    
-
-        &-phone, &-email {
-            width: 100%;
-            height: 26px;
-
-            background-repeat: no-repeat;
-
-
-
-            font-size: 14px;
-            line-height: 20px;
-        }
-    }
 }
 
 @media (max-width: 860px) {
-    .header-navigation {
-        width: 66%;
-    }
-
     .footer-bottom-social-media {
         width: 17%;
     }
+    
+    .header-navigation {
+        width: 66%;
+    }
 }
+
+
 
 @media (max-width: 720px) {
     .body-container {
         width: (375px - 30px) / 375px * 100%;
-    }
-
-    .top-image {
-        background-image: url(img/contacts-main-mobile.jpg);
-        height: 648px;
-        top: 88px;
     }
 
     
@@ -539,75 +363,10 @@ span {
 
 
 
-
-    .contacts {
-        flex-direction: column;
-
-        min-width: 343px;
-        width: 50%;
-        height: 963px;
-        margin-top: 32px;
-        margin-left: auto;
-        margin-right: auto;
-
-        &-contact {
-            width: 100%;
-            height: 289px;
-
-            .contact-photo {
-                height: 168px;
-            }
-
-            .contact-title {
-                height: 48px;
-
-                &-name {
-                    font-size: 18px;
-                    line-height: 28px;
-                }
-
-                &-occupation {
-                    font-size: 12px;
-                    line-height: 20px;
-                }
-            }
-
-            .contact-info {
-                height: 46px;
-
-
-                &-phone, &-email {
-                    font-size: 14px;
-                    line-height: 22px;
-
-                    background-size: 16px 16px;
-                }
-
-            }
-        }
-    }
-
-
-    span {
-        margin-left: 28px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
     .bottom {
         height: 177px;
 
-        top: 1109px;
-        
+           
         .bottom-gradient, .bottom-mountains {
             height: 120px;
             width: 100%;
@@ -619,7 +378,7 @@ span {
             
             z-index: 5;
 
-            background-image: url(img/montana-grande.svg), url(img/montana-pequena.svg);
+            background-image: url(../img/montana-grande.svg), url(../img/montana-pequena.svg);
             background-repeat: no-repeat;
 
             background-position: -30px 25px, 200px bottom;
@@ -628,6 +387,7 @@ span {
 
     .footer {
         height: 56px;
+        
 
         margin-top: 120px;
 
@@ -661,3 +421,5 @@ span {
         }
     }
 }
+
+

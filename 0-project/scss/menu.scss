@@ -1,0 +1,67 @@
+body {
+     height: 812px;
+}
+
+
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.background {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    /* or 125% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    /* White */
+
+    color: #111111;
+
+
+    margin-top: 226px;
+
+}
+
+.menu {
+    height: 224px; 
+    width: 50%;
+
+
+
+    position: relative;
+    top: -164px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        /* identical to box height, or 160% */
+
+        text-transform: uppercase;
+
+        /* light grey */
+
+        color: #C7C7C7;
+    }
+} 
+
+
+
