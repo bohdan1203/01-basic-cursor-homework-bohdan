@@ -289,7 +289,7 @@ body {
   top: 2885px;
 }
 .gallery-grid {
-  width: 100;
+  width: 100%;
   height: 828px;
   display: grid;
   grid-template-columns: 2fr 1fr;
