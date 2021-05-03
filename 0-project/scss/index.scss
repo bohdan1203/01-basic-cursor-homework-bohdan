@@ -32,6 +32,8 @@ body {
 
 
 
+
+
 .top-block {
     width: 100%;
     height: 620px;
@@ -777,6 +779,11 @@ body {
 
     }
 
+    .photo-hovered-block-title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
 }
 
 
@@ -994,7 +1001,7 @@ body {
     }
 
     .projects-mobile-grid-cell:first-child {
-        background-image: url(../img/Photo-1.jpg);
+        background-image: url(../img/Photo-1m.jpg);
         &::after {
             content: 'DISCOVER UKRAINE SVYDOVETS’';
         }

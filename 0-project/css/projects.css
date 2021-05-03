@@ -243,7 +243,7 @@ body {
 }
 
 .projects-mobile-grid-cell:first-child {
-  background-image: url(../img/project-1.jpg);
+  background-image: url(../img/project-1m.jpg);
 }
 .projects-mobile-grid-cell:first-child::after {
   content: "VOLVO XC40 WINTER’";
@@ -292,7 +292,7 @@ body {
 }
 
 .projects-mobile-grid-cell:last-child {
-  background-image: url(../img/project-9.jpg);
+  background-image: url(../img/project-9m.jpg);
 }
 .projects-mobile-grid-cell:last-child::after {
   content: "PORSCHE UKRAINE";

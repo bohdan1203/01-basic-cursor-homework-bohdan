@@ -578,7 +578,7 @@ body {
     min-width: 375px;
     max-width: 420px;
     margin-top: 24px;
-    background-image: url(../img/film-2.jpg);
+    background-image: url(../img/film-2m.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -800,26 +800,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/black-soil-gallery/photo-1.jpg);
+    background-image: url(../img/black-soil-gallery/photo-1m.jpg);
   }
   .projects-content-mobile-cell:first-child > .video-play-image {
     width: 11.6618075802%;
     position: absolute;
   }
   .projects-content-mobile-cell:nth-child(2) {
-    background-image: url(../img/black-soil-gallery/photo-4.jpg);
+    background-image: url(../img/black-soil-gallery/photo-4m.jpg);
   }
   .projects-content-mobile-cell:nth-child(3) {
-    background-image: url(../img/black-soil-gallery/photo-5.jpg);
+    background-image: url(../img/black-soil-gallery/photo-5m.jpg);
   }
   .projects-content-mobile-cell:nth-child(4) {
-    background-image: url(../img/black-soil-gallery/photo-6.jpg);
+    background-image: url(../img/black-soil-gallery/photo-6m.jpg);
   }
   .projects-content-mobile-cell:nth-child(5) {
-    background-image: url(../img/black-soil-gallery/photo-2.jpg);
+    background-image: url(../img/black-soil-gallery/photo-2m.jpg);
   }
   .projects-content-mobile-cell:nth-child(6) {
-    background-image: url(../img/black-soil-gallery/photo-3.jpg);
+    background-image: url(../img/black-soil-gallery/photo-3m.jpg);
   }
   .projects-content-mobile-cell:last-child {
     display: flex;

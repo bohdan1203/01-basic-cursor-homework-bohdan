@@ -536,7 +536,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/five-peaks.jpg);
+    background-image: url(../img/five-peaksm.jpg);
   }
   .top-video-mobile-gradient {
     height: 100%;
@@ -784,19 +784,19 @@ body {
     align-items: center;
   }
   .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:first-child {
-    background-image: url(../img/film-2.jpg);
+    background-image: url(../img/film-2m.jpg);
   }
   .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:first-child::after {
     content: "BLACK SOIL";
   }
   .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(2) {
-    background-image: url(../img/film-3.jpg);
+    background-image: url(../img/film-3m.jpg);
   }
   .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(2)::after {
     content: "MOUNTAIN ISOLATION";
   }
   .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(3) {
-    background-image: url(../img/film-4.jpg);
+    background-image: url(../img/film-4m.jpg);
   }
   .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(3)::after {
     content: "DISCOVER UKRAINE BAKOTA";

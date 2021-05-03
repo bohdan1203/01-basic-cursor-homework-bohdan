@@ -173,35 +173,35 @@ body {
 }
 
 .films-mobile-grid-cell:first-child {
-  background-image: url(../img/film-1.jpg);
+  background-image: url(../img/film-1m.jpg);
 }
 .films-mobile-grid-cell:first-child::after {
   content: "DISCOVER UKRAINE SVYDOVETS’";
 }
 
 .films-mobile-grid-cell:nth-child(2) {
-  background-image: url(../img/film-2.jpg);
+  background-image: url(../img/film-2m.jpg);
 }
 .films-mobile-grid-cell:nth-child(2)::after {
   content: "BLACK SOIL";
 }
 
 .films-mobile-grid-cell:nth-child(3) {
-  background-image: url(../img/film-3.jpg);
+  background-image: url(../img/film-3m.jpg);
 }
 .films-mobile-grid-cell:nth-child(3)::after {
   content: "MOUNTAIN ISOLATION";
 }
 
 .films-mobile-grid-cell:nth-child(4) {
-  background-image: url(../img/film-4.jpg);
+  background-image: url(../img/film-4m.jpg);
 }
 .films-mobile-grid-cell:nth-child(4)::after {
   content: "DISCOVER UKRAINE BAKOTA";
 }
 
 .films-mobile-grid-cell:last-child {
-  background-image: url(../img/film-5.jpg);
+  background-image: url(../img/film-5m.jpg);
 }
 .films-mobile-grid-cell:last-child::after {
   content: "5 ВЕРШИН";
