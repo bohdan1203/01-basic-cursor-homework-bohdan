@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+}
 body {
   width: 100%;
   min-width: 375px;
