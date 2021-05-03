@@ -39,6 +39,10 @@ body {
         z-index: 2;
         margin-bottom: 20px;
         margin-right: 40px;
+        display: flex;
+
+
+
 
         & a img {
             height: 40px;
@@ -735,6 +739,7 @@ align-items: center;
             height: 40px;
             width: 90px;
             position: absolute;
+            display: flex;
 
             &-button {
                 width: 40px;

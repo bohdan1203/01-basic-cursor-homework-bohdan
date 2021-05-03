@@ -154,6 +154,9 @@ body {
   justify-content: space-between;
   color: #FFFFFF;
 }
+.participants-top-carets {
+  display: flex;
+}
 .participants-main {
   width: 100%;
   min-width: 1000px;
@@ -243,6 +246,9 @@ body {
 .partners-top-title {
   color: #010101;
   width: 30%;
+}
+.partners-top-carets {
+  display: flex;
 }
 .partners-grid {
   margin-top: 49px;

@@ -30,6 +30,7 @@ body {
   z-index: 2;
   margin-bottom: 20px;
   margin-right: 40px;
+  display: flex;
 }
 .film-video-carets a img {
   height: 40px;
@@ -547,6 +548,7 @@ body {
     height: 40px;
     width: 90px;
     position: absolute;
+    display: flex;
   }
   .top-video-mobile-carets-button {
     width: 40px;

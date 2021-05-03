@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none;
   transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 a:hover {
   color: #919191;

@@ -213,6 +213,10 @@ body {
         display: flex;
         justify-content: space-between;
         color: #FFFFFF;
+
+        &-carets {
+            display: flex;
+        }
     }
 
     &-main {
@@ -330,6 +334,10 @@ body {
         &-title {
             color: #010101;
             width: 30%;
+        }
+
+        &-carets {
+            display: flex;
         }
     }
 

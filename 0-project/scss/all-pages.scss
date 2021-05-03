@@ -19,6 +19,10 @@ a {
     text-decoration: none;
     transition-duration: .5s;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &:hover {
         color: rgb(145, 145, 145);
         transition-duration: .5s;
