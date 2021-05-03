@@ -1,15 +1,7 @@
-@font-face {
-  font-family: "Oswald";
-  src: url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-}
-@font-face {
-  font-family: "Raleway";
-  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-}
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   width: 100%;
   min-width: 375px;
