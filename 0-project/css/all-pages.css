@@ -20,8 +20,8 @@ a {
   justify-content: center;
 }
 a:hover {
-  color: #919191;
-  transition-duration: 0.5s;
+  font-weight: 600;
+  transition-duration: 0.2s;
 }
 
 h1, p, a {
