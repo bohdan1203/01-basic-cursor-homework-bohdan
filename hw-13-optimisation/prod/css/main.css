@@ -345,6 +345,9 @@ button {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+    margin: auto;
+    background-image: url(../img/reason_sprite.png);
 }
 
 .reasons .reason .square img {
@@ -354,13 +357,33 @@ button {
     margin: 0 auto;
 }
 
-.reasons .reason .square img.width60 {
-    width: 60px;
+
+
+.square-1 {
+    background-position: -143px 10px;
+    width: 55px; 
+    height: 34px;
 }
 
-.reasons .reason .square img.width35 {
-    width: 35px;
+.square-2 {
+    background-position: -78px 5px;
+    width: 45px; 
+    height: 45px;
 }
+
+.square-3 {
+    background-position: -10px -73px;
+    width: 39px; 
+    height: 57px;
+}
+
+.square-4 {
+    background-position: -10px 2px;
+    width: 48px; 
+    height: 48px;
+}
+
+
 
 .video {
     margin-top: 30px;
@@ -431,14 +454,19 @@ button {
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
+
+    background-image: url(../img/arrow-sprite.png);
+    width: 23px; height: 62px;
 }
 
 .reviews .arrow-right {
     right: 50px;
+    background-position: -53px -10px;
 }
 
 .reviews .arrow-left {
     left: 50px;
+    background-position: -10px -10px;
 }
 
 .reviews .review-slider {
@@ -537,6 +565,33 @@ button {
     font-family: "HelveticaNeueBold";
     font-size: 18px;
 }
+
+
+
+.adv-image {
+    background-image: url(../img/adv_sprite.png);
+    width: 55px;
+    height: 60px;
+    margin: auto;
+}
+
+.adv-image-1 {
+    background-position: -10px -10px;
+}
+
+
+.adv-image-2 {
+    background-position: -85px -10px;
+}
+
+
+
+.adv-image-3 {
+    background-position: -160px -10px;
+    width: 60px; 
+    height: 54px;
+}
+
 
 .last-screen {
     clear: both;
