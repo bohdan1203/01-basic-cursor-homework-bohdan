@@ -67,6 +67,20 @@ button:hover {
   transition-property: color, background;
 }
 
+select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+          appearance: none;
+}
+select option {
+  background-color: #1E1E1E;
+}
+select option:hover, select option:active {
+  background-color: #1E1E1E;
+}
+
 .social-media {
   display: flex;
   position: absolute;

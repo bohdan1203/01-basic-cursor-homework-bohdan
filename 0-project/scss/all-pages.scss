@@ -88,6 +88,22 @@ button:hover {
 
 }
 
+select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    appearance: none;
+    
+    option {
+    background-color: #1E1E1E;
+
+        &:hover, &:active {
+            background-color: #1E1E1E;
+        }
+
+    }
+}
+
 
 
 
