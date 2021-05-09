@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .spinner-wrapper {
     position: fixed;
     top: 0;
@@ -438,8 +445,12 @@ button {
 
 .video #video {
     max-width: 800px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     border: 10px solid #ffdc00;
     display: block;
@@ -492,9 +503,15 @@ button {
 }
 
 .slide-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     position: relative;
     top: 150px;
@@ -522,6 +539,12 @@ button {
     width: 90%;
     max-width: 900px;
     margin: 50px auto;
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
 
 
     display: flex;
@@ -635,7 +658,7 @@ button {
 
 
 .adv-image {
-    background-image: url(../img/adv_sprite.png);
+    background-image: url(../img/a_sprite.png);
     width: 55px;
     height: 60px;
     margin: auto;
