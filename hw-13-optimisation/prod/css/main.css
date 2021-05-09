@@ -1,3 +1,46 @@
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: navy;
+    z-index: 999999;
+    }
+
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+
+
 img {
     width: auto;
     height: auto;
@@ -170,7 +213,7 @@ button {
 .main-screen {
     min-height: 1px;
     height: 700px;
-    background-image: url("../img/main-screen-bg.jpg");
+    background-image: url("../img/main-screen-bg.webp");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -296,7 +339,7 @@ button {
     height: 100%;
     display: block;
     margin: 0 auto;
-    max-width: 350px;
+    max-width: 295px;
     max-height: 200px;
 }
 
@@ -448,15 +491,21 @@ button {
     position: relative;
 }
 
-.reviews .arrow-left, .reviews .arrow-right {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+.slide-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    position: relative;
+    top: 150px;
+
+}
+
+.reviews .arrow-left, .reviews .arrow-right {
     background-image: url(../img/arrow-sprite.png);
     width: 23px; height: 62px;
+    display: block;
+    background-repeat: no-repeat;
 }
 
 .reviews .arrow-right {
@@ -473,11 +522,27 @@ button {
     width: 90%;
     max-width: 900px;
     margin: 50px auto;
+
+
+    display: flex;
+    overflow: hidden;
+    overflow-y: hidden;
+
 }
+
+
+
+.reviews .review-slider .slide {
+    min-width: 100%;
+
+}
+
+
 
 .reviews .review-text {
     display: inline-block;
-    width: calc(70% - 15px);
+    width: 60%;
+    margin-right: 30px;
     margin-left: 15px;
     line-height: 24px;
     vertical-align: top;
@@ -485,6 +550,7 @@ button {
 
 .reviews .main-review-img {
     width: calc(30% - 15px);
+    margin-left: 30px;
     margin-right: 10px;
     border: 5px solid #ffdc00;
     vertical-align: top;

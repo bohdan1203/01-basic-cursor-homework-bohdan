@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
+
+<!--Spinner-->
+<div class="spinner-wrapper">
+    <div class="spinner"></div>
+</div>
+
 <body>
 <header>
     <div class="wrapper">
@@ -77,7 +85,7 @@
                 <p class="value">черный, серый</p>
             </div>
             <div class="description">
-                <img src="img/about-2.jpg" alt="">
+                <img src="img/about-2.webp" alt="">
             </div>
         </div>
         <div class="column-block last">
@@ -92,7 +100,7 @@
                 </p>
             </div>
             <div class="description">
-                <img src="img/about-3.jpg" alt="">
+                <img src="img/about-3.webp" alt="">
             </div>
         </div>
         <button class="btn-order centred">Заказать</button>
@@ -134,28 +142,28 @@
         </div>
     </div>
 </section>
-<section class="video">
+<!-- <section class="video">
     <div class="wrapper">
         <h2 class="h2">как работает <span class="yellow">видеопарктроник?</span></h2>
         <div id="video"></div>
     </div>
-</section>
+</section> -->
 <section class="how">
     <div class="wrapper">
         <h2 class="h2">как вы <span class="yellow">экономите?</span></h2>
         <div class="left-block">
             <p>ремонт бампера стоит от</p>
             <p class="cost"><span class="yellow">6000</span> рублей</p>
-            <img src="img/girl-in-car.jpg" alt="" class="full-width">
+            <img src="img/girl-in-car.webp" alt="" class="full-width">
             <img src="img/broken-car1.jpg" alt="" class="half-width">
             <img src="img/broken-car2.jpg" alt="" class="half-width">
         </div>
         <div class="right-block">
             <p>Видеопарктроник с подарком стоит</p>
             <p class="cost"><span class="yellow">3990</span> рублей</p>
-            <img src="img/product.jpg" alt="" class="full-width small-height-fix">
+            <img src="img/product.webp" alt="" class="full-width small-height-fix">
             <span class="plus yellow">+</span>
-            <img src="img/gift.jpg" alt="" class="full-width">
+            <img src="img/gift.webp" alt="" class="full-width">
         </div>
         <button class="btn-order centred">Заказать</button>
     </div>
@@ -163,9 +171,17 @@
 <section class="reviews">
     <div class="wrapper">
         <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
-        <div class="arrow-left"></div>     
-        <div class="review-slider">
-            <div class="slide">
+            
+        <div class="review-slider" id="slider">
+            <div class="slide" id="slide-1">
+
+               
+
+                <div class="slide-navigation">
+                    <a href="#slide-3" class="arrow-left"></a>  
+                    <a href="#slide-2" class="arrow-right"></a>
+                </div>
+
                 <img src="img/review1.jpg" alt="" class="main-review-img">
                 <p class="review-text">
                     Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
@@ -182,11 +198,52 @@
                     зеркало
                     любой машины, вообщем то что доктор прописал!
                 </p>
-                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
-                    Днепропетровск</i></div>
+                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b> <i>г.
+                    Днепр</i></div>
+               
             </div>
+
+            <div class="slide" id="slide-2">
+
+                <div class="slide-navigation">
+                    <a href="#slide-1" class="arrow-left"></a>  
+                    <a href="#slide-3" class="arrow-right"></a>
+                </div>
+           
+                <img src="img/review2.jpg" alt="" class="main-review-img">
+                <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reprehenderit facere culpa, nobis ab, voluptate officiis quod sit porro maxime aut. Iste delectus, a expedita soluta ipsum ea ipsa cumque?
+                </p>
+                <div class="review-author"><img src="img/review2-ava.jpg" alt="" class="ava"><b>Аврелий</b> <i>г.
+                    Рим</i></div>
+        
+            </div>
+
+            <div class="slide" id="slide-3">
+          
+                   
+
+                <div class="slide-navigation">
+                    <a href="#slide-2" class="arrow-left"></a>  
+                    <a href="#slide-1" class="arrow-right"></a>
+                </div>
+
+                <img src="img/review3.jpg" alt="" class="main-review-img">
+                <p class="review-text">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quae eius, quaerat deleniti molestiae dicta. Cumque omnis ab velit iste? Doloremque hic totam voluptates perferendis distinctio ipsa dolorum vel quae.
+Dicta animi accusantium minima autem enim commodi deleniti recusandae nemo, quaerat a tenetur sequi numquam dignissimos sapiente laboriosam iusto dolore officia dolor exercitationem alias fuga architecto, hic sint quidem. Hic!                </p>
+                <div class="review-author"><img src="img/review3-ava.jpg" alt="" class="ava"><b>Джеймс</b> <i>г.
+                    Лондон</i></div>
+    
+            </div>
+
+         
+
+           
+
         </div>
-        <div class="arrow-right"></div>
+
+  
     </div>
 </section>
 <section class="delivery">
@@ -244,7 +301,7 @@
         <h2 class="h2">закажите свой видеопарктроник <span class="yellow">до конца дня</span>
             И <span class="yellow">получите в подарок</span> антибликовое стекло</h2>
         <div class="left-block">
-            <img src="img/product-reverse.jpg" alt="">
+            <img src="img/product-reverse.webp" alt="">
             <span class="plus">+</span>
             <img src="img/gift-reverse.jpg" alt="">
             <div class="price">
@@ -310,5 +367,20 @@
         player.stopVideo();
     }
 </script>
+
+
+
+<script>
+    $(document).ready(function() {
+    //Preloader
+    preloaderFadeOutTime = 5000;
+    function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+    });
+</script>
+  
 </body>
 </html>
