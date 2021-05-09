@@ -19,7 +19,7 @@
     <div class="wrapper">
         <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo">
         <div class="right-block">
-            <a href="tel:+380500704843" class="phone">+38 050 070 48 43</a>
+            <a href="#" class="phone">+38 050 070 48 43</a>
             <button class="btn-call">Заказать звонок</button>
         </div>
     </div>
@@ -339,7 +339,7 @@ Dicta animi accusantium minima autem enim commodi deleniti recusandae nemo, quae
         player = new YT.Player('video', {
             height: '390',
             width: '640',
-            videoId: 'M7lc1UVf-VE',
+            videoId: 'V49oKg2Ba88',
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
@@ -358,7 +358,7 @@ Dicta animi accusantium minima autem enim commodi deleniti recusandae nemo, quae
     var done = false;
     function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
-            setTimeout(stopVideo, 6000);
+            setTimeout(stopVideo, 60000);
             done = true;
         }
     }
