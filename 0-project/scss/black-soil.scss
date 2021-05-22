@@ -366,7 +366,7 @@ body {
 
 .partners-extension {
     width: 100%;
-    min-width: 375px;
+    min-width: 320px;
     height: 482px;
     background-color: #ffffff;
 
@@ -785,7 +785,7 @@ body {
         position: absolute;
         top: 132px;
         z-index: 20;
-        min-width: 375px;
+        min-width: 320px;
         max-width: 420px;
         margin-top: 24px;
 
@@ -825,7 +825,7 @@ body {
         display: block;
 
         width: 100%;
-        min-width: 375px;
+        min-width: 320px;
         height: 1054px;
 
         position: absolute;
@@ -1156,7 +1156,7 @@ body {
 
     .coming-soon-image {
         height: 200px;
-        min-width: 375px;
+        min-width: 320px;
         top: 2696px;
         
     }
@@ -1214,6 +1214,25 @@ body {
     }
 
 
+}
+
+@media (max-width: 375px) {
+    .film-info-grid-cell-left-top-title {
+        font-size: 14px;
+    }
+
+    .film-info-grid-cell-paragraph {
+        font-size: 12px;
+    }
+
+    .projects-content-mobile-cell-button {
+        font-size: 11px;
+        width: 140px;
+    }
+
+    .testimonials-row-review-text {
+        font-size: 12px;
+    }
 }
 
 /////////////////////////////////
