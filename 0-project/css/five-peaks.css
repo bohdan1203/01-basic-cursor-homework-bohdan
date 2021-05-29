@@ -294,7 +294,7 @@ body {
 
 .partners-extension {
   width: 100%;
-  min-width: 320px;
+  min-width: 375px;
   height: 690px;
   background-color: #ffffff;
   position: absolute;
@@ -531,7 +531,7 @@ body {
     position: absolute;
     top: 132px;
     z-index: 20;
-    min-width: 320px;
+    min-width: 375px;
     max-width: 420px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -562,7 +562,7 @@ body {
   .film-info-extension {
     display: block;
     width: 100%;
-    min-width: 320px;
+    min-width: 375px;
     height: 786px;
     position: absolute;
     top: 372px;
@@ -756,7 +756,7 @@ body {
     content: "";
     position: absolute;
     width: 92%;
-    min-width: 295px;
+    min-width: 348.67px;
     max-width: 420px;
     height: 216px;
     background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
@@ -766,7 +766,7 @@ body {
     content: "";
     position: absolute;
     width: 92%;
-    min-width: 295px;
+    min-width: 348.67px;
     max-width: 420px;
     height: 216px;
     font-family: "Oswald", sans-serif;
@@ -800,14 +800,5 @@ body {
   }
   .other-films-placeholder .other-films-mobile-grid .other-films-mobile-grid-cell:nth-child(3)::after {
     content: "DISCOVER UKRAINE BAKOTA";
-  }
-}
-@media (max-width: 375px) {
-  .film-info-grid-cell-left-top-title {
-    font-size: 14px;
-  }
-
-  .film-info-grid-cell-paragraph {
-    font-size: 12px;
   }
 }

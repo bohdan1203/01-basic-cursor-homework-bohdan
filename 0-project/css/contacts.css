@@ -4,7 +4,7 @@ body {
 
 .top-image {
   width: 100%;
-  min-width: 320px;
+  min-width: 375px;
   height: 700px;
   position: absolute;
   background-image: url(../img/contacts-main.jpg);
@@ -148,7 +148,7 @@ span {
 
   .contacts {
     flex-direction: column;
-    min-width: 295px;
+    min-width: 343px;
     width: 50%;
     height: 963px;
     margin-top: 32px;

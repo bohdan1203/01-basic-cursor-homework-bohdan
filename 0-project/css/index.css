@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html {
-  min-width: 320px;
+  min-width: 375px;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 
 .top-image {
   width: 100%;
-  min-width: 320px;
+  min-width: 375px;
   height: 700px;
   position: absolute;
   background-image: url(../img/image-21.jpg);
@@ -204,19 +204,6 @@ body {
 @media (max-width: 720px) {
   .grid {
     margin-top: 56px;
-  }
-}
-@media (max-width: 375px) {
-  .cell-top {
-    font-size: 30px;
-  }
-
-  .cell-bottom-number {
-    font-size: 40px;
-  }
-
-  .cell-bottom-text {
-    font-size: 14px;
   }
 }
 .services {
@@ -495,7 +482,7 @@ body {
 
 .partners-extension {
   width: 100%;
-  min-width: 320px;
+  min-width: 375px;
   height: 690px;
   background-color: #ffffff;
   position: absolute;
@@ -681,7 +668,7 @@ body {
   }
   .services .service-block {
     width: 100%;
-    min-width: 295px;
+    min-width: 320px;
     max-width: 480px;
     height: 152px;
   }
@@ -704,7 +691,7 @@ body {
     position: absolute;
     top: 1594px;
     width: 100%;
-    min-width: 320px;
+    min-width: 375px;
     height: 592px;
     background-image: url(../img/Group221.jpg);
     background-repeat: no-repeat;
@@ -780,7 +767,7 @@ body {
     content: "";
     position: absolute;
     width: 92%;
-    min-width: 295px;
+    min-width: 348.67px;
     max-width: 420px;
     height: 216px;
     background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
@@ -790,7 +777,7 @@ body {
     content: "";
     position: absolute;
     width: 92%;
-    min-width: 295px;
+    min-width: 348.67px;
     max-width: 420px;
     height: 216px;
     font-family: "Oswald", sans-serif;
@@ -928,10 +915,5 @@ body {
 
   .bottom {
     top: 4083px;
-  }
-}
-@media (max-width: 375px) {
-  .testimonials-row-review-text {
-    font-size: 12px;
   }
 }
