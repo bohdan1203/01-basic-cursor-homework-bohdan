@@ -144,7 +144,7 @@ body {
   content: "";
   position: absolute;
   width: 92%;
-  min-width: 348.67px;
+  min-width: 295px;
   max-width: 420px;
   height: 216px;
   background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
@@ -154,7 +154,7 @@ body {
   content: "";
   position: absolute;
   width: 92%;
-  min-width: 348.67px;
+  min-width: 295px;
   max-width: 420px;
   height: 216px;
   font-family: "Oswald", sans-serif;

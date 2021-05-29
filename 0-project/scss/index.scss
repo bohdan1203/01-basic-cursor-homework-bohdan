@@ -1,5 +1,5 @@
 html {
-    min-width: 375px;
+    min-width: 320px;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 
 .top-image {
     width: 100%;
-    min-width: 375px;
+    min-width: 320px;
     height: 700px;
     position: absolute;
 
@@ -259,14 +259,19 @@ body {
     }
 }
 
+@media (max-width: 375px) {
+    .cell-top {
+        font-size: 30px;
+    }
 
+    .cell-bottom-number {
+        font-size: 40px;
+    }
 
-
-
-
-
-
-
+    .cell-bottom-text {
+        font-size: 14px;
+    }
+}
 
 
 
@@ -606,7 +611,7 @@ body {
 
 .partners-extension {
     width: 100%;
-    min-width: 375px;
+    min-width: 320px;
     height: 690px;
     background-color: #ffffff;
 
@@ -842,7 +847,7 @@ body {
 
         .service-block {
             width: 100%;
-            min-width: 320px;
+            min-width: 295px;
             max-width: 480px;
             height: 152px;
         }
@@ -870,7 +875,7 @@ body {
         top: 1594px;
 
         width: 100%;
-        min-width: 375px;
+        min-width: 320px;
         height: 592px;
         background-image: url(../img/Group221.jpg);
         background-repeat: no-repeat;
@@ -964,7 +969,7 @@ body {
             position: absolute;
 
             width: 92%;
-            min-width: 348.67px;
+            min-width: 295px;
             max-width: 420px;
             height: 216px;
             background: linear-gradient(360deg, #010101 -16.15%, rgba(1, 1, 1, 0) 104.17%);
@@ -977,7 +982,7 @@ body {
             position: absolute;
 
             width: 92%;
-            min-width: 348.67px;
+            min-width: 295px;
             max-width: 420px;
             height: 216px;
 
@@ -1142,5 +1147,11 @@ body {
         top: 4083px;
     }
 
+}
+
+@media (max-width: 375px) {
+    .testimonials-row-review-text {
+        font-size: 12px;
+    }
 }
 
