@@ -6,61 +6,61 @@ console.log(nokia3310Price);
 console.log(youTubePremiumPrice);
 
 // Максимальне та мінімальне числа
-let highestPrice = Math.max(rollsRoycePhantomPrice, nokia3310Price, youTubePremiumPrice);
-let lowestPrice = Math.min(rollsRoycePhantomPrice, nokia3310Price, youTubePremiumPrice);
+const highestPrice = Math.max(rollsRoycePhantomPrice, nokia3310Price, youTubePremiumPrice);
+const lowestPrice = Math.min(rollsRoycePhantomPrice, nokia3310Price, youTubePremiumPrice);
 console.log(highestPrice);
 console.log(lowestPrice);
 
 // Вартість всіх товарів
-let totalAmountPayable = rollsRoycePhantomPrice + nokia3310Price + youTubePremiumPrice;
+const totalAmountPayable = rollsRoycePhantomPrice + nokia3310Price + youTubePremiumPrice;
 console.log(totalAmountPayable);
 
 // Вартість всіх товарів без копійок
-let totalWithoutChangeCoins = Math.trunc(rollsRoycePhantomPrice) + Math.trunc(nokia3310Price) + Math.trunc(youTubePremiumPrice);
+const totalWithoutChangeCoins = Math.trunc(rollsRoycePhantomPrice) + Math.trunc(nokia3310Price) + Math.trunc(youTubePremiumPrice);
 console.log(totalWithoutChangeCoins);
 
 // Вартість всіх товарів, округлена до сотень
 console.log(Math.round(totalAmountPayable / 100) * 100);
 
 // Сума парна, чи не парна?
-let totalRoundedToLess = Math.floor(totalAmountPayable);
-let totalRemainder = totalRoundedToLess % 2;
-let isEvenNumber = totalRemainder === 0;
+const totalRoundedToLess = Math.floor(totalAmountPayable);
+const totalRemainder = totalRoundedToLess % 2;
+const isEvenNumber = totalRemainder === 0;
 console.log(isEvenNumber);
 
 // Решта при оплаті (500 гривень)
-let clientsPayment = 500;
+const clientsPayment = 500;
 console.log(clientsPayment - totalAmountPayable);
 
 // Cереднє значення цін, округлене до другого знаку після коми
-let averageAmount = totalAmountPayable / 3;
+const averageAmount = totalAmountPayable / 3;
 console.log(Math.round(averageAmount * 100) / 100);
 
 
 ///////////// ЗАДАЧА /////////////
 
 // Вартість без знижки
-let totalWithoutDiscount = (Math.round(totalAmountPayable * 100) / 100);
+const totalWithoutDiscount = (Math.round(totalAmountPayable * 100) / 100);
 console.log(totalWithoutDiscount);
 
 // Собівартість
-let costPrice = totalWithoutDiscount / 2;
+const costPrice = totalWithoutDiscount / 2;
 console.log(costPrice);
 
 // Випадкова знижка
-let discount = Math.round(Math.random() * 100);
+const discount = Math.round(Math.random() * 100);
 console.log(discount);
 
 // Сума знижки
-let discountAmount = Math.round((totalWithoutDiscount / 100 * discount) * 100) / 100;
+const discountAmount = Math.round((totalWithoutDiscount / 100 * discount) * 100) / 100;
 console.log(discountAmount);
 
 // Сума до сплати
-let amountToBePaid = Math.round((totalWithoutDiscount - discountAmount) * 100) / 100;
+const amountToBePaid = Math.round((totalWithoutDiscount - discountAmount) * 100) / 100;
 console.log(amountToBePaid);
 
 // Чистий прибуток
-let netProfit = Math.round((costPrice - discountAmount) * 100) / 100;
+const netProfit = Math.round((costPrice - discountAmount) * 100) / 100;
 console.log(netProfit);
 
 
