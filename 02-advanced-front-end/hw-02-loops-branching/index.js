@@ -1,8 +1,8 @@
-alert(`Буде підрахована сума всіх чисел у заданому Вами діапазоні.`);
+alert(`Буде підрахована сума чисел у заданому Вами діапазоні.`);
 
 //Отримуємо два числа від користувача
-let inputFirstNumber = prompt(`Введіть перше число:`);
-let inputSecondNumber = prompt(`Введіть друге число:`);
+let inputFirstNumber = prompt(`Введіть перше число:`, 0);
+let inputSecondNumber = prompt(`Введіть друге число:`, 0);
 
 //Конвертуємо отримані рядки в числа, відкидаємо дробну частину, якщо користувач ввів нецілі числа
 let firstNumber = Number(Math.trunc(inputFirstNumber));
@@ -11,8 +11,8 @@ let secondNumber = Number(Math.trunc(inputSecondNumber));
 //Задовбуємо впертого користувача доти, доки він не введе два числа
 while ((isNaN(firstNumber)) || isNaN(secondNumber)) {
     alert(`Ви не виконали умову. Спробуйте ще.`);
-    inputFirstNumber = prompt(`Введіть перше число:`);
-    inputSecondNumber = prompt(`Введіть друге число:`);
+    inputFirstNumber = prompt(`Введіть перше число:`, 0);
+    inputSecondNumber = prompt(`Введіть друге число:`, 0);
 
     firstNumber = Number(Math.trunc(inputFirstNumber));
     secondNumber = Number(Math.trunc(inputSecondNumber));
@@ -45,3 +45,4 @@ for (smallestNumber; smallestNumber <= biggestNumber; smallestNumber++) {
 };
 
 alert(`Результат: ` + sum);
+console.log(sum);
