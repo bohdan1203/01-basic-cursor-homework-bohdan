@@ -1,0 +1,7 @@
+body {
+    background-color: #DFFF00;
+}
+
+.power-without-power:last-child {
+    font-weight: 800;
+}
