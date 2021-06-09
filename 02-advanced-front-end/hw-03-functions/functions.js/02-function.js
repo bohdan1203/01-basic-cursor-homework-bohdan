@@ -5,7 +5,7 @@ function powerWithoutPower() {
     let power = +prompt('Введіть ступінь: ', 10);
 
     // Перевіряємо, чи числа ввів користувач, та чи є ступінь додатним числом
-    while (isNaN(number) || isNaN(power) || (power < 0)) {
+    while (isNaN(number) || isNaN(power) || (power < 0) || number == '' || power == '' || number == ' ' || power == ' ') {
         alert(`Ви не виконали умову. Спробуйте ще.`);
         number = +prompt(`Введіть число, яке буде зведено в ступінь: `, 10);
         power = +prompt('Введіть ступінь: ', 10);

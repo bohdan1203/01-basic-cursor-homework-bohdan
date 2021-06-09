@@ -4,7 +4,7 @@ function getMaxDigit() {
     let number = prompt(`Введіть число: `, 2131237235135676);
 
     // Перевіряємо, чи число ввів користувач
-    while (isNaN(number)) {
+    while (isNaN(number) || number == '' || number == ' ') {
         alert(`Ви не виконали умову. Спробуйте ще.`);
         number = prompt(`Введіть число: `, 2131237235135676);
     };
@@ -30,7 +30,7 @@ function powerWithoutPower() {
     let power = +prompt('Введіть ступінь: ', 10);
 
     // Перевіряємо, чи числа ввів користувач, та чи є ступінь додатним числом
-    while (isNaN(number) || isNaN(power) || (power < 0)) {
+    while (isNaN(number) || isNaN(power) || (power < 0) || number == '' || power == '' || number == ' ' || power == ' ') {
         alert(`Ви не виконали умову. Спробуйте ще.`);
         number = +prompt(`Введіть число, яке буде зведено в ступінь: `, 10);
         power = +prompt('Введіть ступінь: ', 10);
@@ -76,7 +76,7 @@ function calcSalaryWithoutTaxes() {
     let salary = +prompt('Розмір зарплати:', '10000');
 
     // Перевіряємо, чи число ввів користувач
-    while (isNaN(salary)) {
+    while (isNaN(salary) || salary == '' || salary == ' ') {
         alert(`Ви не виконали умову. Спробуйте ще.`);
         salary = +prompt('Розмір зарплати:', '10000');
     };
@@ -96,7 +96,7 @@ function getRandomNumber() {
     let inputSecondNumber = +prompt(`Введіть друге число:`, 100);
 
     // Перевіряємо, чи числа ввів користувач
-    while (isNaN(inputFirstNumber) || isNaN(inputSecondNumber)) {
+    while (isNaN(inputFirstNumber) || isNaN(inputSecondNumber) || inputFirstNumber == '' || inputSecondNumber == '' || inputFirstNumber == ' ' || inputSecondNumber == ' ') {
         alert(`Ви не виконали умову. Спробуйте ще.`);
         inputFirstNumber = +prompt(`Введіть перше число:`, 1);
         inputSecondNumber = +prompt(`Введіть друге число:`, 100);

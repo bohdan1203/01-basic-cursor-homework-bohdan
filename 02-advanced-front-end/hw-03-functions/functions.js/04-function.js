@@ -5,7 +5,7 @@ function calcSalaryWithoutTaxes() {
     let salary = +prompt('Розмір зарплати:', '10000');
 
     // Перевіряємо, чи число ввів користувач
-    while (isNaN(salary)) {
+    while (isNaN(salary) || salary == '' || salary == ' ')  {
         alert(`Ви не виконали умову. Спробуйте ще.`);
         salary = +prompt('Розмір зарплати:', '10000');
     };

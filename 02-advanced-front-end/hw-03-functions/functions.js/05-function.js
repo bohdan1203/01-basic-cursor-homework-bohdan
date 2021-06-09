@@ -5,7 +5,7 @@ function getRandomNumber() {
     let inputSecondNumber = +prompt(`Введіть друге число:`, 100);
 
     // Перевіряємо, чи числа ввів користувач
-    while (isNaN(inputFirstNumber) || isNaN(inputSecondNumber)) {
+    while (isNaN(inputFirstNumber) || isNaN(inputSecondNumber) || inputFirstNumber == '' || inputSecondNumber == '' || inputFirstNumber == ' ' || inputSecondNumber == ' ') {
         alert(`Ви не виконали умову. Спробуйте ще.`);
         inputFirstNumber = +prompt(`Введіть перше число:`, 1);
         inputSecondNumber = +prompt(`Введіть друге число:`, 100);

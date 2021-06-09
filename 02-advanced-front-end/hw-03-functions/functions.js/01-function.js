@@ -3,7 +3,7 @@ function getMaxDigit() {
 
     let number = prompt(`Введіть число: `, 2131237235135676);
 
-    while (isNaN(number)) {
+    while (isNaN(number) || number == '' || number == ' ') {
         alert(`Ви не виконали умову. Спробуйте ще.`);
         number = prompt(`Введіть число: `, 2131237235135676);
     };
