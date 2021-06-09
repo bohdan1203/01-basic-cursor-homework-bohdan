@@ -13,7 +13,7 @@ function getMaxDigit() {
 
     // Конвертуємо кожний елемент масиву в числове значення
     const arrayOfNumbers = array.map((i) => Number(i));
-    document.writeln(`<br>`, `Ваше число: ${number}`);
+    document.writeln(`Ваше число: ${number}`);
 
     // Виявляємо найбільше число в масиві
     const maxDigit = Math.max(...arrayOfNumbers)
