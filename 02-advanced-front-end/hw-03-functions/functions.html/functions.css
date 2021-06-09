@@ -31,7 +31,8 @@ a:hover {
 
 .font-weight-600 {
     font-weight: 600;
-    color: rgb(0, 174, 255);
+    color: rgb(255, 238, 0);
+    text-transform: uppercase;
 }
 
 .container {
