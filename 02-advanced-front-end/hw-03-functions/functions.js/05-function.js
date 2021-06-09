@@ -1,8 +1,15 @@
 // 5. Отримуємо випадкове число в заданому діапазоні
 function getRandomNumber() {
 
-    const inputFirstNumber = +prompt(`Введіть перше число:`, 1);
-    const inputSecondNumber = +prompt(`Введіть друге число:`, 100);
+    let inputFirstNumber = +prompt(`Введіть перше число:`, 1);
+    let inputSecondNumber = +prompt(`Введіть друге число:`, 100);
+
+    // Перевіряємо, чи числа ввів користувач
+    while (isNaN(inputFirstNumber) || isNaN(inputSecondNumber)) {
+        alert(`Ви не виконали умову. Спробуйте ще.`);
+        inputFirstNumber = +prompt(`Введіть перше число:`, 1);
+        inputSecondNumber = +prompt(`Введіть друге число:`, 100);
+    };
 
     const minNumber = Math.min(inputFirstNumber, inputSecondNumber);
     const maxNumber = Math.max(inputFirstNumber, inputSecondNumber);

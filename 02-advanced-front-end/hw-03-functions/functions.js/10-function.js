@@ -1,4 +1,4 @@
-// 10. Чи є строка палиндромом?
+// 10. Чи є строка паліндромом?
 function isPalyndrom() {
 
     let text = prompt(`Введіть текст:`, `А чи в окуня вичуди виду, чи в Януковича?`);
@@ -27,7 +27,7 @@ function isPalyndrom() {
     textReversed = textReversed.join('');
 
     // Порівнюємо отримані строки
-    (textOriginal == textReversed) ? result = (true +". Цей текст читається однаково, як сзаду наперед, так і спереду назад.") : result = (false +". Цей текст не є палиндромом.")
+    (textOriginal == textReversed) ? result = (true +". Цей текст читається однаково, як сзаду наперед, так і спереду назад.") : result = (false +". Цей текст не є паліндромом.")
     
 
     document.writeln(result)

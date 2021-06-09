@@ -2,7 +2,13 @@
 function calcSalaryWithoutTaxes() {
 
     const taxes = 0.195;
-    const salary = +prompt('Розмір зарплати:', '10000');
+    let salary = +prompt('Розмір зарплати:', '10000');
+
+    // Перевіряємо, чи число ввів користувач
+    while (isNaN(salary)) {
+        alert(`Ви не виконали умову. Спробуйте ще.`);
+        salary = +prompt('Розмір зарплати:', '10000');
+    };
 
     const taxesAmount = salary * taxes;
     const salaryWithoutTaxes = salary - taxesAmount;

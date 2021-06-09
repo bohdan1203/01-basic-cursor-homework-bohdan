@@ -13,10 +13,16 @@ function getRandomPassword(password = Math.round(Math.random() * 100000000)) {
         // ...запитуємо, скільки чисел він хоче
         let digitsQuantity = +prompt('Встановіть бажану довжину пароля (кількість чисел):', 6);
 
+        // Перевіряємо, чи число ввів користувач
+        while (isNaN(digitsQuantity)) {
+            alert(`Ви не виконали умову. Спробуйте ще.`);
+            digitsQuantity = +prompt('Встановіть бажану довжину пароля (кількість чисел):', 6);
+        };
+
         // Пароль не має бути занадто коротким або занадто довгим
-        if (digitsQuantity < 4 || digitsQuantity > 16) {
-            document.writeln(`Пароль має містити не менше 4 і не більше 16 чисел`);
-            return
+        while (digitsQuantity < 4 || digitsQuantity > 16) {
+            alert(`Пароль має містити не менше 4 і не більше 16 чисел`);
+            digitsQuantity = +prompt('Встановіть бажану довжину пароля (кількість чисел):', 6);
         } 
 
         digitsQuantity = 10 ** digitsQuantity

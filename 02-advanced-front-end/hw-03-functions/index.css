@@ -23,6 +23,18 @@ a {
     font-weight: 700;
 }
 
+button {
+    border-radius: 5px;
+    border: 1px, solid, transparent;
+    color: chartreuse;
+    background-color: #121212;
+}
+
+button:hover {
+    background-color: rgb(4, 163, 25);
+    color: white;
+}
+
 a:hover {
     color: rgb(4, 163, 25);
 }
@@ -33,13 +45,16 @@ a:hover {
 
 p {
     margin: 0;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 .container {
     width: 50%;
     min-width: 500px;
-    height: 420px;
+    height: fit-content;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     background-color: chartreuse;
     border-radius: 30px;

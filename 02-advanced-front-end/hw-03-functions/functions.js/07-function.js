@@ -2,15 +2,16 @@
 function convertCurrency() {
 
     // Користувач вводить суму та валюту в одне поле, далі розберемося, що до чого
-    const inputAmountAndCurrency = prompt(`Введіть суму та валюту (UAH або $)`, `666 UAH`);
+    let inputAmountAndCurrency = prompt(`Введіть суму та валюту (UAH або $)`, `666 UAH`);
 
     // Нівелюємо різницю регістру
-    const inputToUpperCase = inputAmountAndCurrency.toUpperCase();
+    let inputToUpperCase = inputAmountAndCurrency.toUpperCase();
 
-    // Намагаємося знайти в рядку UAH або $, якщо не знаходимо — видаємо помилку та закінчуємо виконання функції
-    if (inputToUpperCase.indexOf('UAH') < 0 && inputToUpperCase.indexOf('$') < 0) {
-        document.writeln('Невідома валюта!');
-        return;
+    // Намагаємося знайти в рядку UAH або $, якщо не знаходимо — видаємо помилку та пробуємо ще раз
+    while (inputToUpperCase.indexOf('UAH') < 0 && inputToUpperCase.indexOf('$') < 0) {
+        alert('Невідома валюта');
+        inputAmountAndCurrency = prompt(`Введіть суму та валюту (UAH або $)`, `666 UAH`);
+        inputToUpperCase = inputAmountAndCurrency.toUpperCase();
     }
 
     // Видаляємо з рядка все зайве, залишаємо тільки числа

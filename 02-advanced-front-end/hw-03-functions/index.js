@@ -1,7 +1,13 @@
 // 1. Функція, яка отримує будь-яке число та виводить найбільшу цифру в цьому числі
 function getMaxDigit() {
 
-    const number = prompt(`Введіть число: `, 2131237235135676);
+    let number = prompt(`Введіть число: `, 2131237235135676);
+
+    // Перевіряємо, чи число ввів користувач
+    while (isNaN(number)) {
+        alert(`Ви не виконали умову. Спробуйте ще.`);
+        number = prompt(`Введіть число: `, 2131237235135676);
+    };
 
     // Розбиваємо отримане число на масив
     const array = Array.from(number)
@@ -12,7 +18,7 @@ function getMaxDigit() {
     // Виявляємо найбільше число в масиві
     const maxDigit = Math.max(...arrayOfNumbers)
 
-    return (`${number}. Найбільша цифра у цьому числі: ${maxDigit}`)
+    return console.log(`Функція №1: ${number}. Найбільша цифра у цьому числі: ${maxDigit}`)
 }
 
 
@@ -41,7 +47,7 @@ function powerWithoutPower() {
             result = result * number;
         }
     }
-    return (`${number} в степені ${power} дорівнює ${result}`)
+    return console.log(`Функція №2: ${number} в степені ${power} дорівнює ${result}`)
 }
 
 
@@ -58,7 +64,7 @@ function lowerCaseCapitalize() {
     const firstLetter = lower.charAt(0).toUpperCase();
 
     // Додаємо решту до першої літери
-    return (`Відформатований текст: "${firstLetter + lower.slice(1)}"`);
+    return console.log(`Функція №3: Відформатований текст: "${firstLetter + lower.slice(1)}"`);
 }
 
 
@@ -67,12 +73,18 @@ function lowerCaseCapitalize() {
 function calcSalaryWithoutTaxes() {
 
     const taxes = 0.195;
-    const salary = +prompt('Розмір зарплати:', '10000');
+    let salary = +prompt('Розмір зарплати:', '10000');
+
+    // Перевіряємо, чи число ввів користувач
+    while (isNaN(salary)) {
+        alert(`Ви не виконали умову. Спробуйте ще.`);
+        salary = +prompt('Розмір зарплати:', '10000');
+    };
 
     const taxesAmount = salary * taxes;
     const salaryWithoutTaxes = salary - taxesAmount;
 
-    return (`Сума після сплати податків: ${(Math.round(salaryWithoutTaxes * 100) / 100)} грн`)
+    return console.log(`Функція №4: Сума після сплати податків: ${(Math.round(salaryWithoutTaxes * 100) / 100)} грн`)
 }
 
 
@@ -80,15 +92,22 @@ function calcSalaryWithoutTaxes() {
 // 5. Отримуємо випадкове число в заданому діапазоні
 function getRandomNumber() {
 
-    const inputFirstNumber = +prompt(`Введіть перше число:`, 1);
-    const inputSecondNumber = +prompt(`Введіть друге число:`, 100);
+    let inputFirstNumber = +prompt(`Введіть перше число:`, 1);
+    let inputSecondNumber = +prompt(`Введіть друге число:`, 100);
+
+    // Перевіряємо, чи числа ввів користувач
+    while (isNaN(inputFirstNumber) || isNaN(inputSecondNumber)) {
+        alert(`Ви не виконали умову. Спробуйте ще.`);
+        inputFirstNumber = +prompt(`Введіть перше число:`, 1);
+        inputSecondNumber = +prompt(`Введіть друге число:`, 100);
+    };
 
     const minNumber = Math.min(inputFirstNumber, inputSecondNumber);
     const maxNumber = Math.max(inputFirstNumber, inputSecondNumber);
 
     const randomNumber = Math.round(Math.random() * (maxNumber - minNumber) + minNumber);
 
-    return (`Випадкове число між ${minNumber} та ${maxNumber}: ${randomNumber}`)
+    return console.log(`Функція №5: Випадкове число між ${minNumber} та ${maxNumber}: ${randomNumber}`)
 }
 
 
@@ -118,7 +137,7 @@ function countLetter() {
         }
     }
 
-    return (`Рядок "${text}" містить ${letterQuantity} символів, ${result} з них є символом "${letterToCount}"`)
+    return console.log(`Функція №6: Рядок "${text}" містить ${letterQuantity} символів, ${result} з них є символом "${letterToCount}"`)
 }
 
 
@@ -127,14 +146,16 @@ function countLetter() {
 function convertCurrency() {
 
     // Користувач вводить суму та валюту в одне поле, далі розберемося, що до чого
-    const inputAmountAndCurrency = prompt(`Введіть суму та валюту (UAH або $)`, `666 UAH`);
+    let inputAmountAndCurrency = prompt(`Введіть суму та валюту (UAH або $)`, `666 UAH`);
 
     // Нівелюємо різницю регістру
-    const inputToUpperCase = inputAmountAndCurrency.toUpperCase();
+    let inputToUpperCase = inputAmountAndCurrency.toUpperCase();
 
-    // Намагаємося знайти в рядку UAH або $, якщо не знаходимо — видаємо помилку та закінчуємо виконання функції
-    if (inputToUpperCase.indexOf('UAH') < 0 && inputToUpperCase.indexOf('$') < 0) {
-        return ('Невідома валюта');
+    // Намагаємося знайти в рядку UAH або $, якщо не знаходимо — видаємо помилку та пробуємо ще раз
+    while (inputToUpperCase.indexOf('UAH') < 0 && inputToUpperCase.indexOf('$') < 0) {
+        alert('Невідома валюта');
+        inputAmountAndCurrency = prompt(`Введіть суму та валюту (UAH або $)`, `666 UAH`);
+        inputToUpperCase = inputAmountAndCurrency.toUpperCase();
     }
 
     // Видаляємо з рядка все зайве, залишаємо тільки числа
@@ -157,7 +178,7 @@ function convertCurrency() {
         result = amount * 25;
         resultString = `$${amount} = ${result} UAH`;
     }
-    return resultString
+    return console.log(`Функція №7: ${resultString}`)
 }
 
 
@@ -170,22 +191,28 @@ function getRandomPassword(password = Math.round(Math.random() * 100000000)) {
 
     // Якщо так
     if (isSuitable) {
-        return (`Ваш пароль: ${password}`);
+        return console.log(`Ваш пароль: ${password}`);
         // Якщо ні...
     }   else {
         // ...запитуємо, скільки чисел він хоче
         let digitsQuantity = +prompt('Встановіть бажану довжину пароля (кількість чисел):', 6);
 
+        // Перевіряємо, чи число ввів користувач
+        while (isNaN(digitsQuantity)) {
+            alert(`Ви не виконали умову. Спробуйте ще.`);
+            digitsQuantity = +prompt('Встановіть бажану довжину пароля (кількість чисел):', 6);
+        };
+
         // Пароль не має бути занадто коротким або занадто довгим
-        if (digitsQuantity < 4 || digitsQuantity > 16) {
+        while (digitsQuantity < 4 || digitsQuantity > 16) {
             alert(`Пароль має містити не менше 4 і не більше 16 чисел`);
-            return
+            digitsQuantity = +prompt('Встановіть бажану довжину пароля (кількість чисел):', 6);
         } 
 
         digitsQuantity = 10 ** digitsQuantity
         password = Math.round(Math.random() * digitsQuantity);
 
-        return (`Ваш пароль: ${password}`);
+        return console.log(`Функція №8: Ваш пароль: ${password}`);
     }
 }
 
@@ -209,12 +236,12 @@ function deleteLetters() {
     text = text.split(letterToDeleteUpperCase);
     text = text.join('');
 
-    return (`Текст без "${letterToDelete}" виглядає наступним чином: ${text}`)
+    return console.log(`Функція №9: Текст без "${letterToDelete}" виглядає наступним чином: ${text}`)
 }
 
 
 
-// 10. Чи є строка палиндромом?
+// 10. Чи є строка паліндромом?
 function isPalyndrom() {
 
     let text = prompt(`Введіть текст:`, `А чи в окуня вичуди виду, чи в Януковича?`);
@@ -242,9 +269,9 @@ function isPalyndrom() {
     textReversed = textReversed.join('');
 
     // Порівнюємо отримані строки
-    (textOriginal == textReversed) ? result = (true +". Цей текст читається однаково, як сзаду наперед, так і спереду назад.") : result = (false +". Цей текст не є палиндромом.")
+    (textOriginal == textReversed) ? result = (true +". Цей текст читається однаково, як сзаду наперед, так і спереду назад.") : result = (false +". Цей текст не є паліндромом.")
 
-    return result
+    return console.log(`Функція №10: ${result}`)
 }
 
 
@@ -269,19 +296,20 @@ function deleteDuplicateLetter() {
     // Збираємо те, що залишилося знову в строку
     result = result.join('');
 
-    return (`Якщо видалити з тексту всі символи, які зустрічаються в ньому більше одного разу, результат виглядатиме наступним чином: "${result}"`)
+    return console.log(`Функція №11: Якщо видалити з тексту всі символи, які зустрічаються в ньому більше одного разу, результат виглядатиме наступним чином: "${result}"`)
 
 }
 
+// Можливо, ще знадобиться
 
-console.log(`Функція №1: ${getMaxDigit()}`)
-console.log(`Функція №2: ${powerWithoutPower()}`)
-console.log(`Функція №3: ${lowerCaseCapitalize()}`)
-console.log(`Функція №4: ${calcSalaryWithoutTaxes()}`)
-console.log(`Функція №5: ${getRandomNumber()}`)
-console.log(`Функція №6: ${countLetter()}`)
-console.log(`Функція №7: ${convertCurrency()}`)
-console.log(`Функція №8: ${getRandomPassword()}`)
-console.log(`Функція №9: ${deleteLetters()}`)
-console.log(`Функція №10: ${isPalyndrom()}`)
-console.log(`Функція №11: ${deleteDuplicateLetter()}`)
+// console.log(`Функція №1: ${getMaxDigit()}`)
+// console.log(`Функція №2: ${powerWithoutPower()}`)
+// console.log(`Функція №3: ${lowerCaseCapitalize()}`)
+// console.log(`Функція №4: ${calcSalaryWithoutTaxes()}`)
+// console.log(`Функція №5: ${getRandomNumber()}`)
+// console.log(`Функція №6: ${countLetter()}`)
+// console.log(`Функція №7: ${convertCurrency()}`)
+// console.log(`Функція №8: ${getRandomPassword()}`)
+// console.log(`Функція №9: ${deleteLetters()}`)
+// console.log(`Функція №10: ${isPalyndrom()}`)
+// console.log(`Функція №11: ${deleteDuplicateLetter()}`)
