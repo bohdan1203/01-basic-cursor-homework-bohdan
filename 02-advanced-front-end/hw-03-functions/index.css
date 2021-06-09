@@ -25,9 +25,13 @@ a {
 
 button {
     border-radius: 5px;
-    border: 1px, solid, transparent;
-    color: chartreuse;
-    background-color: #121212;
+    border: 1px, solid, срф;
+    color: #121212;
+    background-color: #f2f8ff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    min-width: 100px;
+
 }
 
 button:hover {
