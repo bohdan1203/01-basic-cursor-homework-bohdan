@@ -217,9 +217,35 @@ function countPositiveNumbers(...numbers) {
 
    quantityOfNumbersMoreThanZero = arrayOfNumbers.length
 
-   console.log(`Кількість чисел більших нуля: ${quantityOfNumbersMoreThanZero}`)
+   return console.log(`Кількість чисел більших нуля: ${quantityOfNumbersMoreThanZero}`)
 
 
 }
 countPositiveNumbers(1, 1, -2, 3, -4, -5, 6, 0, -99, 2021, Infinity, -Infinity, 0.000001, NaN)
 console.log(``)
+
+
+
+
+// 7.
+console.log(`Функція 7`)
+
+function getDividedByFive(...numbers) {
+
+    let arrayOfNumbers = numbers;
+
+    console.log(arrayOfNumbers)
+
+    // Створюємо функцію, яка перевіряє, чи є ділиться число на 5 без залишку
+    function isDividedByFive (number) {
+        if (number % 5 == 0) return true;
+        else return false;
+    }
+
+    arrayOfNumbers = arrayOfNumbers.filter(isDividedByFive);
+
+    return console.log(arrayOfNumbers)
+
+
+}
+getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2, 10, 5, 0, 95, 660, 2000005)
