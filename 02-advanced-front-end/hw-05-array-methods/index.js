@@ -249,3 +249,77 @@ function getDividedByFive(...numbers) {
 
 }
 getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2, 10, 5, 0, 95, 660, 2000005)
+console.log(``)
+
+
+
+// 8.
+console.log(`Функція 8`)
+
+function replaceBadWords(string) {
+    const badWords = ["shit", "fuck",]
+    const arrayOfStars = []
+
+    for (i = 0; i < badWords.length; i++) {
+        badWordCensored = []
+
+        for (j = 0; j < badWords[i].length; j++) {
+            badWordCensored.push('*')
+            badWord = badWordCensored.join('')
+        }
+
+        arrayOfStars.push(badWord)
+
+    }
+
+    console.log(string)
+    console.log(badWords)
+    console.log(arrayOfStars)
+   
+    string = string.toLowerCase();
+    string = string.split(" ");
+
+    console.log(string)
+
+
+    for (i = 0; i < string.length; i++) {
+
+        for (j = 0; j < badWords.length; j++) {
+
+            if (string[i].includes(badWords[j])) {
+                string[i] = string[i].replace(badWords[j], arrayOfStars[j])
+            }
+        }
+    }
+
+    string = string.join(' ')
+
+    console.log(string)
+
+}
+replaceBadWords("Holy shit! Are you fucking kidding? It's bullshit!")
+console.log(``)
+
+
+
+// 9.
+console.log(`Функція 9`)
+
+function divideByThree(word) {
+    const byThree = []
+
+    console.log(word)
+
+    word = word.toLowerCase()
+    word = word.replace(/ /g, "");
+    word = word.split("")
+  
+    for (i = 0; i < word.length; i = i + 3) {
+        threeLetters = [].concat(word[i]).concat(word[i + 1]).concat(word[i + 2]).join("")
+        byThree.push(threeLetters)
+    }
+
+    return console.log(byThree)
+}
+divideByThree("Co mma n     ders");
+
