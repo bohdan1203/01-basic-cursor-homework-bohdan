@@ -97,24 +97,24 @@ getAverageMark(1)
 
 
 
-// 3. Створіть функцію, яка повертає інформацію загального виду по переданому студенту
+// // 3. Створіть функцію, яка повертає інформацію загального виду по переданому студенту
 
-function _getStudentInfo(i) {
+// function _getStudentInfo(i) {
 
-    for (i = 0; i < students.length; i++) {
-        students[i]['average_mark'] = _getAverageMark(i) // Додаємо середні оцінки
-        delete students[i].subjects // Видаляємо списки предметів
-    }
+//     for (i = 0; i < students.length; i++) {
+//         students[i]['average_mark'] = _getAverageMark(i) // Додаємо середні оцінки
+//         delete students[i].subjects // Видаляємо списки предметів
+//     }
 
-    return students[i]
-}
+//     return students[i]
+// }
 
-function getStudentInfo(i) {
-    console.log(`Функція 3. Інформація про студента ${students[i].name}:`)
-    console.log(_getStudentInfo(i))
-    console.log(``)
-}
-getStudentInfo(0)
+// function getStudentInfo(i) {
+//     console.log(`Функція 3. Інформація про студента ${students[i].name}:`)
+//     console.log(_getStudentInfo(i))
+//     console.log(``)
+// }
+// getStudentInfo(0)
 
 
 
@@ -147,24 +147,24 @@ console.log(``);
 
 
 
-// 5. Створіть функцію, яка повертає кращого студента зі списку по показнику середньої оцінки
+// // 5. Створіть функцію, яка повертає кращого студента зі списку по показнику середньої оцінки
 
-function getBestStudent() {
-    const arrayOfAverageMarks = []; // Створюємо пустий масив, в який потраплять середні оцінки студентів
+// function getBestStudent() {
+//     const arrayOfAverageMarks = []; // Створюємо пустий масив, в який потраплять середні оцінки студентів
 
-    for (i = 0; i < students.length; i++) {
-        arrayOfAverageMarks.push(students[i]['average_mark']); // Додаємо середні оцінки в масив
-    };
+//     for (i = 0; i < students.length; i++) {
+//         arrayOfAverageMarks.push(students[i]['average_mark']); // Додаємо середні оцінки в масив
+//     };
 
-    bestAverage = Math.max.apply(Math, arrayOfAverageMarks); // Знаходимо найбільшу середню оцінку в масиві
-    indexOfBest = arrayOfAverageMarks.indexOf(bestAverage); // Знаходимо індекс найбільшої середньої оцінки в масиві
-    bestStudent = students[indexOfBest].name; // Застосовуємо отриманий індекс, щоб виявити ім'я найкращого студента
+//     bestAverage = Math.max.apply(Math, arrayOfAverageMarks); // Знаходимо найбільшу середню оцінку в масиві
+//     indexOfBest = arrayOfAverageMarks.indexOf(bestAverage); // Знаходимо індекс найбільшої середньої оцінки в масиві
+//     bestStudent = students[indexOfBest].name; // Застосовуємо отриманий індекс, щоб виявити ім'я найкращого студента
    
-    return bestStudent;
-};
-console.log(`Функція 5. Найкращий студент:`);
-console.log(getBestStudent());
-console.log(``);
+//     return bestStudent;
+// };
+// console.log(`Функція 5. Найкращий студент:`);
+// console.log(getBestStudent());
+// console.log(``);
 
 
 
