@@ -62,14 +62,20 @@ function getModa(...numbers) {
 
     console.log(`Найбільша кількість повторень: ${maximumOccur}`);
 
+    const arrayOfModes = []
+
     // Оскільки мод може бути більше однієї, знаходимо всі індекси, на яких знаходиться максимум
     for (i = 0; i < arrayOfOccurrences.length; i++) {
 
         // Застосовуємо отримані індекси до масиву з числами, таким чином отримуємо моду (моди)
         if (arrayOfOccurrences[i] == maximumOccur) {
-            return console.log (`Мода: ${arrayOfNumbers[i]}`);
+            console.log (`Мода: ${arrayOfNumbers[i]}`);
+
+            arrayOfModes.push(arrayOfNumbers[i]);
         };
     };
+    
+    return console.log(arrayOfModes);
 };
 getModa(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 56, 3, 2);
 console.log(``);
