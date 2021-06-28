@@ -91,7 +91,7 @@ function getMySalary(country) {
 
     salary = Math.round(Math.random() * (2000 - 1500) + 1500);
     taxes = Math.round(tax * salary)
-    profit = salary - taxAmount;
+    profit = salary - taxes;
 
     const mySalary = {
         salary: salary,
