@@ -1,9 +1,31 @@
 body {
-    background-color: #212121;
+    background-color: rgb(14, 14, 14);
     display: flex;
     height: 100vh;
     margin: 0;
     padding: 0;
+    width: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    color: #202020;
+    background-color: #f2f8ff;
+    font-family: monospace;
+    font-size: 16px;
+    width: 250px;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: 1%;
+    padding: 0;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(128, 0, 0);
+    color: rgb(225, 65, 65);
+    cursor: pointer;
 }
 
 #grid {
@@ -14,7 +36,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1px;
     margin-left: auto;
+    margin-right: 1%;
     margin-top: auto;
+    margin-bottom: 1%;
+    max-height: 254px;
+    overflow: hidden;
 }
 
 .cell {
