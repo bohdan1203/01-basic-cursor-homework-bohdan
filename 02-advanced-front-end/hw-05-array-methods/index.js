@@ -12,9 +12,8 @@ function getRandomArray(length, min, max) {
 
     return console.log(arrayOfRandomNumbers);
 };
-getRandomArray(10,  1, 100);
+getRandomArray(10,  1, 100)
 console.log(``);
-
 
 
 
