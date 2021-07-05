@@ -20,60 +20,35 @@ const lithuania = {
 ////////////////////////////////////////////////////////////////////
 console.log(`Функція 1. Сума податку:`);
 
-function getMyTaxes(country, salary) {
-
-    country.getTax = function() {
-        return this.tax;
-    };
-
-    let countryTax = country.getTax;
-    taxAmount = salary * countryTax.call(country);
-
-    return taxAmount;
+function getMyTaxes(salary) {
+    
+    return this.tax * salary;
 };
-console.log(getMyTaxes(ukraine, 2000));
+console.log(getMyTaxes.call(ukraine, 2000));
 console.log(``);
 
 
 ////////////////////////////////////////////////////////////////////
 console.log(`Функція 2. Середній податок для IT-спеціалістів:`);
 
-function getMiddleTaxes(country) {
+function getMiddleTaxes() {
 
-    country.getTax = function() {
-        return this.tax;
-    };
-
-    country.getMiddleSalary = function() {
-        return this.middleSalary;
-    };
-
-    let countryTax = country.getTax;
-    let countryMiddleSalary = country.getMiddleSalary;
-
-    middleTaxes = countryTax.call(country) * countryMiddleSalary.call(country);
-
-    return middleTaxes;
+    return this.tax * this.middleSalary;
 };
-console.log(getMiddleTaxes(latvia));
+console.log(getMiddleTaxes.call(latvia));
 console.log(``);
 
 
 ////////////////////////////////////////////////////////////////////
 console.log(`Функція 3. Всього податків:`);
 
-function getTotalTaxes(country) {
-    country.getVacancies = function() {
-        return this.vacancies;
-    };
+function getTotalTaxes() {
+    
+    country = this;
 
-    let countryVacancies = country.getVacancies;
-
-    totalTaxes = getMiddleTaxes(country) * countryVacancies.call(country);
-
-    return totalTaxes;
+    return getMiddleTaxes.call(country) * this.vacancies;
 };
-console.log(getTotalTaxes(lithuania));
+console.log(getTotalTaxes.call(lithuania));
 console.log(``);
 
 
@@ -82,24 +57,29 @@ console.log(`Функція 4`);
 
 function getMySalary(country) {
 
-    country.getTax = function() {
-        return this.tax;
+    function showSalaryTaxesProfit() {
+
+        country.getTax = function() {
+            return this.tax;
+        };
+
+        let countryTax = country.getTax;
+        tax = countryTax.call(country);
+
+        salary = Math.round(Math.random() * (2000 - 1500) + 1500);
+        taxes = Math.round(tax * salary);
+        profit = salary - taxes;
+
+        const mySalary = {
+            salary: salary,
+            taxes: taxes,
+            profit: profit,
+        };
+
+        return console.log(mySalary);
     };
-
-    let countryTax = country.getTax;
-    tax = countryTax.call(country);
-
-    salary = Math.round(Math.random() * (2000 - 1500) + 1500);
-    taxes = Math.round(tax * salary)
-    profit = salary - taxes;
-
-    const mySalary = {
-        salary: salary,
-        taxes: taxes,
-        profit: profit,
-    };
-
-    return  console.log(mySalary);
+    showSalaryTaxesProfit();
+    setInterval(showSalaryTaxesProfit, 10000);
+    
 };
 getMySalary(ukraine);
-setInterval(getMySalary, 10000, ukraine);
