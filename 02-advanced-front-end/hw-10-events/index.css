@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 100px 0 0 0;
     background-image: url(1577435515298.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     background-position: 25% 100%;
 
