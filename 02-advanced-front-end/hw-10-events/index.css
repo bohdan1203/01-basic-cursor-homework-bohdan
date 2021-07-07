@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
 
+html {
+    width: 100%;
+    min-width: 1100px;
+    height: 100%;
+}
+
 body {
     font-family: 'Quattrocento';
     display: flex;
@@ -9,7 +15,8 @@ body {
     background-image: url(1577435515298.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 90%;
+    background-position: 25% 100%;
+
 }
 
 .keys {
