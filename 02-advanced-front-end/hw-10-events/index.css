@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+
+body {
+    font-family: 'Quattrocento';
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 100px 0 0 0;
+    background-image: url(1577435515298.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90%;
+}
+
+.keys {
+    width: fit-content;
+    position: relative;
+}
+
+.white-keys {
+    display: flex;
+}
+
+.black-keys {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    top: -307px;
+    display: flex;
+    margin-left: 25px;
+}
+
+.key {
+    transition: all 0.1s;
+}
+
+.white-key {
+    width: 100px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.black-key {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    border: 1px solid black;
+    margin-left: 50px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 5px;
+}
+
+.playing {
+    transform: scale(0.98);
+    background-color: #3d0202;
+    color: white;
+}
+
+span {
+    height: 50px;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
