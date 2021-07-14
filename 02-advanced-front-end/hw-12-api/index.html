@@ -5,38 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Домашнє завдання №12. API</title>
+    <title>Домашнє завдання №12. Робота з сервером, API</title>
 </head>
 <body>
 
-
-
-
-
-
-
         <div id="characters-container">
-
             <form id="form-characters">
-                <input type="number" id="films-characters" placeholder="Число від 1 до 6">
-                <input type="submit" id="submit-characters">
+                <input type="number" id="input-number" placeholder="Number from 1 to 6?">
+                <input type="submit" id="submit-characters" value="Submit">
+                <input type="submit" id="wookiee" value="WOOKIEE">
             </form>
 
-            <h2 id="header-characters">Персонажі:</h2>
+            <h2 id="header-characters">Characters:</h2>
             <ol id="characters-info-container"></ol>
         </div>
     
-    
-    
         <div id="planets-container">
-            <button id="get-planets">Отримати список планет</button>
-            <h2 id="header-planets">Список планет:</h2>
+            <button id="get-planets">Get list of planets</button>
+            <h2 id="header-planets">Planets:</h2>
+
+            <div class="nav-buttons">
+                <button id="previous" class="nav-button">Previous 10</button>
+                <button id="next" class="nav-button">Next 10</button>
+            </div>
+
             <ol id="planets-list"></ol>
         </div>
-
- 
-
-    
 
     <script src="index.js"></script>
 </body>
