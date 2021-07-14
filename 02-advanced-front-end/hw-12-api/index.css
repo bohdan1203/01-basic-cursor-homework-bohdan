@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.character-info {
+    background-color: navy;
+}
+
+
+#planets-container {
+    margin-left: 1%;
+}
+
+li {
+    margin-bottom: 5%;
+}
+
+img {
+    max-width: 400px;
+}
