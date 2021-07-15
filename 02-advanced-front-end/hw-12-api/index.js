@@ -170,6 +170,20 @@ document.querySelector('#previous').addEventListener('click', () => {
     page -= 1;
 
     if (page < 1) page = 1;
+
+    if (page === 1) {
+        document.getElementById('previous').style.opacity = '0.1';
+    } else {
+        document.getElementById('previous').style.opacity = '1';
+    }
+
+    if (page === 6) {
+        document.getElementById('next').style.opacity = '0.1';
+    } else {
+        document.getElementById('next').style.opacity = '1';
+    }
+
+
     getPlanetsList();
 })
 
@@ -178,8 +192,24 @@ document.querySelector('#next').addEventListener('click', () => {
     page += 1;
 
     if (page > 6) page = 6;
+
+    if (page === 1) {
+        document.getElementById('previous').style.opacity = '0.1';
+    } else {
+        document.getElementById('previous').style.opacity = '1';
+    }
+
+    if (page === 6) {
+        document.getElementById('next').style.opacity = '0.1';
+    } else {
+        document.getElementById('next').style.opacity = '1';
+    }
+
+
     getPlanetsList();
 })
+
+
 
 
 
