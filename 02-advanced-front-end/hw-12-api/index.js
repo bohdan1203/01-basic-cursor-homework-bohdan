@@ -70,7 +70,7 @@ function getCharactersInformation() {
                         case "male": character.gender = "♂"; 
                             break;
     
-                        case "female": character.gender = "♀"
+                        case "female": character.gender = "♀";
                             break;
                     }
 
