@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Домашнє завдання №13. Генератори</title>
+</head>
+<body style="font-size: 14px;" id="body">
+
+  <button onclick="console.log(fontGenerator.next('up').value)">console.log(fontGenerator.next('up').value)</button>
+  <button onclick="console.log(fontGenerator.next('down').value)">console.log(fontGenerator.next('down').value)</button>
+  <button onclick="console.log(fontGenerator.next().value)">console.log(fontGenerator.next().value)</button>
+
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ad sint, debitis id, enim quo rem recusandae, autem cupiditate ea ducimus dignissimos quasi illum perferendis. Quia iste omnis veniam dolorum?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ad sint, debitis id, enim quo rem recusandae, autem cupiditate ea ducimus dignissimos quasi illum perferendis. Quia iste omnis veniam dolorum?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ad sint, debitis id, enim quo rem recusandae, autem cupiditate ea ducimus dignissimos quasi illum perferendis. Quia iste omnis veniam dolorum?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ad sint, debitis id, enim quo rem recusandae, autem cupiditate ea ducimus dignissimos quasi illum perferendis. Quia iste omnis veniam dolorum?</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ad sint, debitis id, enim quo rem recusandae, autem cupiditate ea ducimus dignissimos quasi illum perferendis. Quia iste omnis veniam dolorum?</p>
+
+  <button onclick="console.log(idGenerator.next().value)">console.log(idGenerator.next().value)</button>
+  
+
+	<script>
+
+    function* createIdGenerator() {
+      for (i = 1; Infinity; i++) yield i;
+    }
+    const idGenerator = createIdGenerator();
+
+
+    function* newFontGenerator(fontSize) {
+      let upOrDown = yield fontSize;
+
+      while (true) {
+
+        switch (upOrDown) {
+          case 'up':
+            upOrDown = yield fontSize += 2;
+            break;
+
+          case 'down':  
+            upOrDown = yield fontSize -= 2;
+            break;
+
+          default:
+            upOrDown = yield fontSize;
+            break;
+        }
+        document.getElementById('body').style.fontSize = fontSize + 'px';
+      }
+    }
+    const fontGenerator = newFontGenerator(14);
+
+	</script>
+</body>
+</html>
