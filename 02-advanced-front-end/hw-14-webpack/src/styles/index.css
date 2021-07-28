@@ -1,0 +1,29 @@
+body { 
+    animation-name: body-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes body-color {
+    from {background-color: black;}
+    to {background-color: blueviolet;}  
+}  
+
+#car {
+    width: 20%;
+    position: relative;
+
+    animation-name: car;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes car {
+    from {left: 0%;}
+    to {left: 80%;}  
+}  
+
