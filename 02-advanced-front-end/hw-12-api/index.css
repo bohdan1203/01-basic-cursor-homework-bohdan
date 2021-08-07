@@ -40,6 +40,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.no-film {
+    font-family: 'Oswald', sans-serif; 
+    text-align: center;
+    font-size: larger;
+    color: rgb(255, 0, 0);
+}
+
 #submit-characters, #wookiee {
     border: 2px solid white;
     background-color: black;

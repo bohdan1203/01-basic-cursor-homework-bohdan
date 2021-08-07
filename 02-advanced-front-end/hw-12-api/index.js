@@ -35,6 +35,11 @@ function getCharactersInformation() {
   
     charactersHeader.insertAdjacentHTML('afterbegin', `Film ${input.value}, characters:`);
 
+    if (input.value < 1 || input.value > 6) {
+        charactersContainer.insertAdjacentHTML('afterbegin', `<p class="no-film">There is no such a film. <br> You should input number in the range 1 to 6.</p>`)
+        return;
+    }
+
     fetch(`https://swapi.dev/api/films/${input.value}/`)
 
     .then((response) => {
