@@ -1,7 +1,15 @@
-function generateBlocks() {
-    let grid = document.getElementById('grid');
+let grid = document.getElementById('grid');
+let interval;
+
+function generateBlocks() {    
+
+    if (document.getElementsByClassName('cell').length !== 0) {
+        for (i = 25; i >= 1; i--) {
+            document.getElementById(`cell_${i}`).remove();
+        }
+    }
     
-    for (i = 1; i <= 25; i++) {
+    for (i = 25; i >= 1; i--) {
         grid.insertAdjacentHTML('afterbegin', `<div class="cell" id="cell_${i}"></div>`);
 
         let r = Math.round(Math.random() * 255);
@@ -14,5 +22,15 @@ function generateBlocks() {
 };
 
 function generateBlocksInterval() {
-    setInterval(generateBlocks, 1000);
+    interval = setInterval(generateBlocks, 1000); 
 };
+
+document.getElementById('generate-blocks').addEventListener('click', () => {
+    clearInterval(interval);
+    generateBlocks();
+});
+
+document.getElementById('generate-blocks-interval').addEventListener('click', () => {
+    clearInterval(interval);
+    generateBlocksInterval();
+});
